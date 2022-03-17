@@ -1,4 +1,4 @@
-FROM node:14.16 as build_web
+FROM node:16.0.0 as build_web
 WORKDIR /app/imuzik/web
 COPY package.json yarn.lock ./
 RUN yarn
