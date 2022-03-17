@@ -1,0 +1,85 @@
+query RbtGroupInfo($groupId: ID!) {
+  groupInfo(groupId: $groupId) {
+    id
+    note
+    members {
+      id
+      name
+      number
+    }
+    timeSetting {
+      id
+      timeType
+      startTime
+      endTime
+    }
+    usedTones {
+      id
+      tone {
+        id
+        toneCode
+        toneName
+        singerName
+        availableDateTime
+      }
+      used
+    }
+  }
+}
+
+mutation SetRbtGroupTones($rbtCodes: [String!]!, $groupId: ID!) {
+  setRbtGroupTones(rbtCodes: $rbtCodes, groupId: $groupId) {
+    success
+    message
+    errorCode
+    result
+  }
+}
+
+mutation CreateRbtGroup($groupName: String!) {
+  createRbtGroup(groupName: $groupName) {
+    success
+    message
+    errorCode
+    result {
+      id
+      name
+    }
+  }
+}
+
+mutation DeleteRbtGroup($groupId: ID!) {
+  deleteRbtGroup(groupId: $groupId) {
+    success
+    message
+    errorCode
+    result
+  }
+}
+
+mutation RemoveRbtGroupMember($groupId: ID!, $memberNumber: String!) {
+  removeRbtGroupMember(groupId: $groupId, memberNumber: $memberNumber) {
+    success
+    message
+    errorCode
+    result
+  }
+}
+
+mutation addRbtGroupMember($groupId: ID!, $memberNumber: String!, $memberName: String!) {
+  addRbtGroupMember(groupId: $groupId, memberNumber: $memberNumber, memberName: $memberName) {
+    success
+    message
+    errorCode
+    result
+  }
+}
+
+query CallGroups {
+  myRbt {
+    callGroups {
+      id
+      name
+    }
+  }
+}

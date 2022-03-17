@@ -1,0 +1,6 @@
+build/*
+public/*
+src/react-app-env.d.ts
+src/serviceWorker.ts
+src/**/*.stories.*
+src/queries.tsx

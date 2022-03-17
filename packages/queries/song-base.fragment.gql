@@ -1,0 +1,14 @@
+fragment SongBase on Song {
+  id
+  name
+  slug
+  imageUrl
+  fileUrl
+  downloadNumber
+  liked
+  singers {
+    id
+    alias
+    slug
+  }
+}

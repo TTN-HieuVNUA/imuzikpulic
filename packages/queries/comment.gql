@@ -1,0 +1,116 @@
+query SongComments($slug: String!, $after: String, $first: Int) {
+  song(slug: $slug) {
+    id
+    comments(after: $after, first: $first) {
+      totalCount
+      pageInfo {
+        endCursor
+        hasNextPage
+      }
+      edges {
+        node {
+          id
+          content
+          likes
+          liked
+          createdAt
+          updatedAt
+          replies {
+            id
+            content
+            createdAt
+            updatedAt
+            user {
+              id
+              fullName
+              imageUrl
+            }
+          }
+          user {
+            id
+            fullName
+            imageUrl
+          }
+        }
+      }
+    }
+  }
+}
+
+query Comment($id: ID!) {
+  comment(commentId: $id) {
+    id
+    content
+    likes
+    liked
+    createdAt
+    updatedAt
+    replies {
+      id
+      content
+      createdAt
+      updatedAt
+      user {
+        id
+        fullName
+        imageUrl
+      }
+    }
+    user {
+      id
+      fullName
+      imageUrl
+    }
+  }
+}
+
+mutation CreateComment($songId: ID!, $content: String!) {
+  createComment(songId: $songId, content: $content) {
+    success
+    message
+    errorCode
+    result {
+      id
+      content
+    }
+  }
+}
+mutation LikeComment($commentId: ID!, $like: Boolean!) {
+  likeComment(commentId: $commentId, like: $like) {
+    success
+    message
+    errorCode
+    result {
+      id
+      likes
+      liked
+    }
+  }
+}
+mutation DeleteComment($commentId: ID!) {
+  deleteComment(commentId: $commentId) {
+    errorCode
+    success
+    message
+    result
+  }
+}
+mutation CreateReply($commentId: ID!, $content: String!) {
+  createReply(commentId: $commentId, content: $content) {
+    errorCode
+    success
+    message
+    result {
+      id
+      content
+    }
+  }
+}
+mutation DeleteReply($commentId: ID!, $replyId: ID!) {
+  deleteReply(commentId: $commentId, replyId: $replyId) {
+    success
+    errorCode
+    message
+    result
+  }
+}

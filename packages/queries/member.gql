@@ -1,0 +1,105 @@
+mutation Authenticate($username: String, $password: String, $captcha: String) {
+  authenticate(username: $username, password: $password, captcha: $captcha) {
+    success
+    errorCode
+    message
+    result {
+      accessToken
+      accessTokenExpiry
+      refreshToken
+      refreshTokenExpiry
+    }
+  }
+}
+
+mutation Logout {
+  logout {
+    success
+  }
+}
+
+mutation RefreshAccessToken($refreshToken: String) {
+  refreshAccessToken(refreshToken: $refreshToken) {
+    success
+    result {
+      accessToken
+      accessTokenExpiry
+    }
+  }
+}
+
+query Me {
+  me {
+    id
+    username
+    fullName
+    birthday
+    address
+    sex
+    avatarUrl
+    displayMsisdn
+  }
+}
+
+mutation GenerateCaptcha($username: String) {
+  generateCaptcha(username: $username) {
+    result {
+      data
+    }
+  }
+}
+
+mutation UpdateProfile($fullName: String!, $sex: Sex, $birthday: DateTime, $address: String!) {
+  updateProfile(fullName: $fullName, sex: $sex, birthday: $birthday, address: $address) {
+    success
+    errorCode
+    message
+    result {
+      id
+      username
+      fullName
+      address
+      birthday
+      sex
+      avatarUrl
+      displayMsisdn
+    }
+  }
+}
+
+mutation UpdateAvatar($avatar: String!) {
+  updateAvatar(avatar: $avatar, extension: "jpg") {
+    success
+    errorCode
+    message
+    result {
+      id
+      username
+      fullName
+      address
+      birthday
+      sex
+      avatarUrl
+      displayMsisdn
+    }
+  }
+}
+
+mutation UpdatePassword(
+  $currentPassword: String!
+  $repeatPassword: String!
+  $newPassword: String!
+  $captcha: String!
+) {
+  updatePassword(
+    currentPassword: $currentPassword
+    repeatPassword: $repeatPassword
+    newPassword: $newPassword
+    captcha: $captcha
+  ) {
+    result
+    errorCode
+    message
+    success
+  }
+}

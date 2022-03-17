@@ -1,0 +1,44 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cinoss/cupl/master/src/config.schema.json",
+  "global": {
+    "dialect": "vi"
+  },
+  "paths": {
+    "Chưa đăng nhập": {
+      "name": "Tải nhạc chờ lúc chưa đăng nhập"
+    },
+    "Đã đăng nhập|Chưa đăng ký dịch vụ|Đăng ký thành công|Tải không thành công": {
+      "name": "Tải nhạc chờ lúc đang tạm dừng dịch vụ",
+      "tags": []
+    },
+    "Đã đăng nhập|Chưa đăng ký dịch vụ|Đăng ký thành công|Tải nhạc chờ thành công": {
+      "tags": []
+    },
+    "Đã đăng nhập|Chưa đăng ký dịch vụ|Đăng ký thất bại": {
+      "alias": {
+        "Chưa đăng ký dịch vụ": "Chưa đăng ký dịch vụ và có <count> dữ liệu"
+      },
+      "examples": [["count"], ["0"], ["1"]],
+      "tags": []
+    },
+    "Đã đăng nhập|Dịch vụ đang active|Tải không thành công": {
+      "tags": []
+    },
+    "Đã đăng nhập|Dịch vụ đang active|Tải nhạc chờ thành công": {
+      "tags": []
+    },
+    "Đã đăng nhập|Lấy trạng thái không thành công": {
+      "tags": []
+    },
+    "Đã đăng nhập|Đang tạm dừng dịch vụ|Kích hoạt dịch vụ thành công|Tải không thành công": {
+      "tags": []
+    },
+    "Đã đăng nhập|Đang tạm dừng dịch vụ|Kích hoạt dịch vụ thành công|Tải nhạc chờ thành công": {
+      "tags": []
+    },
+    "Đã đăng nhập|Đang tạm dừng dịch vụ|Kích hoạt dịch vụ thất bại": {
+      "name": "Tải nhạc chờ lúc đang tạm dừng dịch vụ và kích hoạt không thành công",
+      "tags": []
+    }
+  }
+}

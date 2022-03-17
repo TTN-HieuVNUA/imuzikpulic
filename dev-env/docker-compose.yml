@@ -1,0 +1,184 @@
+version: '3.2'
+
+services:
+  lb:
+    image: nginx:alpine
+    restart: unless-stopped
+    tty: true
+    ports:
+      - '80:80'
+      - '443:443'
+    volumes:
+      - ./nginx/conf.d/:/etc/nginx/conf.d/
+      - ./nginx/log/:/var/log/nginx/
+    depends_on:
+      - wap
+      - server
+    networks:
+      - app
+
+  server:
+    image: registry.gitlab.com/imuzik/imusik-web/server:0.0.1-a8a91b3b6
+    environment:
+      MYSQL_HOST: 'mysql'
+      MYSQL_LOGDB_HOST: 'mysql'
+      MONGO_HOST: 'mongo'
+      REDIS_HOST: 'redis'
+      ES_HOST: 'http://elasticsearch:9200'
+      UPLOAD_PATH: 'uploads'
+      MEDIA_MEMBER_HOST: 'http://${DOMAIN:-localhost:4000}/uploads/media2/images/member'
+      VCRBT_CRBTPRESENT: 'http://soap:8001/crbt-present?wsdl'
+      VCRBT_USERMANAGE: 'http://soap:8001/user-manage?wsdl'
+      VCRBT_USERTONEMANAGE: 'http://soap:8001/user-tone-manage?wsdl'
+    volumes:
+      - ./server/uploads/:/app/imuzik/packages/server/uploads
+    ports:
+      - 4000:4000
+    networks:
+      - app
+    depends_on:
+      - redis
+      - mysql
+      - mongo
+  wap:
+    image: registry.gitlab.com/imuzik/imusik-web/wap:0.0.1-17a0a42f3
+    environment:
+      BACKEND_HOST: 'http://${DOMAIN:-localhost:4000}'
+      BACKEND_HOST_SSR: 'http://server:4000'
+      BACKEND_HOST: 'http://${DOMAIN:-localhost:3000}'
+    ports:
+      - 3000:3000
+    networks:
+      - app
+  soap:
+    build:
+      context: ./soap
+    environment:
+      HOST: 'http://soap:8001'
+    ports:
+      - 8001:8001
+    networks:
+      - app
+  mysql:
+    image: mysql:5.6
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+      MYSQL_USER: '${DB_USERNAME}'
+      MYSQL_PASSWORD: '${DB_PASSWORD}'
+      MYSQL_DATABASE: '${DB_DATABASE}'
+    ports:
+      - 3306:3306
+      - 33060:33060
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+    networks:
+      elk:
+        aliases:
+          - db
+      app:
+  mongo:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongo_root
+      MONGO_INITDB_ROOT_PASSWORD: mongo_root_pass
+      MONGO_INITDB_DATABASE: admin
+    ports:
+      - 27017:27017
+    volumes:
+      - ./mongo/data:/data/db
+      - ./mongo/init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+    networks:
+      - app
+  redis:
+    image: redis:5
+    restart: always
+    ports:
+      - 6379:6379
+    volumes:
+      - ./redis/data:/data
+    networks:
+      - app
+  elasticsearch:
+    build:
+      context: elasticsearch/
+      args:
+        ELK_VERSION: $ELK_VERSION
+    volumes:
+      - type: bind
+        source: ./elasticsearch/config/elasticsearch.yml
+        target: /usr/share/elasticsearch/config/elasticsearch.yml
+        read_only: true
+      - type: bind
+        source: es-data
+        target: /usr/share/elasticsearch/data
+
+    ports:
+      - '9200:9200'
+      - '9300:9300'
+    environment:
+      ES_JAVA_OPTS: '-Xmx256m -Xms256m'
+      ELASTIC_PASSWORD: changeme
+      # Use single node discovery in order to disable production mode and avoid bootstrap checks
+      # see https://www.elastic.co/guide/en/elasticsearch/reference/current/bootstrap-checks.html
+      discovery.type: single-node
+    networks:
+      - elk
+      - app
+  logstash:
+    build:
+      context: logstash/
+      args:
+        ELK_VERSION: $ELK_VERSION
+    volumes:
+      - type: bind
+        source: ./logstash/config/logstash.yml
+        target: /usr/share/logstash/config/logstash.yml
+        read_only: true
+      - type: bind
+        source: ./logstash/pipeline
+        target: /usr/share/logstash/pipeline
+        read_only: true
+      - type: bind
+        source: ./logstash/lastrun
+        target: /usr/share/logstash/lastrun
+        # TODO: fix last run
+    ports:
+      - '5000:5000/tcp'
+      - '5000:5000/udp'
+      - '9600:9600'
+    environment:
+      DB_USERNAME: '${DB_USERNAME}'
+      DB_PASSWORD: '${DB_PASSWORD}'
+      DB_DATABASE: '${DB_DATABASE}'
+      LS_JAVA_OPTS: '-Xmx256m -Xms256m'
+    networks:
+      - elk
+    depends_on:
+      - elasticsearch
+      - mysql
+  kibana:
+    build:
+      context: kibana/
+      args:
+        ELK_VERSION: $ELK_VERSION
+    volumes:
+      - type: bind
+        source: ./kibana/config/kibana.yml
+        target: /usr/share/kibana/config/kibana.yml
+        read_only: true
+    ports:
+      - '5601:5601'
+    networks:
+      - elk
+    depends_on:
+      - elasticsearch
+volumes:
+  es-data:
+
+networks:
+  elk:
+    driver: bridge
+  app:
+    driver: bridge

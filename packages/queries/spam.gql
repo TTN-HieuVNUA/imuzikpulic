@@ -1,0 +1,70 @@
+fragment SpamBase on Spam {
+  id
+  name
+  content
+  sendTime
+  seen
+  itemType
+  itemId
+  item {
+    __typename
+    ... on Song {
+      id
+      slug
+      imageUrl
+    }
+    ... on Singer {
+      id
+      slug
+      imageUrl
+    }
+    ... on Topic {
+      id
+      slug
+      imageUrl
+    }
+    ... on RingBackTone {
+      id
+      song {
+        id
+        slug
+        imageUrl
+      }
+    }
+  }
+}
+
+query Spams($after: String, $first: Int!) {
+  spams(after: $after, first: $first) {
+    totalCount
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+    edges {
+      node {
+        ...SpamBase
+      }
+    }
+  }
+}
+
+mutation MarkSpamAsSeen($spamId: ID!, $seen: Boolean!) {
+  markSpamAsSeen(spamId: $spamId, seen: $seen) {
+    success
+    errorCode
+    message
+    result {
+      ...SpamBase
+    }
+  }
+}
+
+mutation RecordSpamClick($spamId: ID!) {
+  recordSpamClick(spamId: $spamId) {
+    success
+    errorCode
+    message
+    result
+  }
+}

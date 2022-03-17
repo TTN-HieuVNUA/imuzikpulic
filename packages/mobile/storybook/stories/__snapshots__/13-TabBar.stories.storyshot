@@ -1,0 +1,3231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots TabBar Dark 1`] = `
+<View
+  bg="defaultBackground"
+  py={3}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#262523",
+        "paddingBottom": 15,
+        "paddingTop": 15,
+      },
+    ]
+  }
+>
+  <View
+    bg="alternativeBackground"
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#32302E",
+        },
+      ]
+    }
+  >
+    <View
+      alignItems="center"
+      flexDirection="row"
+      position="relative"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "width": "25%",
+            },
+          ]
+        }
+        width={0.25}
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            alignItems="center"
+            pb={2}
+            pt={2}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "paddingBottom": 10,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {},
+                  Object {
+                    "marginBottom": 2,
+                  },
+                ]
+              }
+            >
+              <View
+                alignItems="center"
+                height={20}
+                justifyContent="center"
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "height": 20,
+                      "justifyContent": "center",
+                      "width": 20,
+                    },
+                  ]
+                }
+                width={20}
+              >
+                <RNSVGSvgView
+                  align="xMidYMid"
+                  bbHeight="20"
+                  bbWidth="20"
+                  fill="none"
+                  focusable={false}
+                  height="20"
+                  meetOrSlice={0}
+                  minX={0}
+                  minY={0}
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderWidth": 0,
+                      },
+                      Object {
+                        "flex": 0,
+                        "height": 20,
+                        "width": 20,
+                      },
+                    ]
+                  }
+                  vbHeight={20}
+                  vbWidth={20}
+                  width="20"
+                >
+                  <RNSVGGroup
+                    fill={null}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                  >
+                    <RNSVGPath
+                      clipRule={0}
+                      d="M10.6575 0.250016L19.6575 8.25002C19.9708 8.52714 20.0785 8.96996 19.9275 9.36002C19.7791 9.74467 19.4098 9.9988 18.9975 10H17.9975V19C17.9975 19.5523 17.5498 20 16.9975 20H2.99748C2.44519 20 1.99748 19.5523 1.99748 19V10H0.997477C0.585185 9.9988 0.215902 9.74467 0.0674774 9.36002C-0.0835133 8.96996 0.0241995 8.52714 0.337477 8.25002L9.33748 0.250016C9.71498 -0.0816297 10.28 -0.0816297 10.6575 0.250016ZM8.99748 15V18H10.9975V15C10.9975 14.4477 10.5498 14 9.99748 14C9.44519 14 8.99748 14.4477 8.99748 15ZM15.9975 18H12.9975V15C12.9975 13.3432 11.6543 12 9.99748 12C8.34062 12 6.99748 13.3432 6.99748 15V18H3.99748V10H15.9975V18ZM9.99748 2.34002L3.62748 8.00002H16.3675L9.99748 2.34002Z"
+                      fill={4294967295}
+                      fillRule={0}
+                      propList={
+                        Array [
+                          "fill",
+                          "fillRule",
+                        ]
+                      }
+                    />
+                    <RNSVGDefs>
+                      <RNSVGLinearGradient
+                        gradient={
+                          Array [
+                            0,
+                            -15623794,
+                            1,
+                            -13045891,
+                          ]
+                        }
+                        gradientTransform={null}
+                        gradientUnits={1}
+                        name="paint0_linear"
+                        x1="15.4022"
+                        x2="0.688721"
+                        y1="0"
+                        y2="0"
+                      />
+                      <RNSVGLinearGradient
+                        gradient={
+                          Array [
+                            0,
+                            -6022805,
+                            1,
+                            -235673,
+                          ]
+                        }
+                        gradientTransform={null}
+                        gradientUnits={1}
+                        name="paint1_linear"
+                        x1="10.5"
+                        x2="10.5"
+                        y1="10"
+                        y2="0"
+                      />
+                    </RNSVGDefs>
+                  </RNSVGGroup>
+                </RNSVGSvgView>
+              </View>
+            </View>
+            <Text
+              color="normalText"
+              fontFamily="body"
+              fontSize={1}
+              fontWeight="bold"
+              style={
+                Array [
+                  Object {
+                    "color": "white",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 12,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              Trang chủ
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "width": "25%",
+            },
+          ]
+        }
+        width={0.25}
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            alignItems="center"
+            pb={2}
+            pt={2}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "paddingBottom": 10,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {},
+                  Object {
+                    "marginBottom": 2,
+                  },
+                ]
+              }
+            >
+              <View
+                alignItems="center"
+                height={20}
+                justifyContent="center"
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "height": 20,
+                      "justifyContent": "center",
+                      "width": 20,
+                    },
+                  ]
+                }
+                width={20}
+              >
+                <RNSVGSvgView
+                  align="xMidYMid"
+                  bbHeight={20}
+                  bbWidth={20}
+                  fill="none"
+                  focusable={false}
+                  height={20}
+                  meetOrSlice={0}
+                  minX={0}
+                  minY={0}
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderWidth": 0,
+                      },
+                      Object {
+                        "flex": 0,
+                        "height": 20,
+                        "width": 20,
+                      },
+                    ]
+                  }
+                  vbHeight={24}
+                  vbWidth={20}
+                  width={20}
+                >
+                  <RNSVGGroup
+                    fill={null}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                  >
+                    <RNSVGGroup>
+                      <RNSVGPath
+                        clipRule={0}
+                        d="M17.8659 5.56692C17.7315 5.32647 17.4841 5.1671 17.2058 5.14173C16.9241 5.11416 16.6542 5.22666 16.4759 5.43842L14.8222 7.40111C14.2448 4.50368 15.2434 1.69173 15.2546 1.6603C15.3424 1.42151 15.3137 1.15791 15.1776 0.942834C15.041 0.728312 14.8116 0.586584 14.5552 0.557908C9.28037 -0.0211362 6.31882 3.95938 5.23362 5.825C4.8985 5.51177 4.48803 5.08383 4.12423 4.65589C3.97579 4.48107 3.761 4.37464 3.5299 4.3603C3.29655 4.34431 3.07164 4.42482 2.90239 4.57978C-2.83347 9.80607 1.69404 16.7987 1.74071 16.8688C1.99486 17.252 2.51666 17.3607 2.90745 17.112C3.29824 16.8627 3.40901 16.3504 3.15485 15.9671C3.14529 15.9528 2.18042 14.4792 1.81156 12.4608C1.38366 10.1188 1.93245 8.08383 3.44331 6.40184C3.99209 6.98254 4.71069 7.65533 5.24936 7.84394C5.6722 7.99228 6.14058 7.78714 6.31264 7.3807C6.40654 7.15901 8.53085 2.27022 13.3592 2.15772C12.9858 3.69136 12.5405 6.64669 13.6786 9.43548C13.7888 9.7068 14.0367 9.90037 14.3314 9.94559C14.6221 9.98916 14.9223 9.88052 15.1118 9.65497L16.8869 7.5478C17.4678 9.25901 18.0801 12.58 15.8557 15.9704C15.6038 16.3548 15.7168 16.8665 16.1087 17.1136C16.2499 17.2029 16.4079 17.2454 16.5648 17.2454C16.8414 17.2454 17.113 17.1114 17.2744 16.8654C20.9629 11.2443 17.9941 5.79633 17.8659 5.56692Z"
+                        fill={4289374890}
+                        fillRule={0}
+                        propList={
+                          Array [
+                            "fill",
+                            "fillRule",
+                          ]
+                        }
+                      />
+                    </RNSVGGroup>
+                    <RNSVGPath
+                      clipRule={0}
+                      d="M11.9814 20.1051C11.4292 20.1051 10.9799 19.6762 10.9799 19.149C10.9799 18.6219 11.4292 18.1936 11.9814 18.1936C12.5335 18.1936 12.9822 18.6219 12.9822 19.149C12.9822 19.6762 12.5335 20.1051 11.9814 20.1051ZM4.19509 21.8839C3.64295 21.8839 3.19423 21.455 3.19423 20.9279C3.19423 20.4007 3.64295 19.9718 4.19509 19.9718C4.74723 19.9718 5.19653 20.4007 5.19653 20.9279C5.19653 21.455 4.74723 21.8839 4.19509 21.8839ZM13.8389 12.1655C13.2879 11.7771 12.5961 11.6641 11.9423 11.8567L6.99601 13.3047C5.91988 13.6196 5.19653 14.5531 5.19653 15.6282V18.5139C4.8857 18.396 4.54901 18.3263 4.19509 18.3263C2.69265 18.3263 1.47058 19.4935 1.47058 20.9279C1.47058 22.3622 2.69265 23.5294 4.19509 23.5294C5.69753 23.5294 6.92017 22.3622 6.92017 20.9279V15.6282C6.92017 15.281 7.15401 14.9793 7.50104 14.8778L12.4479 13.4292C12.6197 13.3788 12.7518 13.444 12.8145 13.489C12.8777 13.5334 12.9822 13.6333 12.9822 13.8072V16.7351C12.6714 16.6177 12.3353 16.548 11.9814 16.548C10.4789 16.548 9.25628 17.7147 9.25628 19.149C9.25628 20.5834 10.4789 21.7506 11.9814 21.7506C13.4838 21.7506 14.7059 20.5834 14.7059 19.149V13.8072C14.7059 13.1528 14.3899 12.5544 13.8389 12.1655Z"
+                      fill={4289374890}
+                      fillRule={0}
+                      propList={
+                        Array [
+                          "fill",
+                          "fillRule",
+                        ]
+                      }
+                    />
+                    <RNSVGDefs>
+                      <RNSVGLinearGradient
+                        gradient={
+                          Array [
+                            0,
+                            -15623794,
+                            1,
+                            -13045891,
+                          ]
+                        }
+                        gradientTransform={null}
+                        gradientUnits={1}
+                        name="paint0_linear"
+                        x1="15.4022"
+                        x2="0.688721"
+                        y1="0"
+                        y2="0"
+                      />
+                      <RNSVGLinearGradient
+                        gradient={
+                          Array [
+                            0,
+                            -6022805,
+                            1,
+                            -235673,
+                          ]
+                        }
+                        gradientTransform={null}
+                        gradientUnits={1}
+                        name="paint1_linear"
+                        x1="10.5"
+                        x2="10.5"
+                        y1="10"
+                        y2="0"
+                      />
+                    </RNSVGDefs>
+                  </RNSVGGroup>
+                </RNSVGSvgView>
+              </View>
+            </View>
+            <Text
+              color="lightText"
+              fontFamily="body"
+              fontSize={1}
+              fontWeight="bold"
+              style={
+                Array [
+                  Object {
+                    "color": "#AAAAAA",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 12,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              Nổi bật
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "width": "25%",
+            },
+          ]
+        }
+        width={0.25}
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            alignItems="center"
+            pb={2}
+            pt={2}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "paddingBottom": 10,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {},
+                  Object {
+                    "marginBottom": 2,
+                  },
+                ]
+              }
+            >
+              <View
+                alignItems="center"
+                height={20}
+                justifyContent="center"
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "height": 20,
+                      "justifyContent": "center",
+                      "width": 20,
+                    },
+                  ]
+                }
+                width={20}
+              >
+                <RNSVGSvgView
+                  align="xMidYMid"
+                  bbHeight={20}
+                  bbWidth={20}
+                  fill="none"
+                  focusable={false}
+                  height={20}
+                  meetOrSlice={0}
+                  minX={0}
+                  minY={0}
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderWidth": 0,
+                      },
+                      Object {
+                        "flex": 0,
+                        "height": 20,
+                        "width": 20,
+                      },
+                    ]
+                  }
+                  vbHeight={18}
+                  vbWidth={15}
+                  width={20}
+                >
+                  <RNSVGGroup
+                    fill={null}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                  >
+                    <RNSVGPath
+                      d="M14.7174 1.15729L14.7009 0.578949L4.44988 2.56957V12.7487C3.98668 12.5718 3.54803 12.4759 3.05083 12.4759C1.36441 12.4759 0 13.5851 0 14.9485C0 16.3119 1.36987 17.4211 3.04888 17.4211C4.72919 17.4211 6.09805 16.3119 6.09805 14.9485C6.09805 14.8246 6.07062 7.85227 6.06544 5.49571L13.0654 4.13576V10.9376C12.6022 10.761 12.1678 10.6653 11.674 10.6653C9.98958 10.6653 8.62694 11.7744 8.62694 13.1379C8.62694 14.5013 9.99764 15.6104 11.6777 15.6104C13.3634 15.6104 14.7368 14.5013 14.7368 13.1379C14.7369 13.0372 14.7183 1.64232 14.7174 1.15729Z"
+                      fill={4289374890}
+                      propList={
+                        Array [
+                          "fill",
+                        ]
+                      }
+                    />
+                    <RNSVGDefs>
+                      <RNSVGLinearGradient
+                        gradient={
+                          Array [
+                            0,
+                            -15623794,
+                            1,
+                            -13045891,
+                          ]
+                        }
+                        gradientTransform={null}
+                        gradientUnits={1}
+                        name="paint0_linear"
+                        x1="15.4022"
+                        x2="0.688721"
+                        y1="0"
+                        y2="0"
+                      />
+                      <RNSVGLinearGradient
+                        gradient={
+                          Array [
+                            0,
+                            -6022805,
+                            1,
+                            -235673,
+                          ]
+                        }
+                        gradientTransform={null}
+                        gradientUnits={1}
+                        name="paint1_linear"
+                        x1="10.5"
+                        x2="10.5"
+                        y1="10"
+                        y2="0"
+                      />
+                    </RNSVGDefs>
+                  </RNSVGGroup>
+                </RNSVGSvgView>
+              </View>
+            </View>
+            <Text
+              color="lightText"
+              fontFamily="body"
+              fontSize={1}
+              fontWeight="bold"
+              style={
+                Array [
+                  Object {
+                    "color": "#AAAAAA",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 12,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              Khám phá
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "width": "25%",
+            },
+          ]
+        }
+        width={0.25}
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            alignItems="center"
+            pb={2}
+            pt={2}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "paddingBottom": 10,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {},
+                  Object {
+                    "marginBottom": 2,
+                  },
+                ]
+              }
+            >
+              <View
+                alignItems="center"
+                height={20}
+                justifyContent="center"
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "height": 20,
+                      "justifyContent": "center",
+                      "width": 20,
+                    },
+                  ]
+                }
+                width={20}
+              >
+                <RNSVGSvgView
+                  align="xMidYMid"
+                  bbHeight={20}
+                  bbWidth={20}
+                  fill="none"
+                  focusable={false}
+                  height={20}
+                  meetOrSlice={0}
+                  minX={0}
+                  minY={0}
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderWidth": 0,
+                      },
+                      Object {
+                        "flex": 0,
+                        "height": 20,
+                        "width": 20,
+                      },
+                    ]
+                  }
+                  vbHeight={21}
+                  vbWidth={20}
+                  width={20}
+                >
+                  <RNSVGGroup
+                    fill={null}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                  >
+                    <RNSVGPath
+                      clipRule={0}
+                      d="M15.6697 4.03696C16.5064 6.45331 15.7196 9.13437 13.71 10.7155C17.1475 12.0797 19.5514 15.2298 19.96 18.9055C20.0185 19.4516 19.6256 19.9427 19.08 20.0055H18.97C18.4579 20.0086 18.0263 19.6244 17.97 19.1155C17.5153 15.0682 14.0927 12.0085 10.02 12.0085C5.94725 12.0085 2.52459 15.0682 2.06996 19.1155C2.00921 19.6678 1.51225 20.0662 0.959962 20.0055C0.407677 19.9447 0.00921062 19.4478 0.0699619 18.8955C0.476579 15.2306 2.86706 12.0868 6.28996 10.7155C4.28031 9.13437 3.49357 6.45331 4.33017 4.03696C5.16678 1.62062 7.44288 0 9.99996 0C12.557 0 14.8331 1.62062 15.6697 4.03696ZM5.99996 6.0055C5.99996 8.21463 7.79082 10.0055 9.99996 10.0055C11.0608 10.0055 12.0782 9.58407 12.8284 8.83392C13.5785 8.08378 14 7.06636 14 6.0055C14 3.79636 12.2091 2.0055 9.99996 2.0055C7.79082 2.0055 5.99996 3.79636 5.99996 6.0055Z"
+                      fill={4289374890}
+                      fillRule={0}
+                      propList={
+                        Array [
+                          "fill",
+                          "fillRule",
+                        ]
+                      }
+                    />
+                    <RNSVGDefs>
+                      <RNSVGLinearGradient
+                        gradient={
+                          Array [
+                            0,
+                            -15623794,
+                            1,
+                            -13045891,
+                          ]
+                        }
+                        gradientTransform={null}
+                        gradientUnits={1}
+                        name="paint0_linear"
+                        x1="15.4022"
+                        x2="0.688721"
+                        y1="0"
+                        y2="0"
+                      />
+                      <RNSVGLinearGradient
+                        gradient={
+                          Array [
+                            0,
+                            -6022805,
+                            1,
+                            -235673,
+                          ]
+                        }
+                        gradientTransform={null}
+                        gradientUnits={1}
+                        name="paint1_linear"
+                        x1="10.5"
+                        x2="10.5"
+                        y1="10"
+                        y2="0"
+                      />
+                    </RNSVGDefs>
+                  </RNSVGGroup>
+                </RNSVGSvgView>
+              </View>
+            </View>
+            <Text
+              color="lightText"
+              fontFamily="body"
+              fontSize={1}
+              fontWeight="bold"
+              style={
+                Array [
+                  Object {
+                    "color": "#AAAAAA",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 12,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              Cá nhân
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    height={50}
+    style={
+      Array [
+        Object {
+          "height": 50,
+        },
+      ]
+    }
+  />
+  <View
+    bg="defaultBackground"
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#262523",
+        },
+      ]
+    }
+  >
+    <View
+      alignItems="center"
+      flexDirection="row"
+      position="relative"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "width": "50%",
+            },
+          ]
+        }
+        width={0.5}
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            alignItems="center"
+            pb={0}
+            pt={2}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "paddingBottom": 0,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            <Text
+              color="normalText"
+              fontFamily="body"
+              fontSize={3}
+              fontWeight="bold"
+              style={
+                Array [
+                  Object {
+                    "color": "white",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 17,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              Quản lý dịch vụ
+            </Text>
+            <View
+              borderRadius={2}
+              height={4}
+              mt={2}
+              overflow="hidden"
+              style={
+                Array [
+                  Object {
+                    "borderRadius": 2,
+                    "height": 4,
+                    "marginTop": 10,
+                    "overflow": "hidden",
+                    "width": 30,
+                  },
+                ]
+              }
+              width={30}
+            >
+              <ViewManagerAdapter_ExpoLinearGradient
+                proxiedProperties={
+                  Object {
+                    "colors": Array [
+                      4281921405,
+                      4279343502,
+                    ],
+                    "endPoint": Array [
+                      1,
+                      1,
+                    ],
+                    "locations": undefined,
+                    "startPoint": Array [
+                      0,
+                      0,
+                    ],
+                  }
+                }
+                style={
+                  Object {
+                    "height": "100%",
+                  }
+                }
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "width": "50%",
+            },
+          ]
+        }
+        width={0.5}
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            alignItems="center"
+            pb={0}
+            pt={2}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "paddingBottom": 0,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            <Text
+              color="lightText"
+              fontFamily="body"
+              fontSize={3}
+              fontWeight="bold"
+              style={
+                Array [
+                  Object {
+                    "color": "#AAAAAA",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 17,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              Thông tin cá nhân
+            </Text>
+            <View
+              borderRadius={2}
+              height={4}
+              mt={2}
+              overflow="hidden"
+              style={
+                Array [
+                  Object {
+                    "borderRadius": 2,
+                    "height": 4,
+                    "marginTop": 10,
+                    "overflow": "hidden",
+                    "width": 30,
+                  },
+                ]
+              }
+              width={30}
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    height={50}
+    style={
+      Array [
+        Object {
+          "height": 50,
+        },
+      ]
+    }
+  />
+  <View
+    bg="defaultBackground"
+    px={3}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#262523",
+          "paddingLeft": 15,
+          "paddingRight": 15,
+        },
+      ]
+    }
+  >
+    <View
+      alignItems="center"
+      flexDirection="row"
+      position="relative"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        bg="separator"
+        borderRadius={2}
+        bottom={0}
+        height={4}
+        overflow="hidden"
+        position="absolute"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#3D3D3F",
+              "borderRadius": 2,
+              "bottom": 0,
+              "height": 4,
+              "overflow": "hidden",
+              "position": "absolute",
+              "width": "100%",
+            },
+          ]
+        }
+        width="100%"
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "width": "33.33333333333333%",
+            },
+          ]
+        }
+        width={0.3333333333333333}
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            alignItems="center"
+            pb={0}
+            pt={2}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "paddingBottom": 0,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            <Text
+              color="normalText"
+              fontFamily="body"
+              fontSize={3}
+              fontWeight="bold"
+              style={
+                Array [
+                  Object {
+                    "color": "white",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 17,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              Số điện thoại
+            </Text>
+            <View
+              borderRadius={2}
+              height={4}
+              mt={2}
+              overflow="hidden"
+              style={
+                Array [
+                  Object {
+                    "borderRadius": 2,
+                    "height": 4,
+                    "marginTop": 10,
+                    "overflow": "hidden",
+                    "width": "100%",
+                  },
+                ]
+              }
+              width="100%"
+            >
+              <ViewManagerAdapter_ExpoLinearGradient
+                proxiedProperties={
+                  Object {
+                    "colors": Array [
+                      4281921405,
+                      4279343502,
+                    ],
+                    "endPoint": Array [
+                      1,
+                      1,
+                    ],
+                    "locations": undefined,
+                    "startPoint": Array [
+                      0,
+                      0,
+                    ],
+                  }
+                }
+                style={
+                  Object {
+                    "height": "100%",
+                  }
+                }
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "width": "33.33333333333333%",
+            },
+          ]
+        }
+        width={0.3333333333333333}
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            alignItems="center"
+            pb={0}
+            pt={2}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "paddingBottom": 0,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            <Text
+              color="lightText"
+              fontFamily="body"
+              fontSize={3}
+              fontWeight="bold"
+              style={
+                Array [
+                  Object {
+                    "color": "#AAAAAA",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 17,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              Nhạc chờ
+            </Text>
+            <View
+              borderRadius={2}
+              height={4}
+              mt={2}
+              overflow="hidden"
+              style={
+                Array [
+                  Object {
+                    "borderRadius": 2,
+                    "height": 4,
+                    "marginTop": 10,
+                    "overflow": "hidden",
+                    "width": "100%",
+                  },
+                ]
+              }
+              width="100%"
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "width": "33.33333333333333%",
+            },
+          ]
+        }
+        width={0.3333333333333333}
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            alignItems="center"
+            pb={0}
+            pt={2}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "paddingBottom": 0,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            <Text
+              color="lightText"
+              fontFamily="body"
+              fontSize={3}
+              fontWeight="bold"
+              style={
+                Array [
+                  Object {
+                    "color": "#AAAAAA",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 17,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              Thời gian
+            </Text>
+            <View
+              borderRadius={2}
+              height={4}
+              mt={2}
+              overflow="hidden"
+              style={
+                Array [
+                  Object {
+                    "borderRadius": 2,
+                    "height": 4,
+                    "marginTop": 10,
+                    "overflow": "hidden",
+                    "width": "100%",
+                  },
+                ]
+              }
+              width="100%"
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    height={50}
+    style={
+      Array [
+        Object {
+          "height": 50,
+        },
+      ]
+    }
+  />
+  <View
+    bg="defaultBackground"
+    px={3}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#262523",
+          "paddingLeft": 15,
+          "paddingRight": 15,
+        },
+      ]
+    }
+  >
+    <View
+      alignItems="center"
+      flexDirection="row"
+      position="relative"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        bg="separator"
+        borderRadius={2}
+        bottom={0}
+        height={4}
+        overflow="hidden"
+        position="absolute"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#3D3D3F",
+              "borderRadius": 2,
+              "bottom": 0,
+              "height": 4,
+              "overflow": "hidden",
+              "position": "absolute",
+              "width": "100%",
+            },
+          ]
+        }
+        width="100%"
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "width": "33.33333333333333%",
+            },
+          ]
+        }
+        width={0.3333333333333333}
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            alignItems="center"
+            pb={0}
+            pt={2}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "paddingBottom": 0,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            <Text
+              color="lightText"
+              fontFamily="body"
+              fontSize={3}
+              fontWeight="bold"
+              style={
+                Array [
+                  Object {
+                    "color": "#AAAAAA",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 17,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              Số điện thoại
+            </Text>
+            <View
+              borderRadius={2}
+              height={4}
+              mt={2}
+              overflow="hidden"
+              style={
+                Array [
+                  Object {
+                    "borderRadius": 2,
+                    "height": 4,
+                    "marginTop": 10,
+                    "overflow": "hidden",
+                    "width": "100%",
+                  },
+                ]
+              }
+              width="100%"
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "width": "33.33333333333333%",
+            },
+          ]
+        }
+        width={0.3333333333333333}
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            alignItems="center"
+            pb={0}
+            pt={2}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "paddingBottom": 0,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            <Text
+              color="lightText"
+              fontFamily="body"
+              fontSize={3}
+              fontWeight="bold"
+              style={
+                Array [
+                  Object {
+                    "color": "#AAAAAA",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 17,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              Nhạc chờ
+            </Text>
+            <View
+              borderRadius={2}
+              height={4}
+              mt={2}
+              overflow="hidden"
+              style={
+                Array [
+                  Object {
+                    "borderRadius": 2,
+                    "height": 4,
+                    "marginTop": 10,
+                    "overflow": "hidden",
+                    "width": "100%",
+                  },
+                ]
+              }
+              width="100%"
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "width": "33.33333333333333%",
+            },
+          ]
+        }
+        width={0.3333333333333333}
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            alignItems="center"
+            pb={0}
+            pt={2}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "paddingBottom": 0,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            <Text
+              color="normalText"
+              fontFamily="body"
+              fontSize={3}
+              fontWeight="bold"
+              style={
+                Array [
+                  Object {
+                    "color": "white",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 17,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              Thời gian
+            </Text>
+            <View
+              borderRadius={2}
+              height={4}
+              mt={2}
+              overflow="hidden"
+              style={
+                Array [
+                  Object {
+                    "borderRadius": 2,
+                    "height": 4,
+                    "marginTop": 10,
+                    "overflow": "hidden",
+                    "width": "100%",
+                  },
+                ]
+              }
+              width="100%"
+            >
+              <ViewManagerAdapter_ExpoLinearGradient
+                proxiedProperties={
+                  Object {
+                    "colors": Array [
+                      4281921405,
+                      4279343502,
+                    ],
+                    "endPoint": Array [
+                      1,
+                      1,
+                    ],
+                    "locations": undefined,
+                    "startPoint": Array [
+                      0,
+                      0,
+                    ],
+                  }
+                }
+                style={
+                  Object {
+                    "height": "100%",
+                  }
+                }
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots TabBar Light 1`] = `
+<View
+  bg="defaultBackground"
+  py={3}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "white",
+        "paddingBottom": 15,
+        "paddingTop": 15,
+      },
+    ]
+  }
+>
+  <View
+    bg="alternativeBackground"
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#F1F1F1",
+        },
+      ]
+    }
+  >
+    <View
+      alignItems="center"
+      flexDirection="row"
+      position="relative"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "width": "25%",
+            },
+          ]
+        }
+        width={0.25}
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            alignItems="center"
+            pb={2}
+            pt={2}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "paddingBottom": 10,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {},
+                  Object {
+                    "marginBottom": 2,
+                  },
+                ]
+              }
+            >
+              <View
+                alignItems="center"
+                height={20}
+                justifyContent="center"
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "height": 20,
+                      "justifyContent": "center",
+                      "width": 20,
+                    },
+                  ]
+                }
+                width={20}
+              >
+                <RNSVGSvgView
+                  align="xMidYMid"
+                  bbHeight="20"
+                  bbWidth="20"
+                  fill="none"
+                  focusable={false}
+                  height="20"
+                  meetOrSlice={0}
+                  minX={0}
+                  minY={0}
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderWidth": 0,
+                      },
+                      Object {
+                        "flex": 0,
+                        "height": 20,
+                        "width": 20,
+                      },
+                    ]
+                  }
+                  vbHeight={20}
+                  vbWidth={20}
+                  width="20"
+                >
+                  <RNSVGGroup
+                    fill={null}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                  >
+                    <RNSVGPath
+                      clipRule={0}
+                      d="M10.6575 0.250016L19.6575 8.25002C19.9708 8.52714 20.0785 8.96996 19.9275 9.36002C19.7791 9.74467 19.4098 9.9988 18.9975 10H17.9975V19C17.9975 19.5523 17.5498 20 16.9975 20H2.99748C2.44519 20 1.99748 19.5523 1.99748 19V10H0.997477C0.585185 9.9988 0.215902 9.74467 0.0674774 9.36002C-0.0835133 8.96996 0.0241995 8.52714 0.337477 8.25002L9.33748 0.250016C9.71498 -0.0816297 10.28 -0.0816297 10.6575 0.250016ZM8.99748 15V18H10.9975V15C10.9975 14.4477 10.5498 14 9.99748 14C9.44519 14 8.99748 14.4477 8.99748 15ZM15.9975 18H12.9975V15C12.9975 13.3432 11.6543 12 9.99748 12C8.34062 12 6.99748 13.3432 6.99748 15V18H3.99748V10H15.9975V18ZM9.99748 2.34002L3.62748 8.00002H16.3675L9.99748 2.34002Z"
+                      fill={4280689955}
+                      fillRule={0}
+                      propList={
+                        Array [
+                          "fill",
+                          "fillRule",
+                        ]
+                      }
+                    />
+                    <RNSVGDefs>
+                      <RNSVGLinearGradient
+                        gradient={
+                          Array [
+                            0,
+                            -15623794,
+                            1,
+                            -13045891,
+                          ]
+                        }
+                        gradientTransform={null}
+                        gradientUnits={1}
+                        name="paint0_linear"
+                        x1="15.4022"
+                        x2="0.688721"
+                        y1="0"
+                        y2="0"
+                      />
+                      <RNSVGLinearGradient
+                        gradient={
+                          Array [
+                            0,
+                            -6022805,
+                            1,
+                            -235673,
+                          ]
+                        }
+                        gradientTransform={null}
+                        gradientUnits={1}
+                        name="paint1_linear"
+                        x1="10.5"
+                        x2="10.5"
+                        y1="10"
+                        y2="0"
+                      />
+                    </RNSVGDefs>
+                  </RNSVGGroup>
+                </RNSVGSvgView>
+              </View>
+            </View>
+            <Text
+              color="normalText"
+              fontFamily="body"
+              fontSize={1}
+              fontWeight="bold"
+              style={
+                Array [
+                  Object {
+                    "color": "#262523",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 12,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              Trang chủ
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "width": "25%",
+            },
+          ]
+        }
+        width={0.25}
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            alignItems="center"
+            pb={2}
+            pt={2}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "paddingBottom": 10,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {},
+                  Object {
+                    "marginBottom": 2,
+                  },
+                ]
+              }
+            >
+              <View
+                alignItems="center"
+                height={20}
+                justifyContent="center"
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "height": 20,
+                      "justifyContent": "center",
+                      "width": 20,
+                    },
+                  ]
+                }
+                width={20}
+              >
+                <RNSVGSvgView
+                  align="xMidYMid"
+                  bbHeight={20}
+                  bbWidth={20}
+                  fill="none"
+                  focusable={false}
+                  height={20}
+                  meetOrSlice={0}
+                  minX={0}
+                  minY={0}
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderWidth": 0,
+                      },
+                      Object {
+                        "flex": 0,
+                        "height": 20,
+                        "width": 20,
+                      },
+                    ]
+                  }
+                  vbHeight={24}
+                  vbWidth={20}
+                  width={20}
+                >
+                  <RNSVGGroup
+                    fill={null}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                  >
+                    <RNSVGGroup>
+                      <RNSVGPath
+                        clipRule={0}
+                        d="M17.8659 5.56692C17.7315 5.32647 17.4841 5.1671 17.2058 5.14173C16.9241 5.11416 16.6542 5.22666 16.4759 5.43842L14.8222 7.40111C14.2448 4.50368 15.2434 1.69173 15.2546 1.6603C15.3424 1.42151 15.3137 1.15791 15.1776 0.942834C15.041 0.728312 14.8116 0.586584 14.5552 0.557908C9.28037 -0.0211362 6.31882 3.95938 5.23362 5.825C4.8985 5.51177 4.48803 5.08383 4.12423 4.65589C3.97579 4.48107 3.761 4.37464 3.5299 4.3603C3.29655 4.34431 3.07164 4.42482 2.90239 4.57978C-2.83347 9.80607 1.69404 16.7987 1.74071 16.8688C1.99486 17.252 2.51666 17.3607 2.90745 17.112C3.29824 16.8627 3.40901 16.3504 3.15485 15.9671C3.14529 15.9528 2.18042 14.4792 1.81156 12.4608C1.38366 10.1188 1.93245 8.08383 3.44331 6.40184C3.99209 6.98254 4.71069 7.65533 5.24936 7.84394C5.6722 7.99228 6.14058 7.78714 6.31264 7.3807C6.40654 7.15901 8.53085 2.27022 13.3592 2.15772C12.9858 3.69136 12.5405 6.64669 13.6786 9.43548C13.7888 9.7068 14.0367 9.90037 14.3314 9.94559C14.6221 9.98916 14.9223 9.88052 15.1118 9.65497L16.8869 7.5478C17.4678 9.25901 18.0801 12.58 15.8557 15.9704C15.6038 16.3548 15.7168 16.8665 16.1087 17.1136C16.2499 17.2029 16.4079 17.2454 16.5648 17.2454C16.8414 17.2454 17.113 17.1114 17.2744 16.8654C20.9629 11.2443 17.9941 5.79633 17.8659 5.56692Z"
+                        fill={4284966759}
+                        fillRule={0}
+                        propList={
+                          Array [
+                            "fill",
+                            "fillRule",
+                          ]
+                        }
+                      />
+                    </RNSVGGroup>
+                    <RNSVGPath
+                      clipRule={0}
+                      d="M11.9814 20.1051C11.4292 20.1051 10.9799 19.6762 10.9799 19.149C10.9799 18.6219 11.4292 18.1936 11.9814 18.1936C12.5335 18.1936 12.9822 18.6219 12.9822 19.149C12.9822 19.6762 12.5335 20.1051 11.9814 20.1051ZM4.19509 21.8839C3.64295 21.8839 3.19423 21.455 3.19423 20.9279C3.19423 20.4007 3.64295 19.9718 4.19509 19.9718C4.74723 19.9718 5.19653 20.4007 5.19653 20.9279C5.19653 21.455 4.74723 21.8839 4.19509 21.8839ZM13.8389 12.1655C13.2879 11.7771 12.5961 11.6641 11.9423 11.8567L6.99601 13.3047C5.91988 13.6196 5.19653 14.5531 5.19653 15.6282V18.5139C4.8857 18.396 4.54901 18.3263 4.19509 18.3263C2.69265 18.3263 1.47058 19.4935 1.47058 20.9279C1.47058 22.3622 2.69265 23.5294 4.19509 23.5294C5.69753 23.5294 6.92017 22.3622 6.92017 20.9279V15.6282C6.92017 15.281 7.15401 14.9793 7.50104 14.8778L12.4479 13.4292C12.6197 13.3788 12.7518 13.444 12.8145 13.489C12.8777 13.5334 12.9822 13.6333 12.9822 13.8072V16.7351C12.6714 16.6177 12.3353 16.548 11.9814 16.548C10.4789 16.548 9.25628 17.7147 9.25628 19.149C9.25628 20.5834 10.4789 21.7506 11.9814 21.7506C13.4838 21.7506 14.7059 20.5834 14.7059 19.149V13.8072C14.7059 13.1528 14.3899 12.5544 13.8389 12.1655Z"
+                      fill={4284966759}
+                      fillRule={0}
+                      propList={
+                        Array [
+                          "fill",
+                          "fillRule",
+                        ]
+                      }
+                    />
+                    <RNSVGDefs>
+                      <RNSVGLinearGradient
+                        gradient={
+                          Array [
+                            0,
+                            -15623794,
+                            1,
+                            -13045891,
+                          ]
+                        }
+                        gradientTransform={null}
+                        gradientUnits={1}
+                        name="paint0_linear"
+                        x1="15.4022"
+                        x2="0.688721"
+                        y1="0"
+                        y2="0"
+                      />
+                      <RNSVGLinearGradient
+                        gradient={
+                          Array [
+                            0,
+                            -6022805,
+                            1,
+                            -235673,
+                          ]
+                        }
+                        gradientTransform={null}
+                        gradientUnits={1}
+                        name="paint1_linear"
+                        x1="10.5"
+                        x2="10.5"
+                        y1="10"
+                        y2="0"
+                      />
+                    </RNSVGDefs>
+                  </RNSVGGroup>
+                </RNSVGSvgView>
+              </View>
+            </View>
+            <Text
+              color="lightText"
+              fontFamily="body"
+              fontSize={1}
+              fontWeight="bold"
+              style={
+                Array [
+                  Object {
+                    "color": "#676767",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 12,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              Nổi bật
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "width": "25%",
+            },
+          ]
+        }
+        width={0.25}
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            alignItems="center"
+            pb={2}
+            pt={2}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "paddingBottom": 10,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {},
+                  Object {
+                    "marginBottom": 2,
+                  },
+                ]
+              }
+            >
+              <View
+                alignItems="center"
+                height={20}
+                justifyContent="center"
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "height": 20,
+                      "justifyContent": "center",
+                      "width": 20,
+                    },
+                  ]
+                }
+                width={20}
+              >
+                <RNSVGSvgView
+                  align="xMidYMid"
+                  bbHeight={20}
+                  bbWidth={20}
+                  fill="none"
+                  focusable={false}
+                  height={20}
+                  meetOrSlice={0}
+                  minX={0}
+                  minY={0}
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderWidth": 0,
+                      },
+                      Object {
+                        "flex": 0,
+                        "height": 20,
+                        "width": 20,
+                      },
+                    ]
+                  }
+                  vbHeight={18}
+                  vbWidth={15}
+                  width={20}
+                >
+                  <RNSVGGroup
+                    fill={null}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                  >
+                    <RNSVGPath
+                      d="M14.7174 1.15729L14.7009 0.578949L4.44988 2.56957V12.7487C3.98668 12.5718 3.54803 12.4759 3.05083 12.4759C1.36441 12.4759 0 13.5851 0 14.9485C0 16.3119 1.36987 17.4211 3.04888 17.4211C4.72919 17.4211 6.09805 16.3119 6.09805 14.9485C6.09805 14.8246 6.07062 7.85227 6.06544 5.49571L13.0654 4.13576V10.9376C12.6022 10.761 12.1678 10.6653 11.674 10.6653C9.98958 10.6653 8.62694 11.7744 8.62694 13.1379C8.62694 14.5013 9.99764 15.6104 11.6777 15.6104C13.3634 15.6104 14.7368 14.5013 14.7368 13.1379C14.7369 13.0372 14.7183 1.64232 14.7174 1.15729Z"
+                      fill={4284966759}
+                      propList={
+                        Array [
+                          "fill",
+                        ]
+                      }
+                    />
+                    <RNSVGDefs>
+                      <RNSVGLinearGradient
+                        gradient={
+                          Array [
+                            0,
+                            -15623794,
+                            1,
+                            -13045891,
+                          ]
+                        }
+                        gradientTransform={null}
+                        gradientUnits={1}
+                        name="paint0_linear"
+                        x1="15.4022"
+                        x2="0.688721"
+                        y1="0"
+                        y2="0"
+                      />
+                      <RNSVGLinearGradient
+                        gradient={
+                          Array [
+                            0,
+                            -6022805,
+                            1,
+                            -235673,
+                          ]
+                        }
+                        gradientTransform={null}
+                        gradientUnits={1}
+                        name="paint1_linear"
+                        x1="10.5"
+                        x2="10.5"
+                        y1="10"
+                        y2="0"
+                      />
+                    </RNSVGDefs>
+                  </RNSVGGroup>
+                </RNSVGSvgView>
+              </View>
+            </View>
+            <Text
+              color="lightText"
+              fontFamily="body"
+              fontSize={1}
+              fontWeight="bold"
+              style={
+                Array [
+                  Object {
+                    "color": "#676767",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 12,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              Khám phá
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "width": "25%",
+            },
+          ]
+        }
+        width={0.25}
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            alignItems="center"
+            pb={2}
+            pt={2}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "paddingBottom": 10,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {},
+                  Object {
+                    "marginBottom": 2,
+                  },
+                ]
+              }
+            >
+              <View
+                alignItems="center"
+                height={20}
+                justifyContent="center"
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "height": 20,
+                      "justifyContent": "center",
+                      "width": 20,
+                    },
+                  ]
+                }
+                width={20}
+              >
+                <RNSVGSvgView
+                  align="xMidYMid"
+                  bbHeight={20}
+                  bbWidth={20}
+                  fill="none"
+                  focusable={false}
+                  height={20}
+                  meetOrSlice={0}
+                  minX={0}
+                  minY={0}
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderWidth": 0,
+                      },
+                      Object {
+                        "flex": 0,
+                        "height": 20,
+                        "width": 20,
+                      },
+                    ]
+                  }
+                  vbHeight={21}
+                  vbWidth={20}
+                  width={20}
+                >
+                  <RNSVGGroup
+                    fill={null}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                  >
+                    <RNSVGPath
+                      clipRule={0}
+                      d="M15.6697 4.03696C16.5064 6.45331 15.7196 9.13437 13.71 10.7155C17.1475 12.0797 19.5514 15.2298 19.96 18.9055C20.0185 19.4516 19.6256 19.9427 19.08 20.0055H18.97C18.4579 20.0086 18.0263 19.6244 17.97 19.1155C17.5153 15.0682 14.0927 12.0085 10.02 12.0085C5.94725 12.0085 2.52459 15.0682 2.06996 19.1155C2.00921 19.6678 1.51225 20.0662 0.959962 20.0055C0.407677 19.9447 0.00921062 19.4478 0.0699619 18.8955C0.476579 15.2306 2.86706 12.0868 6.28996 10.7155C4.28031 9.13437 3.49357 6.45331 4.33017 4.03696C5.16678 1.62062 7.44288 0 9.99996 0C12.557 0 14.8331 1.62062 15.6697 4.03696ZM5.99996 6.0055C5.99996 8.21463 7.79082 10.0055 9.99996 10.0055C11.0608 10.0055 12.0782 9.58407 12.8284 8.83392C13.5785 8.08378 14 7.06636 14 6.0055C14 3.79636 12.2091 2.0055 9.99996 2.0055C7.79082 2.0055 5.99996 3.79636 5.99996 6.0055Z"
+                      fill={4284966759}
+                      fillRule={0}
+                      propList={
+                        Array [
+                          "fill",
+                          "fillRule",
+                        ]
+                      }
+                    />
+                    <RNSVGDefs>
+                      <RNSVGLinearGradient
+                        gradient={
+                          Array [
+                            0,
+                            -15623794,
+                            1,
+                            -13045891,
+                          ]
+                        }
+                        gradientTransform={null}
+                        gradientUnits={1}
+                        name="paint0_linear"
+                        x1="15.4022"
+                        x2="0.688721"
+                        y1="0"
+                        y2="0"
+                      />
+                      <RNSVGLinearGradient
+                        gradient={
+                          Array [
+                            0,
+                            -6022805,
+                            1,
+                            -235673,
+                          ]
+                        }
+                        gradientTransform={null}
+                        gradientUnits={1}
+                        name="paint1_linear"
+                        x1="10.5"
+                        x2="10.5"
+                        y1="10"
+                        y2="0"
+                      />
+                    </RNSVGDefs>
+                  </RNSVGGroup>
+                </RNSVGSvgView>
+              </View>
+            </View>
+            <Text
+              color="lightText"
+              fontFamily="body"
+              fontSize={1}
+              fontWeight="bold"
+              style={
+                Array [
+                  Object {
+                    "color": "#676767",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 12,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              Cá nhân
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    height={50}
+    style={
+      Array [
+        Object {
+          "height": 50,
+        },
+      ]
+    }
+  />
+  <View
+    bg="defaultBackground"
+    style={
+      Array [
+        Object {
+          "backgroundColor": "white",
+        },
+      ]
+    }
+  >
+    <View
+      alignItems="center"
+      flexDirection="row"
+      position="relative"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "width": "50%",
+            },
+          ]
+        }
+        width={0.5}
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            alignItems="center"
+            pb={0}
+            pt={2}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "paddingBottom": 0,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            <Text
+              color="normalText"
+              fontFamily="body"
+              fontSize={3}
+              fontWeight="bold"
+              style={
+                Array [
+                  Object {
+                    "color": "#262523",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 17,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              Quản lý dịch vụ
+            </Text>
+            <View
+              borderRadius={2}
+              height={4}
+              mt={2}
+              overflow="hidden"
+              style={
+                Array [
+                  Object {
+                    "borderRadius": 2,
+                    "height": 4,
+                    "marginTop": 10,
+                    "overflow": "hidden",
+                    "width": 30,
+                  },
+                ]
+              }
+              width={30}
+            >
+              <ViewManagerAdapter_ExpoLinearGradient
+                proxiedProperties={
+                  Object {
+                    "colors": Array [
+                      4281921405,
+                      4279343502,
+                    ],
+                    "endPoint": Array [
+                      1,
+                      1,
+                    ],
+                    "locations": undefined,
+                    "startPoint": Array [
+                      0,
+                      0,
+                    ],
+                  }
+                }
+                style={
+                  Object {
+                    "height": "100%",
+                  }
+                }
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "width": "50%",
+            },
+          ]
+        }
+        width={0.5}
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            alignItems="center"
+            pb={0}
+            pt={2}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "paddingBottom": 0,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            <Text
+              color="lightText"
+              fontFamily="body"
+              fontSize={3}
+              fontWeight="bold"
+              style={
+                Array [
+                  Object {
+                    "color": "#676767",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 17,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              Thông tin cá nhân
+            </Text>
+            <View
+              borderRadius={2}
+              height={4}
+              mt={2}
+              overflow="hidden"
+              style={
+                Array [
+                  Object {
+                    "borderRadius": 2,
+                    "height": 4,
+                    "marginTop": 10,
+                    "overflow": "hidden",
+                    "width": 30,
+                  },
+                ]
+              }
+              width={30}
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    height={50}
+    style={
+      Array [
+        Object {
+          "height": 50,
+        },
+      ]
+    }
+  />
+  <View
+    bg="defaultBackground"
+    px={3}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "white",
+          "paddingLeft": 15,
+          "paddingRight": 15,
+        },
+      ]
+    }
+  >
+    <View
+      alignItems="center"
+      flexDirection="row"
+      position="relative"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        bg="separator"
+        borderRadius={2}
+        bottom={0}
+        height={4}
+        overflow="hidden"
+        position="absolute"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#F1F1F1",
+              "borderRadius": 2,
+              "bottom": 0,
+              "height": 4,
+              "overflow": "hidden",
+              "position": "absolute",
+              "width": "100%",
+            },
+          ]
+        }
+        width="100%"
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "width": "33.33333333333333%",
+            },
+          ]
+        }
+        width={0.3333333333333333}
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            alignItems="center"
+            pb={0}
+            pt={2}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "paddingBottom": 0,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            <Text
+              color="normalText"
+              fontFamily="body"
+              fontSize={3}
+              fontWeight="bold"
+              style={
+                Array [
+                  Object {
+                    "color": "#262523",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 17,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              Số điện thoại
+            </Text>
+            <View
+              borderRadius={2}
+              height={4}
+              mt={2}
+              overflow="hidden"
+              style={
+                Array [
+                  Object {
+                    "borderRadius": 2,
+                    "height": 4,
+                    "marginTop": 10,
+                    "overflow": "hidden",
+                    "width": "100%",
+                  },
+                ]
+              }
+              width="100%"
+            >
+              <ViewManagerAdapter_ExpoLinearGradient
+                proxiedProperties={
+                  Object {
+                    "colors": Array [
+                      4281921405,
+                      4279343502,
+                    ],
+                    "endPoint": Array [
+                      1,
+                      1,
+                    ],
+                    "locations": undefined,
+                    "startPoint": Array [
+                      0,
+                      0,
+                    ],
+                  }
+                }
+                style={
+                  Object {
+                    "height": "100%",
+                  }
+                }
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "width": "33.33333333333333%",
+            },
+          ]
+        }
+        width={0.3333333333333333}
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            alignItems="center"
+            pb={0}
+            pt={2}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "paddingBottom": 0,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            <Text
+              color="lightText"
+              fontFamily="body"
+              fontSize={3}
+              fontWeight="bold"
+              style={
+                Array [
+                  Object {
+                    "color": "#676767",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 17,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              Nhạc chờ
+            </Text>
+            <View
+              borderRadius={2}
+              height={4}
+              mt={2}
+              overflow="hidden"
+              style={
+                Array [
+                  Object {
+                    "borderRadius": 2,
+                    "height": 4,
+                    "marginTop": 10,
+                    "overflow": "hidden",
+                    "width": "100%",
+                  },
+                ]
+              }
+              width="100%"
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "width": "33.33333333333333%",
+            },
+          ]
+        }
+        width={0.3333333333333333}
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            alignItems="center"
+            pb={0}
+            pt={2}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "paddingBottom": 0,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            <Text
+              color="lightText"
+              fontFamily="body"
+              fontSize={3}
+              fontWeight="bold"
+              style={
+                Array [
+                  Object {
+                    "color": "#676767",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 17,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              Thời gian
+            </Text>
+            <View
+              borderRadius={2}
+              height={4}
+              mt={2}
+              overflow="hidden"
+              style={
+                Array [
+                  Object {
+                    "borderRadius": 2,
+                    "height": 4,
+                    "marginTop": 10,
+                    "overflow": "hidden",
+                    "width": "100%",
+                  },
+                ]
+              }
+              width="100%"
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    height={50}
+    style={
+      Array [
+        Object {
+          "height": 50,
+        },
+      ]
+    }
+  />
+  <View
+    bg="defaultBackground"
+    px={3}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "white",
+          "paddingLeft": 15,
+          "paddingRight": 15,
+        },
+      ]
+    }
+  >
+    <View
+      alignItems="center"
+      flexDirection="row"
+      position="relative"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        bg="separator"
+        borderRadius={2}
+        bottom={0}
+        height={4}
+        overflow="hidden"
+        position="absolute"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#F1F1F1",
+              "borderRadius": 2,
+              "bottom": 0,
+              "height": 4,
+              "overflow": "hidden",
+              "position": "absolute",
+              "width": "100%",
+            },
+          ]
+        }
+        width="100%"
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "width": "33.33333333333333%",
+            },
+          ]
+        }
+        width={0.3333333333333333}
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            alignItems="center"
+            pb={0}
+            pt={2}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "paddingBottom": 0,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            <Text
+              color="lightText"
+              fontFamily="body"
+              fontSize={3}
+              fontWeight="bold"
+              style={
+                Array [
+                  Object {
+                    "color": "#676767",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 17,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              Số điện thoại
+            </Text>
+            <View
+              borderRadius={2}
+              height={4}
+              mt={2}
+              overflow="hidden"
+              style={
+                Array [
+                  Object {
+                    "borderRadius": 2,
+                    "height": 4,
+                    "marginTop": 10,
+                    "overflow": "hidden",
+                    "width": "100%",
+                  },
+                ]
+              }
+              width="100%"
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "width": "33.33333333333333%",
+            },
+          ]
+        }
+        width={0.3333333333333333}
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            alignItems="center"
+            pb={0}
+            pt={2}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "paddingBottom": 0,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            <Text
+              color="lightText"
+              fontFamily="body"
+              fontSize={3}
+              fontWeight="bold"
+              style={
+                Array [
+                  Object {
+                    "color": "#676767",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 17,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              Nhạc chờ
+            </Text>
+            <View
+              borderRadius={2}
+              height={4}
+              mt={2}
+              overflow="hidden"
+              style={
+                Array [
+                  Object {
+                    "borderRadius": 2,
+                    "height": 4,
+                    "marginTop": 10,
+                    "overflow": "hidden",
+                    "width": "100%",
+                  },
+                ]
+              }
+              width="100%"
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "width": "33.33333333333333%",
+            },
+          ]
+        }
+        width={0.3333333333333333}
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            alignItems="center"
+            pb={0}
+            pt={2}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "paddingBottom": 0,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            <Text
+              color="normalText"
+              fontFamily="body"
+              fontSize={3}
+              fontWeight="bold"
+              style={
+                Array [
+                  Object {
+                    "color": "#262523",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 17,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              Thời gian
+            </Text>
+            <View
+              borderRadius={2}
+              height={4}
+              mt={2}
+              overflow="hidden"
+              style={
+                Array [
+                  Object {
+                    "borderRadius": 2,
+                    "height": 4,
+                    "marginTop": 10,
+                    "overflow": "hidden",
+                    "width": "100%",
+                  },
+                ]
+              }
+              width="100%"
+            >
+              <ViewManagerAdapter_ExpoLinearGradient
+                proxiedProperties={
+                  Object {
+                    "colors": Array [
+                      4281921405,
+                      4279343502,
+                    ],
+                    "endPoint": Array [
+                      1,
+                      1,
+                    ],
+                    "locations": undefined,
+                    "startPoint": Array [
+                      0,
+                      0,
+                    ],
+                  }
+                }
+                style={
+                  Object {
+                    "height": "100%",
+                  }
+                }
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

@@ -1,0 +1,10 @@
+query BannerPackages {
+  bannerPackages {
+    id
+    name
+    note
+    price
+    period
+    brandId
+  }
+}

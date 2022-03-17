@@ -1,0 +1,355 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Footer Default 1`] = `
+<View
+  bg="defaultBackground"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#262523",
+      },
+    ]
+  }
+>
+  <View
+    bg="black"
+    flexDirection="column"
+    py={3}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "black",
+          "flexDirection": "column",
+          "paddingBottom": 15,
+          "paddingTop": 15,
+        },
+      ]
+    }
+  >
+    <View
+      px={3}
+      style={
+        Array [
+          Object {
+            "paddingLeft": 15,
+            "paddingRight": 15,
+          },
+        ]
+      }
+    >
+      <Text
+        color="secondary"
+        fontFamily="body"
+        fontSize={0}
+        fontWeight="bold"
+        mb={3}
+        style={
+          Array [
+            Object {
+              "color": "#22E26B",
+              "fontFamily": "Helvetica",
+              "fontSize": 10,
+              "fontWeight": "700",
+              "marginBottom": 15,
+            },
+          ]
+        }
+      >
+        Đơn vị chủ quản: Tập đoàn Công nghiệp - Viễn thông Quân đội Viettel
+      </Text>
+      <Text
+        color="secondary"
+        fontFamily="body"
+        fontSize={0}
+        fontWeight="bold"
+        mb={3}
+        style={
+          Array [
+            Object {
+              "color": "#22E26B",
+              "fontFamily": "Helvetica",
+              "fontSize": 10,
+              "fontWeight": "700",
+              "marginBottom": 15,
+            },
+          ]
+        }
+      >
+        Giấy phép MXH số 67/GP-BTTTT cấp ngày 05/02/2016
+      </Text>
+    </View>
+    <View
+      flexDirection="row"
+      flexWrap="wrap"
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+          },
+        ]
+      }
+    >
+      <Text
+        color="white"
+        fontFamily="body"
+        fontSize={1}
+        fontWeight="bold"
+        px={3}
+        py={2}
+        style={
+          Array [
+            Object {
+              "color": "white",
+              "fontFamily": "Helvetica",
+              "fontSize": 12,
+              "fontWeight": "700",
+              "paddingBottom": 10,
+              "paddingLeft": 15,
+              "paddingRight": 15,
+              "paddingTop": 10,
+              "width": 375,
+            },
+          ]
+        }
+        width={375}
+      >
+        Liên hệ
+      </Text>
+      <Text
+        color="white"
+        fontFamily="body"
+        fontSize={1}
+        fontWeight="bold"
+        px={3}
+        py={2}
+        style={
+          Array [
+            Object {
+              "color": "white",
+              "fontFamily": "Helvetica",
+              "fontSize": 12,
+              "fontWeight": "700",
+              "paddingBottom": 10,
+              "paddingLeft": 15,
+              "paddingRight": 15,
+              "paddingTop": 10,
+              "width": 375,
+            },
+          ]
+        }
+        width={375}
+      >
+        Chính sách bảo mật
+      </Text>
+      <Text
+        color="white"
+        fontFamily="body"
+        fontSize={1}
+        fontWeight="bold"
+        px={3}
+        py={2}
+        style={
+          Array [
+            Object {
+              "color": "white",
+              "fontFamily": "Helvetica",
+              "fontSize": 12,
+              "fontWeight": "700",
+              "paddingBottom": 10,
+              "paddingLeft": 15,
+              "paddingRight": 15,
+              "paddingTop": 10,
+              "width": 375,
+            },
+          ]
+        }
+        width={375}
+      >
+        Hướng dẫn
+      </Text>
+      <Text
+        color="white"
+        fontFamily="body"
+        fontSize={1}
+        fontWeight="bold"
+        px={3}
+        py={2}
+        style={
+          Array [
+            Object {
+              "color": "white",
+              "fontFamily": "Helvetica",
+              "fontSize": 12,
+              "fontWeight": "700",
+              "paddingBottom": 10,
+              "paddingLeft": 15,
+              "paddingRight": 15,
+              "paddingTop": 10,
+              "width": 375,
+            },
+          ]
+        }
+        width={375}
+      >
+        Tổng đài âm nhạc
+      </Text>
+      <Text
+        color="white"
+        fontFamily="body"
+        fontSize={1}
+        fontWeight="bold"
+        px={3}
+        py={2}
+        style={
+          Array [
+            Object {
+              "color": "white",
+              "fontFamily": "Helvetica",
+              "fontSize": 12,
+              "fontWeight": "700",
+              "paddingBottom": 10,
+              "paddingLeft": 15,
+              "paddingRight": 15,
+              "paddingTop": 10,
+              "width": 375,
+            },
+          ]
+        }
+        width={375}
+      >
+        Điều khoản sử dụng
+      </Text>
+      <Text
+        color="white"
+        fontFamily="body"
+        fontSize={1}
+        fontWeight="bold"
+        px={3}
+        py={2}
+        style={
+          Array [
+            Object {
+              "color": "white",
+              "fontFamily": "Helvetica",
+              "fontSize": 12,
+              "fontWeight": "700",
+              "paddingBottom": 10,
+              "paddingLeft": 15,
+              "paddingRight": 15,
+              "paddingTop": 10,
+              "width": 375,
+            },
+          ]
+        }
+        width={375}
+      >
+        Nhạc chờ doanh nghiệp
+      </Text>
+      <Text
+        color="white"
+        fontFamily="body"
+        fontSize={1}
+        fontWeight="bold"
+        px={3}
+        py={2}
+        style={
+          Array [
+            Object {
+              "color": "white",
+              "fontFamily": "Helvetica",
+              "fontSize": 12,
+              "fontWeight": "700",
+              "paddingBottom": 10,
+              "paddingLeft": 15,
+              "paddingRight": 15,
+              "paddingTop": 10,
+              "width": 375,
+            },
+          ]
+        }
+        width={375}
+      >
+        Góp ý / báo lỗi
+      </Text>
+      <Text
+        color="white"
+        fontFamily="body"
+        fontSize={1}
+        fontWeight="bold"
+        px={3}
+        py={2}
+        style={
+          Array [
+            Object {
+              "color": "white",
+              "fontFamily": "Helvetica",
+              "fontSize": 12,
+              "fontWeight": "700",
+              "paddingBottom": 10,
+              "paddingLeft": 15,
+              "paddingRight": 15,
+              "paddingTop": 10,
+              "width": 375,
+            },
+          ]
+        }
+        width={375}
+      >
+        Quy chế sàn
+      </Text>
+      <Text
+        color="white"
+        fontFamily="body"
+        fontSize={1}
+        fontWeight="bold"
+        px={3}
+        py={2}
+        style={
+          Array [
+            Object {
+              "color": "white",
+              "fontFamily": "Helvetica",
+              "fontSize": 12,
+              "fontWeight": "700",
+              "paddingBottom": 10,
+              "paddingLeft": 15,
+              "paddingRight": 15,
+              "paddingTop": 10,
+              "width": 375,
+            },
+          ]
+        }
+        width={375}
+      >
+        Câu hỏi thường gặp
+      </Text>
+    </View>
+    <Text
+      color="lightText"
+      fontFamily="body"
+      fontSize={0}
+      fontWeight="bold"
+      m={3}
+      style={
+        Array [
+          Object {
+            "color": "#AAAAAA",
+            "fontFamily": "Helvetica",
+            "fontSize": 10,
+            "fontWeight": "700",
+            "marginBottom": 15,
+            "marginLeft": 15,
+            "marginRight": 15,
+            "marginTop": 15,
+            "textAlign": "center",
+          },
+        ]
+      }
+      textAlign="center"
+    >
+      ©2019 VAS Viettel. Imuzik. All rights reserved.
+    </Text>
+  </View>
+</View>
+`;

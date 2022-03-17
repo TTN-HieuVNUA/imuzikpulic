@@ -1,0 +1,2253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Box Dark 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    bg="defaultBackground"
+    py={3}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#262523",
+          "paddingBottom": 15,
+          "paddingTop": 15,
+        },
+      ]
+    }
+  >
+    <View
+      bg="alternativeBackground"
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#32302E",
+          },
+        ]
+      }
+    >
+      <View
+        bg="defaultBackground"
+        p={2}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#262523",
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+            },
+          ]
+        }
+      >
+        <View
+          alignItems="center"
+          border={1}
+          borderColor="#FCCC26"
+          borderRadius={8}
+          flexDirection="column"
+          height={480}
+          overflow="hidden"
+          position="relative"
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderColor": "#FCCC26",
+                "borderRadius": 8,
+                "borderStyle": "solid",
+                "borderWidth": 1,
+                "flexDirection": "column",
+                "height": 480,
+                "overflow": "hidden",
+                "position": "relative",
+              },
+            ]
+          }
+        >
+          <View
+            alignItems="center"
+            backgroundColor="#FCCC26"
+            flexDirection="column"
+            height={48}
+            justifyContent="center"
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#FCCC26",
+                  "flexDirection": "column",
+                  "height": 48,
+                  "justifyContent": "center",
+                  "width": "100%",
+                },
+              ]
+            }
+            width="100%"
+          >
+            <Text
+              color="#262523"
+              css={
+                Object {
+                  "position": "relative",
+                  "zIndex": 2,
+                }
+              }
+              fontFamily="body"
+              fontSize={20}
+              fontWeight="bold"
+              lineHeight={26}
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#262523",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 20,
+                    "fontWeight": "700",
+                    "lineHeight": 26,
+                  },
+                ]
+              }
+            >
+              VIP
+            </Text>
+          </View>
+          <View
+            alignItems="center"
+            borderBottomColor="#3D3D3F"
+            borderBottomWidth={1}
+            flexDirection="column"
+            height={73}
+            justifyContent="center"
+            px={29}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "borderBottomColor": "#3D3D3F",
+                  "borderBottomWidth": 1,
+                  "flexDirection": "column",
+                  "height": 73,
+                  "justifyContent": "center",
+                  "paddingLeft": 29,
+                  "paddingRight": 29,
+                  "width": "100%",
+                },
+              ]
+            }
+            width="100%"
+          >
+            <Text
+              color="#FFFFFF;"
+              css={
+                Object {
+                  "position": "relative",
+                  "zIndex": 2,
+                }
+              }
+              fontFamily="body"
+              fontSize={14}
+              lineHeight={19}
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#FFFFFF",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 14,
+                    "lineHeight": 19,
+                  },
+                ]
+              }
+            >
+              Chỉ với 
+              <Text
+                color="#FCCC26;"
+                fontFamily="body"
+                style={
+                  Array [
+                    Object {
+                      "color": "#FCCC26",
+                      "fontFamily": "Helvetica",
+                    },
+                  ]
+                }
+              >
+                 
+                15.000
+                đ/tháng 
+              </Text>
+               để trở thành IVIP và
+            </Text>
+            <Text
+              color="#FFFFFF;"
+              css={
+                Object {
+                  "position": "relative",
+                  "zIndex": 2,
+                }
+              }
+              fontFamily="body"
+              fontSize={14}
+              lineHeight={19}
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#FFFFFF",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 14,
+                    "lineHeight": 19,
+                  },
+                ]
+              }
+            >
+              hưởng đặc quyền của mọi 
+              <Text
+                color="normalText"
+                fontFamily="body"
+                fontWeight="bold"
+                style={
+                  Array [
+                    Object {
+                      "color": "white",
+                      "fontFamily": "Helvetica",
+                      "fontWeight": "700",
+                    },
+                  ]
+                }
+              >
+                VIP member.
+              </Text>
+            </Text>
+          </View>
+          <View
+            flexDirection="column"
+            height={19}
+            justifyContent="center"
+            marginTop={18}
+            style={
+              Array [
+                Object {
+                  "flexDirection": "column",
+                  "height": 19,
+                  "justifyContent": "center",
+                  "marginTop": 18,
+                  "width": "100%",
+                },
+              ]
+            }
+            width="100%"
+          >
+            <Text
+              color="#ffffff"
+              css={
+                Object {
+                  "position": "relative",
+                  "zIndex": 2,
+                }
+              }
+              fontFamily="body"
+              fontSize={14}
+              fontWeight="bold"
+              lineHeight={19}
+              marginLeft={19}
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 14,
+                    "fontWeight": "700",
+                    "lineHeight": 19,
+                    "marginLeft": 19,
+                  },
+                ]
+              }
+            >
+              Quyền lợi đặc biệt
+            </Text>
+          </View>
+          <View
+            flexDirection="column"
+            justifyContent="center"
+            marginTop={28}
+            paddingLeft={23}
+            paddingRight={19}
+            style={
+              Array [
+                Object {
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                  "marginTop": 28,
+                  "paddingLeft": 23,
+                  "paddingRight": 19,
+                  "width": "100%",
+                },
+              ]
+            }
+            width="100%"
+          >
+            <View
+              alignItems="center"
+              flexDirection="row"
+              marginBottom={18}
+              minHeight={44}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "marginBottom": 18,
+                    "minHeight": 44,
+                  },
+                ]
+              }
+            >
+              <View
+                alignItems="center"
+                height={15}
+                justifyContent="center"
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "height": 15,
+                      "justifyContent": "center",
+                      "width": 15,
+                    },
+                  ]
+                }
+                width={15}
+              >
+                <RNSVGSvgView
+                  align="xMidYMid"
+                  bbHeight={15}
+                  bbWidth={15}
+                  fill="none"
+                  focusable={false}
+                  height={15}
+                  meetOrSlice={0}
+                  minX={0}
+                  minY={0}
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderWidth": 0,
+                      },
+                      undefined,
+                      Object {
+                        "opacity": 1,
+                      },
+                      Object {
+                        "flex": 0,
+                        "height": 15,
+                        "width": 15,
+                      },
+                    ]
+                  }
+                  vbHeight={15}
+                  vbWidth={24}
+                  width={15}
+                >
+                  <RNSVGGroup
+                    fill={null}
+                    fillOpacity={1}
+                    fillRule={1}
+                    font={Object {}}
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    opacity={1}
+                    originX={0}
+                    originY={0}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                    rotation={0}
+                    scaleX={1}
+                    scaleY={1}
+                    skewX={0}
+                    skewY={0}
+                    stroke={null}
+                    strokeDasharray={null}
+                    strokeDashoffset={null}
+                    strokeLinecap={0}
+                    strokeLinejoin={0}
+                    strokeMiterlimit={4}
+                    strokeOpacity={1}
+                    strokeWidth={1}
+                    vectorEffect={0}
+                    x={0}
+                    y={0}
+                  >
+                    <RNSVGPath
+                      d="M12 11.815L22.7348 3.79832e-07L24 1.39551L12 14.6318L0 1.39551L1.26516 0L12 11.815Z"
+                      fill={
+                        Array [
+                          0,
+                          4294757414,
+                        ]
+                      }
+                      fillOpacity={1}
+                      fillRule={1}
+                      matrix={
+                        Array [
+                          1,
+                          0,
+                          0,
+                          1,
+                          0,
+                          0,
+                        ]
+                      }
+                      opacity={1}
+                      originX={0}
+                      originY={0}
+                      propList={
+                        Array [
+                          "fill",
+                        ]
+                      }
+                      rotation={0}
+                      scaleX={1}
+                      scaleY={1}
+                      skewX={0}
+                      skewY={0}
+                      stroke={null}
+                      strokeDasharray={null}
+                      strokeDashoffset={null}
+                      strokeLinecap={0}
+                      strokeLinejoin={0}
+                      strokeMiterlimit={4}
+                      strokeOpacity={1}
+                      strokeWidth={1}
+                      vectorEffect={0}
+                      x={0}
+                      y={0}
+                    />
+                  </RNSVGGroup>
+                </RNSVGSvgView>
+              </View>
+              <View
+                flex={1}
+                marginLeft={15}
+                style={
+                  Array [
+                    Object {
+                      "flexBasis": 0,
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "marginLeft": 15,
+                    },
+                  ]
+                }
+              >
+                <Text
+                  color="normalText"
+                  fontFamily="body"
+                  fontSize={14}
+                  fontWeight="bold"
+                  lineHeight={19}
+                  style={
+                    Array [
+                      Object {
+                        "color": "white",
+                        "fontFamily": "Helvetica",
+                        "fontSize": 14,
+                        "fontWeight": "700",
+                        "lineHeight": 19,
+                      },
+                    ]
+                  }
+                >
+                  Âm nhạc sống động đẳng cấp
+                </Text>
+                <Text
+                  color="lightText"
+                  fontFamily="body"
+                  fontSize={12}
+                  lineHeight={16}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#AAAAAA",
+                        "fontFamily": "Helvetica",
+                        "fontSize": 12,
+                        "lineHeight": 16,
+                      },
+                    ]
+                  }
+                >
+                  Thưởng thức kho nhạc số chất lượng cao freedata, cập nhật thường xuyên nội dung Hot
+                </Text>
+              </View>
+            </View>
+            <View
+              alignItems="center"
+              flexDirection="row"
+              marginBottom={18}
+              minHeight={44}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "marginBottom": 18,
+                    "minHeight": 44,
+                  },
+                ]
+              }
+            >
+              <View
+                alignItems="center"
+                height={15}
+                justifyContent="center"
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "height": 15,
+                      "justifyContent": "center",
+                      "width": 15,
+                    },
+                  ]
+                }
+                width={15}
+              >
+                <RNSVGSvgView
+                  align="xMidYMid"
+                  bbHeight={15}
+                  bbWidth={15}
+                  fill="none"
+                  focusable={false}
+                  height={15}
+                  meetOrSlice={0}
+                  minX={0}
+                  minY={0}
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderWidth": 0,
+                      },
+                      undefined,
+                      Object {
+                        "opacity": 1,
+                      },
+                      Object {
+                        "flex": 0,
+                        "height": 15,
+                        "width": 15,
+                      },
+                    ]
+                  }
+                  vbHeight={15}
+                  vbWidth={24}
+                  width={15}
+                >
+                  <RNSVGGroup
+                    fill={null}
+                    fillOpacity={1}
+                    fillRule={1}
+                    font={Object {}}
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    opacity={1}
+                    originX={0}
+                    originY={0}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                    rotation={0}
+                    scaleX={1}
+                    scaleY={1}
+                    skewX={0}
+                    skewY={0}
+                    stroke={null}
+                    strokeDasharray={null}
+                    strokeDashoffset={null}
+                    strokeLinecap={0}
+                    strokeLinejoin={0}
+                    strokeMiterlimit={4}
+                    strokeOpacity={1}
+                    strokeWidth={1}
+                    vectorEffect={0}
+                    x={0}
+                    y={0}
+                  >
+                    <RNSVGPath
+                      d="M12 11.815L22.7348 3.79832e-07L24 1.39551L12 14.6318L0 1.39551L1.26516 0L12 11.815Z"
+                      fill={
+                        Array [
+                          0,
+                          4294757414,
+                        ]
+                      }
+                      fillOpacity={1}
+                      fillRule={1}
+                      matrix={
+                        Array [
+                          1,
+                          0,
+                          0,
+                          1,
+                          0,
+                          0,
+                        ]
+                      }
+                      opacity={1}
+                      originX={0}
+                      originY={0}
+                      propList={
+                        Array [
+                          "fill",
+                        ]
+                      }
+                      rotation={0}
+                      scaleX={1}
+                      scaleY={1}
+                      skewX={0}
+                      skewY={0}
+                      stroke={null}
+                      strokeDasharray={null}
+                      strokeDashoffset={null}
+                      strokeLinecap={0}
+                      strokeLinejoin={0}
+                      strokeMiterlimit={4}
+                      strokeOpacity={1}
+                      strokeWidth={1}
+                      vectorEffect={0}
+                      x={0}
+                      y={0}
+                    />
+                  </RNSVGGroup>
+                </RNSVGSvgView>
+              </View>
+              <View
+                flex={1}
+                marginLeft={15}
+                style={
+                  Array [
+                    Object {
+                      "flexBasis": 0,
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "marginLeft": 15,
+                    },
+                  ]
+                }
+              >
+                <Text
+                  color="normalText"
+                  fontFamily="body"
+                  fontSize={14}
+                  fontWeight="bold"
+                  lineHeight={19}
+                  style={
+                    Array [
+                      Object {
+                        "color": "white",
+                        "fontFamily": "Helvetica",
+                        "fontSize": 14,
+                        "fontWeight": "700",
+                        "lineHeight": 19,
+                      },
+                    ]
+                  }
+                >
+                  Cài đặt nhạc chờ không giới hạn
+                </Text>
+                <Text
+                  color="lightText"
+                  fontFamily="body"
+                  fontSize={12}
+                  lineHeight={16}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#AAAAAA",
+                        "fontFamily": "Helvetica",
+                        "fontSize": 12,
+                        "lineHeight": 16,
+                      },
+                    ]
+                  }
+                >
+                  cài đặt tất cả nhạc chờ với giá 0 đồng
+                </Text>
+              </View>
+            </View>
+            <View
+              alignItems="center"
+              flexDirection="row"
+              marginBottom={18}
+              minHeight={44}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "marginBottom": 18,
+                    "minHeight": 44,
+                  },
+                ]
+              }
+            >
+              <View
+                alignItems="center"
+                height={15}
+                justifyContent="center"
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "height": 15,
+                      "justifyContent": "center",
+                      "width": 15,
+                    },
+                  ]
+                }
+                width={15}
+              >
+                <RNSVGSvgView
+                  align="xMidYMid"
+                  bbHeight={15}
+                  bbWidth={15}
+                  fill="none"
+                  focusable={false}
+                  height={15}
+                  meetOrSlice={0}
+                  minX={0}
+                  minY={0}
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderWidth": 0,
+                      },
+                      undefined,
+                      Object {
+                        "opacity": 1,
+                      },
+                      Object {
+                        "flex": 0,
+                        "height": 15,
+                        "width": 15,
+                      },
+                    ]
+                  }
+                  vbHeight={15}
+                  vbWidth={24}
+                  width={15}
+                >
+                  <RNSVGGroup
+                    fill={null}
+                    fillOpacity={1}
+                    fillRule={1}
+                    font={Object {}}
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    opacity={1}
+                    originX={0}
+                    originY={0}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                    rotation={0}
+                    scaleX={1}
+                    scaleY={1}
+                    skewX={0}
+                    skewY={0}
+                    stroke={null}
+                    strokeDasharray={null}
+                    strokeDashoffset={null}
+                    strokeLinecap={0}
+                    strokeLinejoin={0}
+                    strokeMiterlimit={4}
+                    strokeOpacity={1}
+                    strokeWidth={1}
+                    vectorEffect={0}
+                    x={0}
+                    y={0}
+                  >
+                    <RNSVGPath
+                      d="M12 11.815L22.7348 3.79832e-07L24 1.39551L12 14.6318L0 1.39551L1.26516 0L12 11.815Z"
+                      fill={
+                        Array [
+                          0,
+                          4294757414,
+                        ]
+                      }
+                      fillOpacity={1}
+                      fillRule={1}
+                      matrix={
+                        Array [
+                          1,
+                          0,
+                          0,
+                          1,
+                          0,
+                          0,
+                        ]
+                      }
+                      opacity={1}
+                      originX={0}
+                      originY={0}
+                      propList={
+                        Array [
+                          "fill",
+                        ]
+                      }
+                      rotation={0}
+                      scaleX={1}
+                      scaleY={1}
+                      skewX={0}
+                      skewY={0}
+                      stroke={null}
+                      strokeDasharray={null}
+                      strokeDashoffset={null}
+                      strokeLinecap={0}
+                      strokeLinejoin={0}
+                      strokeMiterlimit={4}
+                      strokeOpacity={1}
+                      strokeWidth={1}
+                      vectorEffect={0}
+                      x={0}
+                      y={0}
+                    />
+                  </RNSVGGroup>
+                </RNSVGSvgView>
+              </View>
+              <View
+                flex={1}
+                marginLeft={15}
+                style={
+                  Array [
+                    Object {
+                      "flexBasis": 0,
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "marginLeft": 15,
+                    },
+                  ]
+                }
+              >
+                <Text
+                  color="normalText"
+                  fontFamily="body"
+                  fontSize={14}
+                  fontWeight="bold"
+                  lineHeight={19}
+                  style={
+                    Array [
+                      Object {
+                        "color": "white",
+                        "fontFamily": "Helvetica",
+                        "fontSize": 14,
+                        "fontWeight": "700",
+                        "lineHeight": 19,
+                      },
+                    ]
+                  }
+                >
+                  Nghe nhạc thoải mái mà không sợ quảng cáo
+                </Text>
+                <Text
+                  color="lightText"
+                  fontFamily="body"
+                  fontSize={12}
+                  lineHeight={16}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#AAAAAA",
+                        "fontFamily": "Helvetica",
+                        "fontSize": 12,
+                        "lineHeight": 16,
+                      },
+                    ]
+                  }
+                >
+                  Không quảng cáo
+                </Text>
+              </View>
+            </View>
+            <View
+              alignItems="center"
+              flexDirection="row"
+              marginBottom={18}
+              minHeight={44}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "marginBottom": 18,
+                    "minHeight": 44,
+                  },
+                ]
+              }
+            >
+              <View
+                alignItems="center"
+                height={15}
+                justifyContent="center"
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "height": 15,
+                      "justifyContent": "center",
+                      "width": 15,
+                    },
+                  ]
+                }
+                width={15}
+              >
+                <RNSVGSvgView
+                  align="xMidYMid"
+                  bbHeight={15}
+                  bbWidth={15}
+                  fill="none"
+                  focusable={false}
+                  height={15}
+                  meetOrSlice={0}
+                  minX={0}
+                  minY={0}
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderWidth": 0,
+                      },
+                      undefined,
+                      Object {
+                        "opacity": 1,
+                      },
+                      Object {
+                        "flex": 0,
+                        "height": 15,
+                        "width": 15,
+                      },
+                    ]
+                  }
+                  vbHeight={15}
+                  vbWidth={24}
+                  width={15}
+                >
+                  <RNSVGGroup
+                    fill={null}
+                    fillOpacity={1}
+                    fillRule={1}
+                    font={Object {}}
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    opacity={1}
+                    originX={0}
+                    originY={0}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                    rotation={0}
+                    scaleX={1}
+                    scaleY={1}
+                    skewX={0}
+                    skewY={0}
+                    stroke={null}
+                    strokeDasharray={null}
+                    strokeDashoffset={null}
+                    strokeLinecap={0}
+                    strokeLinejoin={0}
+                    strokeMiterlimit={4}
+                    strokeOpacity={1}
+                    strokeWidth={1}
+                    vectorEffect={0}
+                    x={0}
+                    y={0}
+                  >
+                    <RNSVGPath
+                      d="M12 11.815L22.7348 3.79832e-07L24 1.39551L12 14.6318L0 1.39551L1.26516 0L12 11.815Z"
+                      fill={
+                        Array [
+                          0,
+                          4294757414,
+                        ]
+                      }
+                      fillOpacity={1}
+                      fillRule={1}
+                      matrix={
+                        Array [
+                          1,
+                          0,
+                          0,
+                          1,
+                          0,
+                          0,
+                        ]
+                      }
+                      opacity={1}
+                      originX={0}
+                      originY={0}
+                      propList={
+                        Array [
+                          "fill",
+                        ]
+                      }
+                      rotation={0}
+                      scaleX={1}
+                      scaleY={1}
+                      skewX={0}
+                      skewY={0}
+                      stroke={null}
+                      strokeDasharray={null}
+                      strokeDashoffset={null}
+                      strokeLinecap={0}
+                      strokeLinejoin={0}
+                      strokeMiterlimit={4}
+                      strokeOpacity={1}
+                      strokeWidth={1}
+                      vectorEffect={0}
+                      x={0}
+                      y={0}
+                    />
+                  </RNSVGGroup>
+                </RNSVGSvgView>
+              </View>
+              <View
+                flex={1}
+                marginLeft={15}
+                style={
+                  Array [
+                    Object {
+                      "flexBasis": 0,
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "marginLeft": 15,
+                    },
+                  ]
+                }
+              >
+                <Text
+                  color="normalText"
+                  fontFamily="body"
+                  fontSize={14}
+                  fontWeight="bold"
+                  lineHeight={19}
+                  style={
+                    Array [
+                      Object {
+                        "color": "white",
+                        "fontFamily": "Helvetica",
+                        "fontSize": 14,
+                        "fontWeight": "700",
+                        "lineHeight": 19,
+                      },
+                    ]
+                  }
+                >
+                  Nhạc chờ cho người gọi
+                </Text>
+                <Text
+                  color="lightText"
+                  fontFamily="body"
+                  fontSize={12}
+                  lineHeight={16}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#AAAAAA",
+                        "fontFamily": "Helvetica",
+                        "fontSize": 12,
+                        "lineHeight": 16,
+                      },
+                    ]
+                  }
+                >
+                  Tính năng miễn phí cho phép người gọi nghe nhạc chờ do chính mình cài đặt khi gọi tới thuê bao khác
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Box Light 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    bg="defaultBackground"
+    py={3}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "white",
+          "paddingBottom": 15,
+          "paddingTop": 15,
+        },
+      ]
+    }
+  >
+    <View
+      bg="alternativeBackground"
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F1F1F1",
+          },
+        ]
+      }
+    >
+      <View
+        bg="defaultBackground"
+        p={2}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "white",
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+            },
+          ]
+        }
+      >
+        <View
+          alignItems="center"
+          border={1}
+          borderColor="#FCCC26"
+          borderRadius={8}
+          flexDirection="column"
+          height={480}
+          overflow="hidden"
+          position="relative"
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderColor": "#FCCC26",
+                "borderRadius": 8,
+                "borderStyle": "solid",
+                "borderWidth": 1,
+                "flexDirection": "column",
+                "height": 480,
+                "overflow": "hidden",
+                "position": "relative",
+              },
+            ]
+          }
+        >
+          <View
+            alignItems="center"
+            backgroundColor="#FCCC26"
+            flexDirection="column"
+            height={48}
+            justifyContent="center"
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#FCCC26",
+                  "flexDirection": "column",
+                  "height": 48,
+                  "justifyContent": "center",
+                  "width": "100%",
+                },
+              ]
+            }
+            width="100%"
+          >
+            <Text
+              color="#262523"
+              css={
+                Object {
+                  "position": "relative",
+                  "zIndex": 2,
+                }
+              }
+              fontFamily="body"
+              fontSize={20}
+              fontWeight="bold"
+              lineHeight={26}
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#262523",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 20,
+                    "fontWeight": "700",
+                    "lineHeight": 26,
+                  },
+                ]
+              }
+            >
+              VIP
+            </Text>
+          </View>
+          <View
+            alignItems="center"
+            borderBottomColor="#3D3D3F"
+            borderBottomWidth={1}
+            flexDirection="column"
+            height={73}
+            justifyContent="center"
+            px={29}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "borderBottomColor": "#3D3D3F",
+                  "borderBottomWidth": 1,
+                  "flexDirection": "column",
+                  "height": 73,
+                  "justifyContent": "center",
+                  "paddingLeft": 29,
+                  "paddingRight": 29,
+                  "width": "100%",
+                },
+              ]
+            }
+            width="100%"
+          >
+            <Text
+              color="#FFFFFF;"
+              css={
+                Object {
+                  "position": "relative",
+                  "zIndex": 2,
+                }
+              }
+              fontFamily="body"
+              fontSize={14}
+              lineHeight={19}
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#FFFFFF",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 14,
+                    "lineHeight": 19,
+                  },
+                ]
+              }
+            >
+              Chỉ với 
+              <Text
+                color="#FCCC26;"
+                fontFamily="body"
+                style={
+                  Array [
+                    Object {
+                      "color": "#FCCC26",
+                      "fontFamily": "Helvetica",
+                    },
+                  ]
+                }
+              >
+                 
+                15.000
+                đ/tháng 
+              </Text>
+               để trở thành IVIP và
+            </Text>
+            <Text
+              color="#FFFFFF;"
+              css={
+                Object {
+                  "position": "relative",
+                  "zIndex": 2,
+                }
+              }
+              fontFamily="body"
+              fontSize={14}
+              lineHeight={19}
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#FFFFFF",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 14,
+                    "lineHeight": 19,
+                  },
+                ]
+              }
+            >
+              hưởng đặc quyền của mọi 
+              <Text
+                color="normalText"
+                fontFamily="body"
+                fontWeight="bold"
+                style={
+                  Array [
+                    Object {
+                      "color": "#262523",
+                      "fontFamily": "Helvetica",
+                      "fontWeight": "700",
+                    },
+                  ]
+                }
+              >
+                VIP member.
+              </Text>
+            </Text>
+          </View>
+          <View
+            flexDirection="column"
+            height={19}
+            justifyContent="center"
+            marginTop={18}
+            style={
+              Array [
+                Object {
+                  "flexDirection": "column",
+                  "height": 19,
+                  "justifyContent": "center",
+                  "marginTop": 18,
+                  "width": "100%",
+                },
+              ]
+            }
+            width="100%"
+          >
+            <Text
+              color="#ffffff"
+              css={
+                Object {
+                  "position": "relative",
+                  "zIndex": 2,
+                }
+              }
+              fontFamily="body"
+              fontSize={14}
+              fontWeight="bold"
+              lineHeight={19}
+              marginLeft={19}
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 14,
+                    "fontWeight": "700",
+                    "lineHeight": 19,
+                    "marginLeft": 19,
+                  },
+                ]
+              }
+            >
+              Quyền lợi đặc biệt
+            </Text>
+          </View>
+          <View
+            flexDirection="column"
+            justifyContent="center"
+            marginTop={28}
+            paddingLeft={23}
+            paddingRight={19}
+            style={
+              Array [
+                Object {
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                  "marginTop": 28,
+                  "paddingLeft": 23,
+                  "paddingRight": 19,
+                  "width": "100%",
+                },
+              ]
+            }
+            width="100%"
+          >
+            <View
+              alignItems="center"
+              flexDirection="row"
+              marginBottom={18}
+              minHeight={44}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "marginBottom": 18,
+                    "minHeight": 44,
+                  },
+                ]
+              }
+            >
+              <View
+                alignItems="center"
+                height={15}
+                justifyContent="center"
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "height": 15,
+                      "justifyContent": "center",
+                      "width": 15,
+                    },
+                  ]
+                }
+                width={15}
+              >
+                <RNSVGSvgView
+                  align="xMidYMid"
+                  bbHeight={15}
+                  bbWidth={15}
+                  fill="none"
+                  focusable={false}
+                  height={15}
+                  meetOrSlice={0}
+                  minX={0}
+                  minY={0}
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderWidth": 0,
+                      },
+                      undefined,
+                      Object {
+                        "opacity": 1,
+                      },
+                      Object {
+                        "flex": 0,
+                        "height": 15,
+                        "width": 15,
+                      },
+                    ]
+                  }
+                  vbHeight={15}
+                  vbWidth={24}
+                  width={15}
+                >
+                  <RNSVGGroup
+                    fill={null}
+                    fillOpacity={1}
+                    fillRule={1}
+                    font={Object {}}
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    opacity={1}
+                    originX={0}
+                    originY={0}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                    rotation={0}
+                    scaleX={1}
+                    scaleY={1}
+                    skewX={0}
+                    skewY={0}
+                    stroke={null}
+                    strokeDasharray={null}
+                    strokeDashoffset={null}
+                    strokeLinecap={0}
+                    strokeLinejoin={0}
+                    strokeMiterlimit={4}
+                    strokeOpacity={1}
+                    strokeWidth={1}
+                    vectorEffect={0}
+                    x={0}
+                    y={0}
+                  >
+                    <RNSVGPath
+                      d="M12 11.815L22.7348 3.79832e-07L24 1.39551L12 14.6318L0 1.39551L1.26516 0L12 11.815Z"
+                      fill={
+                        Array [
+                          0,
+                          4294757414,
+                        ]
+                      }
+                      fillOpacity={1}
+                      fillRule={1}
+                      matrix={
+                        Array [
+                          1,
+                          0,
+                          0,
+                          1,
+                          0,
+                          0,
+                        ]
+                      }
+                      opacity={1}
+                      originX={0}
+                      originY={0}
+                      propList={
+                        Array [
+                          "fill",
+                        ]
+                      }
+                      rotation={0}
+                      scaleX={1}
+                      scaleY={1}
+                      skewX={0}
+                      skewY={0}
+                      stroke={null}
+                      strokeDasharray={null}
+                      strokeDashoffset={null}
+                      strokeLinecap={0}
+                      strokeLinejoin={0}
+                      strokeMiterlimit={4}
+                      strokeOpacity={1}
+                      strokeWidth={1}
+                      vectorEffect={0}
+                      x={0}
+                      y={0}
+                    />
+                  </RNSVGGroup>
+                </RNSVGSvgView>
+              </View>
+              <View
+                flex={1}
+                marginLeft={15}
+                style={
+                  Array [
+                    Object {
+                      "flexBasis": 0,
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "marginLeft": 15,
+                    },
+                  ]
+                }
+              >
+                <Text
+                  color="normalText"
+                  fontFamily="body"
+                  fontSize={14}
+                  fontWeight="bold"
+                  lineHeight={19}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#262523",
+                        "fontFamily": "Helvetica",
+                        "fontSize": 14,
+                        "fontWeight": "700",
+                        "lineHeight": 19,
+                      },
+                    ]
+                  }
+                >
+                  Âm nhạc sống động đẳng cấp
+                </Text>
+                <Text
+                  color="lightText"
+                  fontFamily="body"
+                  fontSize={12}
+                  lineHeight={16}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#676767",
+                        "fontFamily": "Helvetica",
+                        "fontSize": 12,
+                        "lineHeight": 16,
+                      },
+                    ]
+                  }
+                >
+                  Thưởng thức kho nhạc số chất lượng cao freedata, cập nhật thường xuyên nội dung Hot
+                </Text>
+              </View>
+            </View>
+            <View
+              alignItems="center"
+              flexDirection="row"
+              marginBottom={18}
+              minHeight={44}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "marginBottom": 18,
+                    "minHeight": 44,
+                  },
+                ]
+              }
+            >
+              <View
+                alignItems="center"
+                height={15}
+                justifyContent="center"
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "height": 15,
+                      "justifyContent": "center",
+                      "width": 15,
+                    },
+                  ]
+                }
+                width={15}
+              >
+                <RNSVGSvgView
+                  align="xMidYMid"
+                  bbHeight={15}
+                  bbWidth={15}
+                  fill="none"
+                  focusable={false}
+                  height={15}
+                  meetOrSlice={0}
+                  minX={0}
+                  minY={0}
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderWidth": 0,
+                      },
+                      undefined,
+                      Object {
+                        "opacity": 1,
+                      },
+                      Object {
+                        "flex": 0,
+                        "height": 15,
+                        "width": 15,
+                      },
+                    ]
+                  }
+                  vbHeight={15}
+                  vbWidth={24}
+                  width={15}
+                >
+                  <RNSVGGroup
+                    fill={null}
+                    fillOpacity={1}
+                    fillRule={1}
+                    font={Object {}}
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    opacity={1}
+                    originX={0}
+                    originY={0}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                    rotation={0}
+                    scaleX={1}
+                    scaleY={1}
+                    skewX={0}
+                    skewY={0}
+                    stroke={null}
+                    strokeDasharray={null}
+                    strokeDashoffset={null}
+                    strokeLinecap={0}
+                    strokeLinejoin={0}
+                    strokeMiterlimit={4}
+                    strokeOpacity={1}
+                    strokeWidth={1}
+                    vectorEffect={0}
+                    x={0}
+                    y={0}
+                  >
+                    <RNSVGPath
+                      d="M12 11.815L22.7348 3.79832e-07L24 1.39551L12 14.6318L0 1.39551L1.26516 0L12 11.815Z"
+                      fill={
+                        Array [
+                          0,
+                          4294757414,
+                        ]
+                      }
+                      fillOpacity={1}
+                      fillRule={1}
+                      matrix={
+                        Array [
+                          1,
+                          0,
+                          0,
+                          1,
+                          0,
+                          0,
+                        ]
+                      }
+                      opacity={1}
+                      originX={0}
+                      originY={0}
+                      propList={
+                        Array [
+                          "fill",
+                        ]
+                      }
+                      rotation={0}
+                      scaleX={1}
+                      scaleY={1}
+                      skewX={0}
+                      skewY={0}
+                      stroke={null}
+                      strokeDasharray={null}
+                      strokeDashoffset={null}
+                      strokeLinecap={0}
+                      strokeLinejoin={0}
+                      strokeMiterlimit={4}
+                      strokeOpacity={1}
+                      strokeWidth={1}
+                      vectorEffect={0}
+                      x={0}
+                      y={0}
+                    />
+                  </RNSVGGroup>
+                </RNSVGSvgView>
+              </View>
+              <View
+                flex={1}
+                marginLeft={15}
+                style={
+                  Array [
+                    Object {
+                      "flexBasis": 0,
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "marginLeft": 15,
+                    },
+                  ]
+                }
+              >
+                <Text
+                  color="normalText"
+                  fontFamily="body"
+                  fontSize={14}
+                  fontWeight="bold"
+                  lineHeight={19}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#262523",
+                        "fontFamily": "Helvetica",
+                        "fontSize": 14,
+                        "fontWeight": "700",
+                        "lineHeight": 19,
+                      },
+                    ]
+                  }
+                >
+                  Cài đặt nhạc chờ không giới hạn
+                </Text>
+                <Text
+                  color="lightText"
+                  fontFamily="body"
+                  fontSize={12}
+                  lineHeight={16}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#676767",
+                        "fontFamily": "Helvetica",
+                        "fontSize": 12,
+                        "lineHeight": 16,
+                      },
+                    ]
+                  }
+                >
+                  cài đặt tất cả nhạc chờ với giá 0 đồng
+                </Text>
+              </View>
+            </View>
+            <View
+              alignItems="center"
+              flexDirection="row"
+              marginBottom={18}
+              minHeight={44}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "marginBottom": 18,
+                    "minHeight": 44,
+                  },
+                ]
+              }
+            >
+              <View
+                alignItems="center"
+                height={15}
+                justifyContent="center"
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "height": 15,
+                      "justifyContent": "center",
+                      "width": 15,
+                    },
+                  ]
+                }
+                width={15}
+              >
+                <RNSVGSvgView
+                  align="xMidYMid"
+                  bbHeight={15}
+                  bbWidth={15}
+                  fill="none"
+                  focusable={false}
+                  height={15}
+                  meetOrSlice={0}
+                  minX={0}
+                  minY={0}
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderWidth": 0,
+                      },
+                      undefined,
+                      Object {
+                        "opacity": 1,
+                      },
+                      Object {
+                        "flex": 0,
+                        "height": 15,
+                        "width": 15,
+                      },
+                    ]
+                  }
+                  vbHeight={15}
+                  vbWidth={24}
+                  width={15}
+                >
+                  <RNSVGGroup
+                    fill={null}
+                    fillOpacity={1}
+                    fillRule={1}
+                    font={Object {}}
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    opacity={1}
+                    originX={0}
+                    originY={0}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                    rotation={0}
+                    scaleX={1}
+                    scaleY={1}
+                    skewX={0}
+                    skewY={0}
+                    stroke={null}
+                    strokeDasharray={null}
+                    strokeDashoffset={null}
+                    strokeLinecap={0}
+                    strokeLinejoin={0}
+                    strokeMiterlimit={4}
+                    strokeOpacity={1}
+                    strokeWidth={1}
+                    vectorEffect={0}
+                    x={0}
+                    y={0}
+                  >
+                    <RNSVGPath
+                      d="M12 11.815L22.7348 3.79832e-07L24 1.39551L12 14.6318L0 1.39551L1.26516 0L12 11.815Z"
+                      fill={
+                        Array [
+                          0,
+                          4294757414,
+                        ]
+                      }
+                      fillOpacity={1}
+                      fillRule={1}
+                      matrix={
+                        Array [
+                          1,
+                          0,
+                          0,
+                          1,
+                          0,
+                          0,
+                        ]
+                      }
+                      opacity={1}
+                      originX={0}
+                      originY={0}
+                      propList={
+                        Array [
+                          "fill",
+                        ]
+                      }
+                      rotation={0}
+                      scaleX={1}
+                      scaleY={1}
+                      skewX={0}
+                      skewY={0}
+                      stroke={null}
+                      strokeDasharray={null}
+                      strokeDashoffset={null}
+                      strokeLinecap={0}
+                      strokeLinejoin={0}
+                      strokeMiterlimit={4}
+                      strokeOpacity={1}
+                      strokeWidth={1}
+                      vectorEffect={0}
+                      x={0}
+                      y={0}
+                    />
+                  </RNSVGGroup>
+                </RNSVGSvgView>
+              </View>
+              <View
+                flex={1}
+                marginLeft={15}
+                style={
+                  Array [
+                    Object {
+                      "flexBasis": 0,
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "marginLeft": 15,
+                    },
+                  ]
+                }
+              >
+                <Text
+                  color="normalText"
+                  fontFamily="body"
+                  fontSize={14}
+                  fontWeight="bold"
+                  lineHeight={19}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#262523",
+                        "fontFamily": "Helvetica",
+                        "fontSize": 14,
+                        "fontWeight": "700",
+                        "lineHeight": 19,
+                      },
+                    ]
+                  }
+                >
+                  Nghe nhạc thoải mái mà không sợ quảng cáo
+                </Text>
+                <Text
+                  color="lightText"
+                  fontFamily="body"
+                  fontSize={12}
+                  lineHeight={16}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#676767",
+                        "fontFamily": "Helvetica",
+                        "fontSize": 12,
+                        "lineHeight": 16,
+                      },
+                    ]
+                  }
+                >
+                  Không quảng cáo
+                </Text>
+              </View>
+            </View>
+            <View
+              alignItems="center"
+              flexDirection="row"
+              marginBottom={18}
+              minHeight={44}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "marginBottom": 18,
+                    "minHeight": 44,
+                  },
+                ]
+              }
+            >
+              <View
+                alignItems="center"
+                height={15}
+                justifyContent="center"
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "height": 15,
+                      "justifyContent": "center",
+                      "width": 15,
+                    },
+                  ]
+                }
+                width={15}
+              >
+                <RNSVGSvgView
+                  align="xMidYMid"
+                  bbHeight={15}
+                  bbWidth={15}
+                  fill="none"
+                  focusable={false}
+                  height={15}
+                  meetOrSlice={0}
+                  minX={0}
+                  minY={0}
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderWidth": 0,
+                      },
+                      undefined,
+                      Object {
+                        "opacity": 1,
+                      },
+                      Object {
+                        "flex": 0,
+                        "height": 15,
+                        "width": 15,
+                      },
+                    ]
+                  }
+                  vbHeight={15}
+                  vbWidth={24}
+                  width={15}
+                >
+                  <RNSVGGroup
+                    fill={null}
+                    fillOpacity={1}
+                    fillRule={1}
+                    font={Object {}}
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    opacity={1}
+                    originX={0}
+                    originY={0}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                    rotation={0}
+                    scaleX={1}
+                    scaleY={1}
+                    skewX={0}
+                    skewY={0}
+                    stroke={null}
+                    strokeDasharray={null}
+                    strokeDashoffset={null}
+                    strokeLinecap={0}
+                    strokeLinejoin={0}
+                    strokeMiterlimit={4}
+                    strokeOpacity={1}
+                    strokeWidth={1}
+                    vectorEffect={0}
+                    x={0}
+                    y={0}
+                  >
+                    <RNSVGPath
+                      d="M12 11.815L22.7348 3.79832e-07L24 1.39551L12 14.6318L0 1.39551L1.26516 0L12 11.815Z"
+                      fill={
+                        Array [
+                          0,
+                          4294757414,
+                        ]
+                      }
+                      fillOpacity={1}
+                      fillRule={1}
+                      matrix={
+                        Array [
+                          1,
+                          0,
+                          0,
+                          1,
+                          0,
+                          0,
+                        ]
+                      }
+                      opacity={1}
+                      originX={0}
+                      originY={0}
+                      propList={
+                        Array [
+                          "fill",
+                        ]
+                      }
+                      rotation={0}
+                      scaleX={1}
+                      scaleY={1}
+                      skewX={0}
+                      skewY={0}
+                      stroke={null}
+                      strokeDasharray={null}
+                      strokeDashoffset={null}
+                      strokeLinecap={0}
+                      strokeLinejoin={0}
+                      strokeMiterlimit={4}
+                      strokeOpacity={1}
+                      strokeWidth={1}
+                      vectorEffect={0}
+                      x={0}
+                      y={0}
+                    />
+                  </RNSVGGroup>
+                </RNSVGSvgView>
+              </View>
+              <View
+                flex={1}
+                marginLeft={15}
+                style={
+                  Array [
+                    Object {
+                      "flexBasis": 0,
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "marginLeft": 15,
+                    },
+                  ]
+                }
+              >
+                <Text
+                  color="normalText"
+                  fontFamily="body"
+                  fontSize={14}
+                  fontWeight="bold"
+                  lineHeight={19}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#262523",
+                        "fontFamily": "Helvetica",
+                        "fontSize": 14,
+                        "fontWeight": "700",
+                        "lineHeight": 19,
+                      },
+                    ]
+                  }
+                >
+                  Nhạc chờ cho người gọi
+                </Text>
+                <Text
+                  color="lightText"
+                  fontFamily="body"
+                  fontSize={12}
+                  lineHeight={16}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#676767",
+                        "fontFamily": "Helvetica",
+                        "fontSize": 12,
+                        "lineHeight": 16,
+                      },
+                    ]
+                  }
+                >
+                  Tính năng miễn phí cho phép người gọi nghe nhạc chờ do chính mình cài đặt khi gọi tới thuê bao khác
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

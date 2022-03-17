@@ -1,0 +1,745 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Button Muted 1`] = `
+<View
+  bg="defaultBackground"
+  p={2}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#262523",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#3D3D3F",
+        "borderColor": "black",
+        "borderRadius": 10,
+        "borderStyle": "solid",
+        "borderWidth": 0,
+        "height": 50,
+        "justifyContent": "center",
+        "opacity": 1,
+        "overflow": "hidden",
+        "paddingBottom": 24,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 24,
+      }
+    }
+  >
+    <ViewManagerAdapter_ExpoLinearGradient
+      proxiedProperties={
+        Object {
+          "colors": Array [
+            0,
+            0,
+          ],
+          "endPoint": Array [
+            1,
+            1,
+          ],
+          "locations": undefined,
+          "startPoint": Array [
+            0,
+            0,
+          ],
+        }
+      }
+      style={
+        Object {
+          "height": "100%",
+        }
+      }
+    >
+      <View
+        alignItems="center"
+        flexDirection="row"
+        height="100%"
+        justifyContent="center"
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": "100%",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+          ]
+        }
+        width="100%"
+      >
+        <Text
+          color="normalText"
+          fontFamily="body"
+          fontSize={16}
+          fontWeight="bold"
+          style={
+            Array [
+              Object {
+                "color": "white",
+                "fontFamily": "Helvetica",
+                "fontSize": 16,
+                "fontWeight": "700",
+              },
+              Object {},
+            ]
+          }
+        >
+          QUAY LẠI
+        </Text>
+      </View>
+    </ViewManagerAdapter_ExpoLinearGradient>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Button Outline 1`] = `
+<View
+  bg="defaultBackground"
+  p={2}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#262523",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "borderColor": "#979797",
+        "borderRadius": 8,
+        "borderWidth": 1,
+        "height": 32,
+        "justifyContent": "center",
+        "opacity": 1,
+        "overflow": "hidden",
+      }
+    }
+  >
+    <ViewManagerAdapter_ExpoLinearGradient
+      proxiedProperties={
+        Object {
+          "colors": Array [
+            0,
+            0,
+          ],
+          "endPoint": Array [
+            1,
+            1,
+          ],
+          "locations": undefined,
+          "startPoint": Array [
+            0,
+            0,
+          ],
+        }
+      }
+      style={
+        Object {
+          "height": "100%",
+        }
+      }
+    >
+      <View
+        alignItems="center"
+        flexDirection="row"
+        height="100%"
+        justifyContent="center"
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": "100%",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+          ]
+        }
+        width="100%"
+      >
+        <Text
+          color="#979797"
+          fontFamily="body"
+          fontSize={2}
+          fontWeight="bold"
+          style={
+            Array [
+              Object {
+                "color": "#979797",
+                "fontFamily": "Helvetica",
+                "fontSize": 14,
+                "fontWeight": "700",
+              },
+              Object {},
+            ]
+          }
+        >
+          ĐĂNG KÝ
+        </Text>
+      </View>
+    </ViewManagerAdapter_ExpoLinearGradient>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Button Primary 1`] = `
+<View
+  bg="defaultBackground"
+  p={2}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#262523",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#FDCC26",
+        "borderRadius": 10,
+        "height": 32,
+        "justifyContent": "center",
+        "opacity": 1,
+        "overflow": "hidden",
+        "width": 86,
+      }
+    }
+  >
+    <ViewManagerAdapter_ExpoLinearGradient
+      proxiedProperties={
+        Object {
+          "colors": Array [
+            0,
+            0,
+          ],
+          "endPoint": Array [
+            1,
+            1,
+          ],
+          "locations": undefined,
+          "startPoint": Array [
+            0,
+            0,
+          ],
+        }
+      }
+      style={
+        Object {
+          "height": "100%",
+        }
+      }
+    >
+      <View
+        alignItems="center"
+        flexDirection="row"
+        height="100%"
+        justifyContent="center"
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": "100%",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+          ]
+        }
+        width="100%"
+      >
+        <Text
+          color="#262523"
+          fontFamily="body"
+          fontSize={2}
+          fontWeight="bold"
+          style={
+            Array [
+              Object {
+                "color": "#262523",
+                "fontFamily": "Helvetica",
+                "fontSize": 14,
+                "fontWeight": "700",
+              },
+              Object {},
+            ]
+          }
+        >
+          Go VIP
+        </Text>
+      </View>
+    </ViewManagerAdapter_ExpoLinearGradient>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Button PrimaryWithIcon 1`] = `
+<View
+  bg="defaultBackground"
+  p={2}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#262523",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#FDCC26",
+        "borderRadius": 10,
+        "height": 32,
+        "justifyContent": "center",
+        "opacity": 1,
+        "overflow": "hidden",
+        "width": 100,
+      }
+    }
+  >
+    <ViewManagerAdapter_ExpoLinearGradient
+      proxiedProperties={
+        Object {
+          "colors": Array [
+            0,
+            0,
+          ],
+          "endPoint": Array [
+            1,
+            1,
+          ],
+          "locations": undefined,
+          "startPoint": Array [
+            0,
+            0,
+          ],
+        }
+      }
+      style={
+        Object {
+          "height": "100%",
+        }
+      }
+    >
+      <View
+        alignItems="center"
+        flexDirection="row"
+        height="100%"
+        justifyContent="center"
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": "100%",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+          ]
+        }
+        width="100%"
+      >
+        <Text
+          color="#262523"
+          fontFamily="body"
+          fontSize={0}
+          fontWeight="bold"
+          style={
+            Array [
+              Object {
+                "color": "#262523",
+                "fontFamily": "Helvetica",
+                "fontSize": 10,
+                "fontWeight": "700",
+              },
+              Object {},
+            ]
+          }
+        >
+          <View
+            alignItems="center"
+            height={7}
+            justifyContent="center"
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "height": 7,
+                  "justifyContent": "center",
+                  "width": 7,
+                },
+              ]
+            }
+            width={7}
+          >
+            <RNSVGSvgView
+              align="xMidYMid"
+              bbHeight={7}
+              bbWidth={7}
+              fill="none"
+              focusable={false}
+              height={7}
+              meetOrSlice={0}
+              minX={0}
+              minY={0}
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  Object {
+                    "flex": 0,
+                    "height": 7,
+                    "width": 7,
+                  },
+                ]
+              }
+              vbHeight={20}
+              vbWidth={17}
+              width={7}
+            >
+              <RNSVGGroup
+                fill={null}
+                propList={
+                  Array [
+                    "fill",
+                  ]
+                }
+              >
+                <RNSVGPath
+                  clipRule={0}
+                  d="M2.49848 0.200036C2.09653 -0.0526161 1.58904 -0.0669151 1.1735 0.162703C0.757961 0.392321 0.5 0.829588 0.5 1.30435V18.6957C0.5 19.1704 0.757961 19.6077 1.1735 19.8373C1.58904 20.0669 2.09653 20.0526 2.49848 19.8L16.3327 11.1043C16.7124 10.8656 16.9429 10.4485 16.9429 10C16.9429 9.55147 16.7124 9.13439 16.3327 8.89569L2.49848 0.200036Z"
+                  fill={4280689955}
+                  fillRule={0}
+                  propList={
+                    Array [
+                      "fill",
+                      "fillRule",
+                    ]
+                  }
+                />
+                <RNSVGDefs>
+                  <RNSVGLinearGradient
+                    gradient={
+                      Array [
+                        0,
+                        -15623794,
+                        1,
+                        -13045891,
+                      ]
+                    }
+                    gradientTransform={null}
+                    gradientUnits={1}
+                    name="paint0_linear"
+                    x1="15.4022"
+                    x2="0.688721"
+                    y1="0"
+                    y2="0"
+                  />
+                  <RNSVGLinearGradient
+                    gradient={
+                      Array [
+                        0,
+                        -6022805,
+                        1,
+                        -235673,
+                      ]
+                    }
+                    gradientTransform={null}
+                    gradientUnits={1}
+                    name="paint1_linear"
+                    x1="10.5"
+                    x2="10.5"
+                    y1="10"
+                    y2="0"
+                  />
+                </RNSVGDefs>
+              </RNSVGGroup>
+            </RNSVGSvgView>
+          </View>
+           
+          NGHE TẤT CẢ
+        </Text>
+      </View>
+    </ViewManagerAdapter_ExpoLinearGradient>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Button Secondary 1`] = `
+<View
+  bg="defaultBackground"
+  p={2}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#262523",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "borderRadius": 16,
+        "height": 50,
+        "justifyContent": "center",
+        "opacity": 1,
+        "overflow": "hidden",
+      }
+    }
+  >
+    <ViewManagerAdapter_ExpoLinearGradient
+      proxiedProperties={
+        Object {
+          "colors": Array [
+            4281921405,
+            4279343502,
+          ],
+          "endPoint": Array [
+            1,
+            1,
+          ],
+          "locations": undefined,
+          "startPoint": Array [
+            0,
+            0,
+          ],
+        }
+      }
+      style={
+        Object {
+          "height": "100%",
+        }
+      }
+    >
+      <View
+        alignItems="center"
+        flexDirection="row"
+        height="100%"
+        justifyContent="center"
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": "100%",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+          ]
+        }
+        width="100%"
+      >
+        <Text
+          color="white"
+          fontFamily="body"
+          fontSize={16}
+          fontWeight="bold"
+          style={
+            Array [
+              Object {
+                "color": "white",
+                "fontFamily": "Helvetica",
+                "fontSize": 16,
+                "fontWeight": "700",
+              },
+              Object {},
+            ]
+          }
+        >
+          CÀI NHẠC CHỜ
+        </Text>
+      </View>
+    </ViewManagerAdapter_ExpoLinearGradient>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Button Underlined 1`] = `
+<View
+  bg="defaultBackground"
+  p={2}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#262523",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "borderColor": "black",
+        "borderRadius": 10,
+        "borderStyle": "solid",
+        "borderWidth": 0,
+        "height": 50,
+        "justifyContent": "center",
+        "opacity": 1,
+        "overflow": "hidden",
+      }
+    }
+  >
+    <ViewManagerAdapter_ExpoLinearGradient
+      proxiedProperties={
+        Object {
+          "colors": Array [
+            0,
+            0,
+          ],
+          "endPoint": Array [
+            1,
+            1,
+          ],
+          "locations": undefined,
+          "startPoint": Array [
+            0,
+            0,
+          ],
+        }
+      }
+      style={
+        Object {
+          "height": "100%",
+        }
+      }
+    >
+      <View
+        alignItems="center"
+        flexDirection="row"
+        height="100%"
+        justifyContent="center"
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": "100%",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+          ]
+        }
+        width="100%"
+      >
+        <Text
+          color="#848484"
+          fontFamily="body"
+          fontSize={1}
+          fontWeight="bold"
+          style={
+            Array [
+              Object {
+                "color": "#848484",
+                "fontFamily": "Helvetica",
+                "fontSize": 12,
+                "fontWeight": "700",
+              },
+              Object {
+                "textDecorationColor": "#848484",
+                "textDecorationLine": "underline",
+                "textDecorationStyle": "solid",
+                "textTransform": "uppercase",
+              },
+            ]
+          }
+        >
+          Xem tất cả
+        </Text>
+      </View>
+    </ViewManagerAdapter_ExpoLinearGradient>
+  </View>
+</View>
+`;

@@ -1,0 +1,66 @@
+query Song($slug: String!, $after: String, $first: Int) {
+  song(slug: $slug) {
+    id
+    comments {
+      totalCount
+    }
+    ...SongBase
+    genres {
+      id
+      name
+      slug
+    }
+    tones {
+      ...ToneBase
+      duration
+      fileUrl
+    }
+    songsFromSameSingers(after: $after, first: $first) {
+      totalCount
+      ...SongConnectionBase
+      edges {
+        node {
+          ...SongBase
+        }
+      }
+    }
+  }
+}
+
+query RecommendedSongs($after: String, $first: Int) {
+  recommendedSongs(first: $first, after: $after) {
+    ...SongConnectionBase
+    edges {
+      node {
+        ...SongBase
+        toneFromList {
+          ...ToneBase
+        }
+      }
+    }
+  }
+}
+
+mutation LikeSong($songId: ID!, $like: Boolean!) {
+  likeSong(songId: $songId, like: $like) {
+    success
+    message
+    errorCode
+    result {
+      id
+      name
+      liked
+    }
+  }
+}
+
+query LikedSong($after: String, $first: Int!) {
+  likedSongs(after: $after, first: $first) {
+    ...SongConnectionBase
+    edges {
+      node {
+        ...SongBase
+      }
+    }
+  }
+}

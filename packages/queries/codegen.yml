@@ -1,0 +1,24 @@
+overwrite: true
+schema: "../server/schema.gql"
+documents: "../queries/*.gql"
+generates:
+  src/queries.tsx:
+    plugins:
+      - add: "/* tslint:disable */"
+      - add: "/* eslint-disable */"
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+    config:
+      withHooks: true
+      withHOC: false
+      withComponent: false
+  src/introspection-result.ts:
+    plugins:
+      - add: "/* tslint:disable */"
+      - add: "/* eslint-disable */"
+      - fragment-matcher
+  src/introspection.json:
+    plugins:
+      - introspection:
+          minify: false

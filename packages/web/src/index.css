@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Wave */
+#waveform {
+  padding: 25px 50px 35px;
+}
+
+.wavesurfer-title {
+  text-align: center;
+  padding-top: 15px;
+  color: #7e7d7c;
+}
+
+/*Thanh xử lý*/
+region handle.wavesurfer-handle::before {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+  border-top: 6px solid #00c300;
+  margin-left: -7px;
+  position: absolute;
+  top: 21px;
+}
+region handle.wavesurfer-handle::after {
+  width: 16px;
+  height: 16px;
+  background: #00c300;
+  content: "";
+  display: block;
+  margin-left: -7px;
+  position: absolute;
+  top: 5px;
+}
+
+/*  Thanh thường*/
+#waveform wave wave::before {
+  width: 16px;
+  height: 16px;
+  background: #00c300;
+  content: "";
+  display: block;
+  right: 0;
+  position: absolute;
+  margin-right: -9px;
+  bottom: -7px;
+}
+
+#waveform wave wave::after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+  border-bottom: 6px solid #00c300;
+  margin-right: -9px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  bottom: 9px;
+}
+
+wave {
+  overflow: visible !important;
+}
+
+wave wave {
+  z-index: 0 !important;
+}
+
+region handle.wavesurfer-handle {
+  background: #00c300 !important;
+  width: 2px !important;
+  height: 125% !important;
+  top: -10px !important;
+}
+
+/* Labels */
+.labels-container {
+  position: relative;
+}
+.wavesurfer-label {
+  display: none;
+  position: absolute;
+  transform: translateY(-100%);
+  z-index: 1;
+  box-sizing: border-box;
+  bottom: -50px;
+}
+
+#region-time-start {
+  color: #00c300;
+}
+#region-time-stop {
+  color: red;
+}
+.text-underline {
+  text-decoration: underline;
+}
+#search-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+#search-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+#search-container::-webkit-scrollbar-thumb {
+  background: #888;
+  -webkit-border-radius: 5px;
+}
+
+/* Handle on hover */
+#search-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*CreativeUnvaiable*/
+/* .button-confirm-create-a-new-song {
+  width: "100px";
+  height: "40px";
+  border: "1px solid #FDCC26";
+  border-radius: "6px";
+  background-color: "#FDCC26";
+  opacity: "30%";
+  color: "black";
+}
+.button-confirm-create-a-new-song:hover {
+  opacity: "100%";
+} */

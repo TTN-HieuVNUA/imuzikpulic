@@ -1,0 +1,691 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots FeatureCard Dark 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    bg="defaultBackground"
+    p={2}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#262523",
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+        },
+      ]
+    }
+  >
+    <View
+      alignItems="center"
+      borderRadius={8}
+      overflow="hidden"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderRadius": 8,
+            "overflow": "hidden",
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityIgnoresInvertColors={true}
+        style={
+          Object {
+            "flexDirection": "column-reverse",
+            "height": 197,
+            "width": "100%",
+          }
+        }
+      >
+        <Image
+          source={
+            Object {
+              "uri": "https://sohanews.sohacdn.com/thumb_w/660/2020/3/15/photo-1-1584256702578674647209-crop-15842567774431431189564.jpg",
+            }
+          }
+          style={
+            Array [
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              Object {
+                "height": 197,
+                "width": "100%",
+              },
+              undefined,
+            ]
+          }
+        />
+        <ViewManagerAdapter_ExpoLinearGradient
+          proxiedProperties={
+            Object {
+              "colors": Array [
+                4278190080,
+                0,
+              ],
+              "endPoint": Array [
+                345,
+                0,
+              ],
+              "locations": Array [
+                0,
+                0.99,
+              ],
+              "startPoint": Array [
+                345,
+                150,
+              ],
+            }
+          }
+        >
+          <View
+            height={150}
+            pb={3}
+            pl={13}
+            pr={12}
+            pt={65}
+            style={
+              Array [
+                Object {
+                  "height": 150,
+                  "paddingBottom": 15,
+                  "paddingLeft": 13,
+                  "paddingRight": 12,
+                  "paddingTop": 65,
+                },
+              ]
+            }
+          >
+            <Text
+              color="#FCCC26"
+              fontFamily="body"
+              fontSize={0}
+              lineHeight={13}
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#FCCC26",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 10,
+                    "lineHeight": 13,
+                  },
+                ]
+              }
+            >
+              1 giờ trước
+            </Text>
+            <Text
+              color="normalText"
+              fontFamily="body"
+              fontSize={2}
+              fontWeight="bold"
+              lineHeight={19}
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "white",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 14,
+                    "fontWeight": "700",
+                    "lineHeight": 19,
+                  },
+                ]
+              }
+            >
+              Anh hiểu không-HariWon
+            </Text>
+            <Text
+              color="#B2B2B2"
+              fontFamily="body"
+              fontSize={1}
+              lineHeight={16}
+              numberOfLines={2}
+              style={
+                Array [
+                  Object {
+                    "color": "#B2B2B2",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 12,
+                    "lineHeight": 16,
+                  },
+                ]
+              }
+            >
+              “Anh hiểu không” thuộc thể loại balad trữ tình với ca từ lẫn giai điệu nhẹ nhàng, sâu lắng. Nội dung bài hát là câu chuyện kể về nỗi lòng của cô gái trong tình yêu
+            </Text>
+          </View>
+        </ViewManagerAdapter_ExpoLinearGradient>
+      </View>
+    </View>
+  </View>
+  <View
+    bg="defaultBackground"
+    p={2}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#262523",
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+        },
+      ]
+    }
+  >
+    <View
+      alignItems="center"
+      borderRadius={8}
+      overflow="hidden"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderRadius": 8,
+            "overflow": "hidden",
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityIgnoresInvertColors={true}
+        style={
+          Object {
+            "flexDirection": "column-reverse",
+            "height": 197,
+            "width": "100%",
+          }
+        }
+      >
+        <Image
+          source={
+            Object {
+              "uri": "https://sohanews.sohacdn.com/thumb_w/660/2020/3/15/photo-1-1584256702578674647209-crop-15842567774431431189564.jpg",
+            }
+          }
+          style={
+            Array [
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              Object {
+                "height": 197,
+                "width": "100%",
+              },
+              undefined,
+            ]
+          }
+        />
+        <ViewManagerAdapter_ExpoLinearGradient
+          proxiedProperties={
+            Object {
+              "colors": Array [
+                4278190080,
+                0,
+              ],
+              "endPoint": Array [
+                345,
+                0,
+              ],
+              "locations": Array [
+                0,
+                0.99,
+              ],
+              "startPoint": Array [
+                345,
+                150,
+              ],
+            }
+          }
+        >
+          <View
+            height={150}
+            pb={3}
+            pl={13}
+            pr={12}
+            pt={65}
+            style={
+              Array [
+                Object {
+                  "height": 150,
+                  "paddingBottom": 15,
+                  "paddingLeft": 13,
+                  "paddingRight": 12,
+                  "paddingTop": 65,
+                },
+              ]
+            }
+          >
+            <Text
+              color="#FCCC26"
+              fontFamily="body"
+              fontSize={0}
+              lineHeight={13}
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#FCCC26",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 10,
+                    "lineHeight": 13,
+                  },
+                ]
+              }
+            >
+              1 giờ trước
+            </Text>
+            <Text
+              color="normalText"
+              fontFamily="body"
+              fontSize={2}
+              fontWeight="bold"
+              lineHeight={19}
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "white",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 14,
+                    "fontWeight": "700",
+                    "lineHeight": 19,
+                  },
+                ]
+              }
+            >
+              Anh hiểu không-HariWon
+            </Text>
+            <Text
+              color="#B2B2B2"
+              fontFamily="body"
+              fontSize={1}
+              lineHeight={16}
+              numberOfLines={2}
+              style={
+                Array [
+                  Object {
+                    "color": "#B2B2B2",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 12,
+                    "lineHeight": 16,
+                  },
+                ]
+              }
+            >
+              “Anh hiểu không” thuộc thể loại balad trữ tình với ca từ lẫn giai điệu nhẹ nhàng, sâu lắng. Nội dung bài hát là câu chuyện kể về nỗi lòng của cô gái trong tình yêu
+            </Text>
+          </View>
+        </ViewManagerAdapter_ExpoLinearGradient>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots FeatureCard Light 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    bg="defaultBackground"
+    p={2}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "white",
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+        },
+      ]
+    }
+  >
+    <View
+      alignItems="center"
+      borderRadius={8}
+      overflow="hidden"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderRadius": 8,
+            "overflow": "hidden",
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityIgnoresInvertColors={true}
+        style={
+          Object {
+            "flexDirection": "column-reverse",
+            "height": 197,
+            "width": "100%",
+          }
+        }
+      >
+        <Image
+          source={
+            Object {
+              "uri": "https://sohanews.sohacdn.com/thumb_w/660/2020/3/15/photo-1-1584256702578674647209-crop-15842567774431431189564.jpg",
+            }
+          }
+          style={
+            Array [
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              Object {
+                "height": 197,
+                "width": "100%",
+              },
+              undefined,
+            ]
+          }
+        />
+        <ViewManagerAdapter_ExpoLinearGradient
+          proxiedProperties={
+            Object {
+              "colors": Array [
+                4278190080,
+                0,
+              ],
+              "endPoint": Array [
+                345,
+                0,
+              ],
+              "locations": Array [
+                0,
+                0.99,
+              ],
+              "startPoint": Array [
+                345,
+                150,
+              ],
+            }
+          }
+        >
+          <View
+            height={150}
+            pb={3}
+            pl={13}
+            pr={12}
+            pt={65}
+            style={
+              Array [
+                Object {
+                  "height": 150,
+                  "paddingBottom": 15,
+                  "paddingLeft": 13,
+                  "paddingRight": 12,
+                  "paddingTop": 65,
+                },
+              ]
+            }
+          >
+            <Text
+              color="#FCCC26"
+              fontFamily="body"
+              fontSize={0}
+              lineHeight={13}
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#FCCC26",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 10,
+                    "lineHeight": 13,
+                  },
+                ]
+              }
+            >
+              1 giờ trước
+            </Text>
+            <Text
+              color="normalText"
+              fontFamily="body"
+              fontSize={2}
+              fontWeight="bold"
+              lineHeight={19}
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#262523",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 14,
+                    "fontWeight": "700",
+                    "lineHeight": 19,
+                  },
+                ]
+              }
+            >
+              Anh hiểu không-HariWon
+            </Text>
+            <Text
+              color="#B2B2B2"
+              fontFamily="body"
+              fontSize={1}
+              lineHeight={16}
+              numberOfLines={2}
+              style={
+                Array [
+                  Object {
+                    "color": "#B2B2B2",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 12,
+                    "lineHeight": 16,
+                  },
+                ]
+              }
+            >
+              “Anh hiểu không” thuộc thể loại balad trữ tình với ca từ lẫn giai điệu nhẹ nhàng, sâu lắng. Nội dung bài hát là câu chuyện kể về nỗi lòng của cô gái trong tình yêu
+            </Text>
+          </View>
+        </ViewManagerAdapter_ExpoLinearGradient>
+      </View>
+    </View>
+  </View>
+  <View
+    bg="defaultBackground"
+    p={2}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "white",
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+        },
+      ]
+    }
+  >
+    <View
+      alignItems="center"
+      borderRadius={8}
+      overflow="hidden"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderRadius": 8,
+            "overflow": "hidden",
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityIgnoresInvertColors={true}
+        style={
+          Object {
+            "flexDirection": "column-reverse",
+            "height": 197,
+            "width": "100%",
+          }
+        }
+      >
+        <Image
+          source={
+            Object {
+              "uri": "https://sohanews.sohacdn.com/thumb_w/660/2020/3/15/photo-1-1584256702578674647209-crop-15842567774431431189564.jpg",
+            }
+          }
+          style={
+            Array [
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              Object {
+                "height": 197,
+                "width": "100%",
+              },
+              undefined,
+            ]
+          }
+        />
+        <ViewManagerAdapter_ExpoLinearGradient
+          proxiedProperties={
+            Object {
+              "colors": Array [
+                4278190080,
+                0,
+              ],
+              "endPoint": Array [
+                345,
+                0,
+              ],
+              "locations": Array [
+                0,
+                0.99,
+              ],
+              "startPoint": Array [
+                345,
+                150,
+              ],
+            }
+          }
+        >
+          <View
+            height={150}
+            pb={3}
+            pl={13}
+            pr={12}
+            pt={65}
+            style={
+              Array [
+                Object {
+                  "height": 150,
+                  "paddingBottom": 15,
+                  "paddingLeft": 13,
+                  "paddingRight": 12,
+                  "paddingTop": 65,
+                },
+              ]
+            }
+          >
+            <Text
+              color="#FCCC26"
+              fontFamily="body"
+              fontSize={0}
+              lineHeight={13}
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#FCCC26",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 10,
+                    "lineHeight": 13,
+                  },
+                ]
+              }
+            >
+              1 giờ trước
+            </Text>
+            <Text
+              color="normalText"
+              fontFamily="body"
+              fontSize={2}
+              fontWeight="bold"
+              lineHeight={19}
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#262523",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 14,
+                    "fontWeight": "700",
+                    "lineHeight": 19,
+                  },
+                ]
+              }
+            >
+              Anh hiểu không-HariWon
+            </Text>
+            <Text
+              color="#B2B2B2"
+              fontFamily="body"
+              fontSize={1}
+              lineHeight={16}
+              numberOfLines={2}
+              style={
+                Array [
+                  Object {
+                    "color": "#B2B2B2",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 12,
+                    "lineHeight": 16,
+                  },
+                ]
+              }
+            >
+              “Anh hiểu không” thuộc thể loại balad trữ tình với ca từ lẫn giai điệu nhẹ nhàng, sâu lắng. Nội dung bài hát là câu chuyện kể về nỗi lòng của cô gái trong tình yêu
+            </Text>
+          </View>
+        </ViewManagerAdapter_ExpoLinearGradient>
+      </View>
+    </View>
+  </View>
+</View>
+`;

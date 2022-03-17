@@ -1,0 +1,270 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots SelectionBar Default 1`] = `
+<View
+  bg="defaultBackground"
+  p={2}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#262523",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <RCTScrollView
+    alwaysBounceVertical={false}
+    horizontal={true}
+  >
+    <View>
+      <View
+        alignItems="center"
+        flexDirection="row"
+        justifyContent="center"
+        mt={1}
+        mx={-2}
+        px={1}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "marginLeft": -10,
+              "marginRight": -10,
+              "marginTop": 5,
+              "paddingLeft": 5,
+              "paddingRight": 5,
+            },
+          ]
+        }
+      >
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            color="primary"
+            fontFamily="body"
+            fontSize={4}
+            fontWeight="bold"
+            mr={1}
+            pb={3}
+            pt={2}
+            px={1}
+            style={
+              Array [
+                Object {
+                  "color": "#FDCC26",
+                  "fontFamily": "Helvetica",
+                  "fontSize": 20,
+                  "fontWeight": "700",
+                  "marginRight": 5,
+                  "paddingBottom": 15,
+                  "paddingLeft": 5,
+                  "paddingRight": 5,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            Nhạc trẻ
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            color="lightText"
+            fontFamily="body"
+            fontSize={3}
+            fontWeight="bold"
+            mr={1}
+            pb={3}
+            pt={2}
+            px={1}
+            style={
+              Array [
+                Object {
+                  "color": "#AAAAAA",
+                  "fontFamily": "Helvetica",
+                  "fontSize": 17,
+                  "fontWeight": "700",
+                  "marginRight": 5,
+                  "paddingBottom": 15,
+                  "paddingLeft": 5,
+                  "paddingRight": 5,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            Trữ tình
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            color="lightText"
+            fontFamily="body"
+            fontSize={3}
+            fontWeight="bold"
+            mr={1}
+            pb={3}
+            pt={2}
+            px={1}
+            style={
+              Array [
+                Object {
+                  "color": "#AAAAAA",
+                  "fontFamily": "Helvetica",
+                  "fontSize": 17,
+                  "fontWeight": "700",
+                  "marginRight": 5,
+                  "paddingBottom": 15,
+                  "paddingLeft": 5,
+                  "paddingRight": 5,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            Quốc tế
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            color="lightText"
+            fontFamily="body"
+            fontSize={3}
+            fontWeight="bold"
+            mr={1}
+            pb={3}
+            pt={2}
+            px={1}
+            style={
+              Array [
+                Object {
+                  "color": "#AAAAAA",
+                  "fontFamily": "Helvetica",
+                  "fontSize": 17,
+                  "fontWeight": "700",
+                  "marginRight": 5,
+                  "paddingBottom": 15,
+                  "paddingLeft": 5,
+                  "paddingRight": 5,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            Sáng tạo
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            color="lightText"
+            fontFamily="body"
+            fontSize={3}
+            fontWeight="bold"
+            mr={1}
+            pb={3}
+            pt={2}
+            px={1}
+            style={
+              Array [
+                Object {
+                  "color": "#AAAAAA",
+                  "fontFamily": "Helvetica",
+                  "fontSize": 17,
+                  "fontWeight": "700",
+                  "marginRight": 5,
+                  "paddingBottom": 15,
+                  "paddingLeft": 5,
+                  "paddingRight": 5,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            My Playlist
+          </Text>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

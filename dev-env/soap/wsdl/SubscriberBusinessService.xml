@@ -1,0 +1,942 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://externalSystem.service.sale.bccs.viettel.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:ns1="http://service.sale.bccs.viettel.com/" name="SubscriberBusinessServiceImplService" targetNamespace="http://externalSystem.service.sale.bccs.viettel.com/">
+  <wsdl:import location="http://10.240.147.246:8004/SALE_SERVICE/bpm/sale/SubscriberBusinessService?wsdl=SubscriberBusinessService.wsdl" namespace="http://service.sale.bccs.viettel.com/">
+    </wsdl:import>
+  <wsdl:binding name="SubscriberBusinessServiceImplServiceSoapBinding" type="ns1:SubscriberBusinessService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getSubscriberInfoAndCurrentCallIdBussiness">
+      <soap:operation soapAction="getSubscriberInfoAndCurrentCallIdBussiness" style="document"/>
+      <wsdl:input name="getSubscriberInfoAndCurrentCallIdBussiness">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getSubscriberInfoAndCurrentCallIdBussinessResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LogicException">
+        <soap:fault name="LogicException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getBccsInfo">
+      <soap:operation soapAction="getBccsInfo" style="document"/>
+      <wsdl:input name="getBccsInfo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getBccsInfoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LogicException">
+        <soap:fault name="LogicException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="validateBeforeChangeSim">
+      <soap:operation soapAction="validateBeforeChangeSim" style="document"/>
+      <wsdl:input name="validateBeforeChangeSim">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="validateBeforeChangeSimResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="changeNoticeChargeForm">
+      <soap:operation soapAction="changeNoticeChargeForm" style="document"/>
+      <wsdl:input name="changeNoticeChargeForm">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="changeNoticeChargeFormResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="connectMobilePrePaid">
+      <soap:operation soapAction="connectMobilePrePaid" style="document"/>
+      <wsdl:input name="connectMobilePrePaid">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="connectMobilePrePaidResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LogicException">
+        <soap:fault name="LogicException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getCustomerByIdNoOrBusPermitNoPre">
+      <soap:operation soapAction="getCustomerByIdNoOrBusPermitNoPre" style="document"/>
+      <wsdl:input name="getCustomerByIdNoOrBusPermitNoPre">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getCustomerByIdNoOrBusPermitNoPreResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LogicException">
+        <soap:fault name="LogicException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoSubscriberByAccount">
+      <soap:operation soapAction="getInfoSubscriberByAccount" style="document"/>
+      <wsdl:input name="getInfoSubscriberByAccount">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoSubscriberByAccountResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LogicException">
+        <soap:fault name="LogicException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="doRenewKitForSubBus">
+      <soap:operation soapAction="doRenewKitForSubBus" style="document"/>
+      <wsdl:input name="doRenewKitForSubBus">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="doRenewKitForSubBusResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="pvTerminateDebtOne">
+      <soap:operation soapAction="pvTerminateDebtOne" style="document"/>
+      <wsdl:input name="pvTerminateDebtOne">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="pvTerminateDebtOneResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LogicException">
+        <soap:fault name="LogicException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateAccountInfo">
+      <soap:operation soapAction="updateAccountInfo" style="document"/>
+      <wsdl:input name="updateAccountInfo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateAccountInfoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getChangeTimes">
+      <soap:operation soapAction="getChangeTimes" style="document"/>
+      <wsdl:input name="getChangeTimes">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getChangeTimesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getSubscriberInfo">
+      <soap:operation soapAction="getSubscriberInfo" style="document"/>
+      <wsdl:input name="getSubscriberInfo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getSubscriberInfoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LogicException">
+        <soap:fault name="LogicException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoForCA">
+      <soap:operation soapAction="getInfoForCA" style="document"/>
+      <wsdl:input name="getInfoForCA">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoForCAResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListSubInfoByDate">
+      <soap:operation soapAction="getListSubInfoByDate" style="document"/>
+      <wsdl:input name="getListSubInfoByDate">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getListSubInfoByDateResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="checkOverQuotaRegister">
+      <soap:operation soapAction="checkOverQuotaRegister" style="document"/>
+      <wsdl:input name="checkOverQuotaRegister">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="checkOverQuotaRegisterResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getListSubInfo">
+      <soap:operation soapAction="getListSubInfo" style="document"/>
+      <wsdl:input name="getListSubInfo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getListSubInfoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LogicException">
+        <soap:fault name="LogicException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getListSubInfoPos">
+      <soap:operation soapAction="getListSubInfoPos" style="document"/>
+      <wsdl:input name="getListSubInfoPos">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getListSubInfoPosResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="blockOpenSubPre">
+      <soap:operation soapAction="blockOpenSubPre" style="document"/>
+      <wsdl:input name="blockOpenSubPre">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="blockOpenSubPreResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="acceptCustomerRequest">
+      <soap:operation soapAction="acceptCustomerRequest" style="document"/>
+      <wsdl:input name="acceptCustomerRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="acceptCustomerRequestResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LogicException">
+        <soap:fault name="LogicException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="cusInfoCollect">
+      <soap:operation soapAction="cusInfoCollect" style="document"/>
+      <wsdl:input name="cusInfoCollect">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="cusInfoCollectResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="findSubscriber">
+      <soap:operation soapAction="findSubscriber" style="document"/>
+      <wsdl:input name="findSubscriber">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="findSubscriberResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListSubInfoFullPre">
+      <soap:operation soapAction="getListSubInfoFullPre" style="document"/>
+      <wsdl:input name="getListSubInfoFullPre">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getListSubInfoFullPreResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getExpireDateKit">
+      <soap:operation soapAction="getExpireDateKit" style="document"/>
+      <wsdl:input name="getExpireDateKit">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getExpireDateKitResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListSubInfoByIdNo">
+      <soap:operation soapAction="getListSubInfoByIdNo" style="document"/>
+      <wsdl:input name="getListSubInfoByIdNo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getListSubInfoByIdNoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getListSubExist">
+      <soap:operation soapAction="getListSubExist" style="document"/>
+      <wsdl:input name="getListSubExist">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getListSubExistResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LogicException">
+        <soap:fault name="LogicException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="geListCustomerByIsdnAndCallNumber">
+      <soap:operation soapAction="geListCustomerByIsdnAndCallNumber" style="document"/>
+      <wsdl:input name="geListCustomerByIsdnAndCallNumber">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="geListCustomerByIsdnAndCallNumberResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updatePassword">
+      <soap:operation soapAction="updatePassword" style="document"/>
+      <wsdl:input name="updatePassword">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updatePasswordResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LogicException">
+        <soap:fault name="LogicException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="searchKitForSub">
+      <soap:operation soapAction="searchKitForSub" style="document"/>
+      <wsdl:input name="searchKitForSub">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="searchKitForSubResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateSubActivate">
+      <soap:operation soapAction="updateSubActivate" style="document"/>
+      <wsdl:input name="updateSubActivate">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateSubActivateResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LogicException">
+        <soap:fault name="LogicException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="changeIsdnMobilePrePaid">
+      <soap:operation soapAction="changeIsdnMobilePrePaid" style="document"/>
+      <wsdl:input name="changeIsdnMobilePrePaid">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="changeIsdnMobilePrePaidResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRequestInfo">
+      <soap:operation soapAction="getRequestInfo" style="document"/>
+      <wsdl:input name="getRequestInfo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getRequestInfoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getListInfoSubByCust">
+      <soap:operation soapAction="getListInfoSubByCust" style="document"/>
+      <wsdl:input name="getListInfoSubByCust">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getListInfoSubByCustResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getListCustomerByIsdn">
+      <soap:operation soapAction="getListCustomerByIsdn" style="document"/>
+      <wsdl:input name="getListCustomerByIsdn">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getListCustomerByIsdnResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getSubscriberInfoAndCurrentCallId">
+      <soap:operation soapAction="getSubscriberInfoAndCurrentCallId" style="document"/>
+      <wsdl:input name="getSubscriberInfoAndCurrentCallId">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getSubscriberInfoAndCurrentCallIdResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="viewInfoSubAdsl">
+      <soap:operation soapAction="viewInfoSubAdsl" style="document"/>
+      <wsdl:input name="viewInfoSubAdsl">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="viewInfoSubAdslResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="tickNotOwnerSub">
+      <soap:operation soapAction="tickNotOwnerSub" style="document"/>
+      <wsdl:input name="tickNotOwnerSub">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="tickNotOwnerSubResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateQuotaSubMb">
+      <soap:operation soapAction="updateQuotaSubMb" style="document"/>
+      <wsdl:input name="updateQuotaSubMb">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateQuotaSubMbResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LogicException">
+        <soap:fault name="LogicException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getActionByIsdn">
+      <soap:operation soapAction="getActionByIsdn" style="document"/>
+      <wsdl:input name="getActionByIsdn">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getActionByIsdnResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LogicException">
+        <soap:fault name="LogicException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="changeZone">
+      <soap:operation soapAction="changeZone" style="document"/>
+      <wsdl:input name="changeZone">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="changeZoneResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="registerOrUnregisterVas">
+      <soap:operation soapAction="registerOrUnregisterVas" style="document"/>
+      <wsdl:input name="registerOrUnregisterVas">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="registerOrUnregisterVasResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getInforSubscribers">
+      <soap:operation soapAction="getInforSubscribers" style="document"/>
+      <wsdl:input name="getInforSubscribers">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInforSubscribersResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LogicException">
+        <soap:fault name="LogicException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getListSubscribers">
+      <soap:operation soapAction="getListSubscribers" style="document"/>
+      <wsdl:input name="getListSubscribers">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getListSubscribersResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoSubService">
+      <soap:operation soapAction="getInfoSubService" style="document"/>
+      <wsdl:input name="getInfoSubService">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoSubServiceResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="renewKitForSub">
+      <soap:operation soapAction="renewKitForSub" style="document"/>
+      <wsdl:input name="renewKitForSub">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="renewKitForSubResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoSubscriberByActionCode">
+      <soap:operation soapAction="getInfoSubscriberByActionCode" style="document"/>
+      <wsdl:input name="getInfoSubscriberByActionCode">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoSubscriberByActionCodeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="sendOTP">
+      <soap:operation soapAction="sendOTP" style="document"/>
+      <wsdl:input name="sendOTP">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="sendOTPResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LogicException">
+        <soap:fault name="LogicException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateNoticeCharge">
+      <soap:operation soapAction="updateNoticeCharge" style="document"/>
+      <wsdl:input name="updateNoticeCharge">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateNoticeChargeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getSubscriberInfor">
+      <soap:operation soapAction="getSubscriberInfor" style="document"/>
+      <wsdl:input name="getSubscriberInfor">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getSubscriberInforResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="checkInfoForRegistering">
+      <soap:operation soapAction="checkInfoForRegistering" style="document"/>
+      <wsdl:input name="checkInfoForRegistering">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="checkInfoForRegisteringResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="registerOrRemoveVas">
+      <soap:operation soapAction="registerOrRemoveVas" style="document"/>
+      <wsdl:input name="registerOrRemoveVas">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="registerOrRemoveVasResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoContractBySub">
+      <soap:operation soapAction="getInfoContractBySub" style="document"/>
+      <wsdl:input name="getInfoContractBySub">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoContractBySubResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewHistoryChangeProductA">
+      <soap:operation soapAction="ViewHistoryChangeProductA" style="document"/>
+      <wsdl:input name="ViewHistoryChangeProductA">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="ViewHistoryChangeProductAResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="changeProductForBMS">
+      <soap:operation soapAction="changeProductForBMS" style="document"/>
+      <wsdl:input name="changeProductForBMS">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="changeProductForBMSResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LogicException">
+        <soap:fault name="LogicException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="sendSmsBeforeChangeSim">
+      <soap:operation soapAction="sendSmsBeforeChangeSim" style="document"/>
+      <wsdl:input name="sendSmsBeforeChangeSim">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="sendSmsBeforeChangeSimResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getPrepaidInfo">
+      <soap:operation soapAction="getPrepaidInfo" style="document"/>
+      <wsdl:input name="getPrepaidInfo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getPrepaidInfoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updatePromotionVTT">
+      <soap:operation soapAction="updatePromotionVTT" style="document"/>
+      <wsdl:input name="updatePromotionVTT">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updatePromotionVTTResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LogicException">
+        <soap:fault name="LogicException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getListVasUseByIsdn">
+      <soap:operation soapAction="getListVasUseByIsdn" style="document"/>
+      <wsdl:input name="getListVasUseByIsdn">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getListVasUseByIsdnResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkConditionChangeZone">
+      <soap:operation soapAction="checkConditionChangeZone" style="document"/>
+      <wsdl:input name="checkConditionChangeZone">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="checkConditionChangeZoneResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updatePayMethodCode">
+      <soap:operation soapAction="updatePayMethodCode" style="document"/>
+      <wsdl:input name="updatePayMethodCode">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updatePayMethodCodeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getListImeiForSub">
+      <soap:operation soapAction="getListImeiForSub" style="document"/>
+      <wsdl:input name="getListImeiForSub">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getListImeiForSubResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getCurrentZone">
+      <soap:operation soapAction="getCurrentZone" style="document"/>
+      <wsdl:input name="getCurrentZone">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getCurrentZoneResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getNoticeChargeForm">
+      <soap:operation soapAction="getNoticeChargeForm" style="document"/>
+      <wsdl:input name="getNoticeChargeForm">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getNoticeChargeFormResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registerOrRemoveVasSafenet">
+      <soap:operation soapAction="registerOrRemoveVasSafenet" style="document"/>
+      <wsdl:input name="registerOrRemoveVasSafenet">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="registerOrRemoveVasSafenetResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsSmartMoto">
+      <soap:operation soapAction="wsSmartMoto" style="document"/>
+      <wsdl:input name="wsSmartMoto">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="wsSmartMotoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="checkStudentForVtShop">
+      <soap:operation soapAction="checkStudentForVtShop" style="document"/>
+      <wsdl:input name="checkStudentForVtShop">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="checkStudentForVtShopResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getContractByContractId">
+      <soap:operation soapAction="getContractByContractId" style="document"/>
+      <wsdl:input name="getContractByContractId">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getContractByContractIdResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoSub">
+      <soap:operation soapAction="getInfoSub" style="document"/>
+      <wsdl:input name="getInfoSub">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoSubResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LogicException">
+        <soap:fault name="LogicException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="recoverSubConnectUCTT">
+      <soap:operation soapAction="recoverSubConnectUCTT" style="document"/>
+      <wsdl:input name="recoverSubConnectUCTT">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="recoverSubConnectUCTTResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LogicException">
+        <soap:fault name="LogicException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="registerReceiveInfoDebit">
+      <soap:operation soapAction="registerReceiveInfoDebit" style="document"/>
+      <wsdl:input name="registerReceiveInfoDebit">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="registerReceiveInfoDebitResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="resetZone">
+      <soap:operation soapAction="resetZone" style="document"/>
+      <wsdl:input name="resetZone">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="resetZoneResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="pvTerminateDebt">
+      <soap:operation soapAction="pvTerminateDebt" style="document"/>
+      <wsdl:input name="pvTerminateDebt">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="pvTerminateDebtResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoSubV4">
+      <soap:operation soapAction="getInfoSubV4" style="document"/>
+      <wsdl:input name="getInfoSubV4">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoSubV4Response">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LogicException">
+        <soap:fault name="LogicException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getDbTypeOfSubscriber">
+      <soap:operation soapAction="getDbTypeOfSubscriber" style="document"/>
+      <wsdl:input name="getDbTypeOfSubscriber">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getDbTypeOfSubscriberResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoSubV3">
+      <soap:operation soapAction="getInfoSubV3" style="document"/>
+      <wsdl:input name="getInfoSubV3">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoSubV3Response">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LogicException">
+        <soap:fault name="LogicException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateInfoCustomer">
+      <soap:operation soapAction="updateInfoCustomer" style="document"/>
+      <wsdl:input name="updateInfoCustomer">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateInfoCustomerResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="changeIsdnMobilePrePaidAndConnectVas">
+      <soap:operation soapAction="changeIsdnMobilePrePaidAndConnectVas" style="document"/>
+      <wsdl:input name="changeIsdnMobilePrePaidAndConnectVas">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="changeIsdnMobilePrePaidAndConnectVasResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkBasicBalanceChangeIsdnForVtShop">
+      <soap:operation soapAction="checkBasicBalanceChangeIsdnForVtShop" style="document"/>
+      <wsdl:input name="checkBasicBalanceChangeIsdnForVtShop">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="checkBasicBalanceChangeIsdnForVtShopResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SubscriberBusinessServiceImplService">
+    <wsdl:port binding="tns:SubscriberBusinessServiceImplServiceSoapBinding" name="SubscriberBusinessServiceImplPort">
+      <soap:address location="http://10.240.147.246:8004/SALE_SERVICE/bpm/sale/SubscriberBusinessService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

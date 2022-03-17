@@ -1,0 +1,11 @@
+query ServerSettings {
+  serverSettings {
+    serviceNumber
+    isForceUpdate
+    clientAutoPlay
+    msisdnRegex
+    facebookUrl
+    contactEmail
+    vipBrandId
+  }
+}

@@ -1,0 +1,7 @@
+fragment SongConnectionBase on SongConnection {
+  totalCount
+  pageInfo {
+    endCursor
+    hasNextPage
+  }
+}

@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://localhost:8001/user-manage"
+    xmlns:apachesoap="http://xml.apache.org/xml-soap"
+    xmlns:impl="http://localhost:8001/user-manage"
+    xmlns:intf="http://localhost:8001/user-manage"
+    xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:tns1="http://soapinterop.org/xsd"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">    <!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+    <wsdl:types>
+        <schema targetNamespace="http://soapinterop.org/xsd"
+            xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://localhost:8001/user-manage"/>
+            <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.SubscribeEvt">
+                <sequence>
+                    <element name="city" nillable="true" type="xsd:string"/>
+                    <element name="dateOfBirth" nillable="true" type="xsd:string"/>
+                    <element name="eMail" nillable="true" type="xsd:string"/>
+                    <element name="email" nillable="true" type="xsd:string"/>
+                    <element name="firstName" nillable="true" type="xsd:string"/>
+                    <element name="lastName" nillable="true" type="xsd:string"/>
+                    <element name="moduleCode" nillable="true" type="xsd:string"/>
+                    <element name="nationality" nillable="true" type="xsd:string"/>
+                    <element name="notifyHLR" nillable="true" type="xsd:string"/>
+                    <element name="phoneNumber" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="prodspecCode" nillable="true" type="xsd:string"/>
+                    <element name="pwd" nillable="true" type="xsd:string"/>
+                    <element name="renewalMode" nillable="true" type="xsd:string"/>
+                    <element name="resourceCode" nillable="true" type="xsd:string"/>
+                    <element name="resourceID" nillable="true" type="xsd:string"/>
+                    <element name="resourceServiceType" nillable="true" type="xsd:string"/>
+                    <element name="resourceType" nillable="true" type="xsd:string"/>
+                    <element name="role" nillable="true" type="xsd:string"/>
+                    <element name="roleCode" nillable="true" type="xsd:string"/>
+                    <element name="serviceID" nillable="true" type="xsd:string"/>
+                    <element name="serviceResult" nillable="true" type="xsd:string"/>
+                    <element name="sex" nillable="true" type="xsd:string"/>
+                    <element name="tradeMark" nillable="true" type="xsd:string"/>
+                    <element name="triggerKey" nillable="true" type="xsd:string"/>
+                    <element name="triggerPhonenumber" nillable="true" type="xsd:string"/>
+                    <element name="triggerType" nillable="true" type="xsd:string"/>
+                    <element name="validateCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.interfaces.webservice.listener.SubscribeResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.UnSubscribeEvt">
+                <sequence>
+                    <element name="deleteFlag" nillable="true" type="xsd:string"/>
+                    <element name="moduleCode" nillable="true" type="xsd:string"/>
+                    <element name="notifyHLR" nillable="true" type="xsd:string"/>
+                    <element name="phoneNumber" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="role" nillable="true" type="xsd:string"/>
+                    <element name="roleCode" nillable="true" type="xsd:string"/>
+                    <element name="serviceFlag" nillable="true" type="xsd:string"/>
+                    <element name="serviceID" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.interfaces.webservice.listener.UnsubscribeResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.CsSubscribeEvt">
+                <sequence>
+                    <element name="city" nillable="true" type="xsd:string"/>
+                    <element name="dateOfBirth" nillable="true" type="xsd:string"/>
+                    <element name="eMail" nillable="true" type="xsd:string"/>
+                    <element name="firstName" nillable="true" type="xsd:string"/>
+                    <element name="lastName" nillable="true" type="xsd:string"/>
+                    <element name="moduleCode" nillable="true" type="xsd:string"/>
+                    <element name="nationality" nillable="true" type="xsd:string"/>
+                    <element name="phoneNumber" nillable="true" type="impl:ArrayOf_xsd_string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="pwd" nillable="true" type="xsd:string"/>
+                    <element name="resourceServiceType" nillable="true" type="xsd:string"/>
+                    <element name="role" nillable="true" type="xsd:string"/>
+                    <element name="roleCode" nillable="true" type="xsd:string"/>
+                    <element name="serviceID" nillable="true" type="xsd:string"/>
+                    <element name="sex" nillable="true" type="xsd:string"/>
+                    <element name="tradeMark" nillable="true" type="xsd:string"/>
+                    <element name="userType" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usermanage.ReturnObject">
+                <sequence>
+                    <element name="phoneNumber" nillable="true" type="xsd:string"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="status" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usermanage.CsSubscribeResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                    <element name="returnObjects" nillable="true" type="impl:ArrayOf_tns1_com.viettel.vcrbt.webservice.response.usermanage.ReturnObject"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.CsUnSubscribeEvt">
+                <sequence>
+                    <element name="phoneNumber" nillable="true" type="impl:ArrayOf_xsd_string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="role" nillable="true" type="xsd:string"/>
+                    <element name="roleCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usermanage.CsUnsubscribeResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                    <element name="returnObjects" nillable="true" type="impl:ArrayOf_tns1_com.viettel.vcrbt.webservice.response.usermanage.ReturnObject"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.GetValidateCodeEvt">
+                <sequence>
+                    <element name="moduleCode" nillable="true" type="xsd:string"/>
+                    <element name="phoneNumber" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="role" nillable="true" type="xsd:string"/>
+                    <element name="roleCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usermanage.GetValidateCodeResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.QueryUserEvt">
+                <sequence>
+                    <element name="brand" nillable="true" type="xsd:string"/>
+                    <element name="endRecordNum" nillable="true" type="xsd:string"/>
+                    <element name="isArrear" nillable="true" type="xsd:string"/>
+                    <element name="maxRegisterTime" nillable="true" type="xsd:string"/>
+                    <element name="minRegisterTime" nillable="true" type="xsd:string"/>
+                    <element name="moodModeID" nillable="true" type="xsd:string"/>
+                    <element name="orderBy" nillable="true" type="xsd:string"/>
+                    <element name="orderType" nillable="true" type="xsd:string"/>
+                    <element name="phoneNumber" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="queryType" nillable="true" type="xsd:string"/>
+                    <element name="region" nillable="true" type="xsd:string"/>
+                    <element name="serviceID" nillable="true" type="xsd:string"/>
+                    <element name="startRecordNum" nillable="true" type="xsd:string"/>
+                    <element name="status" nillable="true" type="xsd:string"/>
+                    <element name="subCosID" nillable="true" type="xsd:string"/>
+                    <element name="type" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usermanage.UserInfo">
+                <sequence>
+                    <element name="bgTone" nillable="true" type="xsd:string"/>
+                    <element name="brand" nillable="true" type="xsd:string"/>
+                    <element name="brandName" nillable="true" type="xsd:string"/>
+                    <element name="city" nillable="true" type="xsd:string"/>
+                    <element name="corpCode" nillable="true" type="xsd:string"/>
+                    <element name="corpID" nillable="true" type="xsd:string"/>
+                    <element name="corpName" nillable="true" type="xsd:string"/>
+                    <element name="dateOfBirth" nillable="true" type="xsd:string"/>
+                    <element name="email" nillable="true" type="xsd:string"/>
+                    <element name="firstName" nillable="true" type="xsd:string"/>
+                    <element name="idCard" nillable="true" type="xsd:string"/>
+                    <element name="initialCreateTime" nillable="true" type="xsd:string"/>
+                    <element name="isArrear" nillable="true" type="xsd:string"/>
+                    <element name="isInvalidUser" nillable="true" type="xsd:string"/>
+                    <element name="isUseCopy" nillable="true" type="xsd:string"/>
+                    <element name="lastName" nillable="true" type="xsd:string"/>
+                    <element name="lrn" nillable="true" type="xsd:string"/>
+                    <element name="monthFeeEndDay" nillable="true" type="xsd:string"/>
+                    <element name="moodModeID" nillable="true" type="xsd:string"/>
+                    <element name="name" nillable="true" type="xsd:string"/>
+                    <element name="nationality" nillable="true" type="xsd:string"/>
+                    <element name="netKind" nillable="true" type="xsd:string"/>
+                    <element name="operator" nillable="true" type="xsd:string"/>
+                    <element name="phoneNumber" nillable="true" type="xsd:string"/>
+                    <element name="playMode" nillable="true" type="xsd:string"/>
+                    <element name="pwd" nillable="true" type="xsd:string"/>
+                    <element name="region" nillable="true" type="xsd:string"/>
+                    <element name="regionName" nillable="true" type="xsd:string"/>
+                    <element name="registerTime" nillable="true" type="xsd:string"/>
+                    <element name="reserveTime" nillable="true" type="xsd:string"/>
+                    <element name="serviceOrders" nillable="true" type="xsd:string"/>
+                    <element name="sex" nillable="true" type="xsd:string"/>
+                    <element name="status" nillable="true" type="xsd:string"/>
+                    <element name="subCosID" nillable="true" type="xsd:string"/>
+                    <element name="totalLoyaltyPonints" nillable="true" type="xsd:string"/>
+                    <element name="type" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usermanage.QueryUserResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="recordSum" nillable="true" type="xsd:string"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                    <element name="userInfos" nillable="true" type="impl:ArrayOf_tns1_com.viettel.vcrbt.webservice.response.usermanage.UserInfo"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.ActivateAndPauseEvt">
+                <sequence>
+                    <element name="moduleCode" nillable="true" type="xsd:string"/>
+                    <element name="phoneNumber" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="role" nillable="true" type="xsd:string"/>
+                    <element name="roleCode" nillable="true" type="xsd:string"/>
+                    <element name="serviceID" nillable="true" type="xsd:string"/>
+                    <element name="type" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usermanage.ActivateAndPauseResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.EditUserEvt">
+                <sequence>
+                    <element name="bgTone" nillable="true" type="xsd:string"/>
+                    <element name="city" nillable="true" type="xsd:string"/>
+                    <element name="dateOfBirth" nillable="true" type="xsd:string"/>
+                    <element name="eMail" nillable="true" type="xsd:string"/>
+                    <element name="email" nillable="true" type="xsd:string"/>
+                    <element name="firstName" nillable="true" type="xsd:string"/>
+                    <element name="idCard" nillable="true" type="xsd:string"/>
+                    <element name="isUseCopy" nillable="true" type="xsd:string"/>
+                    <element name="languageID" nillable="true" type="xsd:string"/>
+                    <element name="lastName" nillable="true" type="xsd:string"/>
+                    <element name="moduleCode" nillable="true" type="xsd:string"/>
+                    <element name="moodModeID" nillable="true" type="xsd:string"/>
+                    <element name="name" nillable="true" type="xsd:string"/>
+                    <element name="nationality" nillable="true" type="xsd:string"/>
+                    <element name="newPwd" nillable="true" type="xsd:string"/>
+                    <element name="oldPwd" nillable="true" type="xsd:string"/>
+                    <element name="phoneNumber" nillable="true" type="xsd:string"/>
+                    <element name="playMode" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="role" nillable="true" type="xsd:string"/>
+                    <element name="roleCode" nillable="true" type="xsd:string"/>
+                    <element name="serviceID" nillable="true" type="xsd:string"/>
+                    <element name="sex" nillable="true" type="xsd:string"/>
+                    <element name="subCosID" nillable="true" type="xsd:string"/>
+                    <element name="subtype" nillable="true" type="xsd:string"/>
+                    <element name="tradeMark" nillable="true" type="xsd:string"/>
+                    <element name="trademark" nillable="true" type="xsd:string"/>
+                    <element name="type" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usermanage.EditUserResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+        </schema>
+        <schema targetNamespace="http://localhost:8001/user-manage"
+            xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://soapinterop.org/xsd"/>
+            <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+            <complexType name="ArrayOf_xsd_string">
+                <complexContent>
+                    <restriction base="soapenc:Array">
+                        <attribute ref="soapenc:arrayType" wsdl:arrayType="xsd:string[]"/>
+                    </restriction>
+                </complexContent>
+            </complexType>
+            <complexType name="ArrayOf_tns1_com.viettel.vcrbt.webservice.response.usermanage.ReturnObject">
+                <complexContent>
+                    <restriction base="soapenc:Array">
+                        <attribute ref="soapenc:arrayType" wsdl:arrayType="tns1:com.viettel.vcrbt.webservice.response.usermanage.ReturnObject[]"/>
+                    </restriction>
+                </complexContent>
+            </complexType>
+            <complexType name="ArrayOf_tns1_com.viettel.vcrbt.webservice.response.usermanage.UserInfo">
+                <complexContent>
+                    <restriction base="soapenc:Array">
+                        <attribute ref="soapenc:arrayType" wsdl:arrayType="tns1:com.viettel.vcrbt.webservice.response.usermanage.UserInfo[]"/>
+                    </restriction>
+                </complexContent>
+            </complexType>
+        </schema>
+    </wsdl:types>
+    <wsdl:message name="unSubscribeReverseRequest">
+        <wsdl:part name="UnSubscribeEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.UnSubscribeEvt"/>
+    </wsdl:message>
+    <wsdl:message name="csSubscribeResponse">
+        <wsdl:part name="csSubscribeReturn" type="tns1:com.viettel.vcrbt.webservice.response.usermanage.CsSubscribeResp"/>
+    </wsdl:message>
+    <wsdl:message name="subscribeBCCSResponse">
+        <wsdl:part name="subscribeBCCSReturn" type="tns1:com.viettel.vcrbt.interfaces.webservice.listener.SubscribeResp"/>
+    </wsdl:message>
+    <wsdl:message name="subscribeSMSResponse">
+        <wsdl:part name="subscribeSMSReturn" type="tns1:com.viettel.vcrbt.interfaces.webservice.listener.SubscribeResp"/>
+    </wsdl:message>
+    <wsdl:message name="subscribePlusRequest">
+        <wsdl:part name="SubscribeEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.SubscribeEvt"/>
+    </wsdl:message>
+    <wsdl:message name="getValidateCodeResponse">
+        <wsdl:part name="getValidateCodeReturn" type="tns1:com.viettel.vcrbt.webservice.response.usermanage.GetValidateCodeResp"/>
+    </wsdl:message>
+    <wsdl:message name="addSubscribeReverseResponse">
+        <wsdl:part name="addSubscribeReverseReturn" type="tns1:com.viettel.vcrbt.interfaces.webservice.listener.SubscribeResp"/>
+    </wsdl:message>
+    <wsdl:message name="addSubscribeReverseRequest">
+        <wsdl:part name="SubscribeEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.SubscribeEvt"/>
+    </wsdl:message>
+    <wsdl:message name="queryUserAllRequest">
+        <wsdl:part name="QueryUserEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.QueryUserEvt"/>
+    </wsdl:message>
+    <wsdl:message name="getValidateCodeRequest">
+        <wsdl:part name="GetValidateCodeEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.GetValidateCodeEvt"/>
+    </wsdl:message>
+    <wsdl:message name="editResponse">
+        <wsdl:part name="editReturn" type="tns1:com.viettel.vcrbt.webservice.response.usermanage.EditUserResp"/>
+    </wsdl:message>
+    <wsdl:message name="queryUserAllResponse">
+        <wsdl:part name="queryUserAllReturn" type="tns1:com.viettel.vcrbt.webservice.response.usermanage.QueryUserResp"/>
+    </wsdl:message>
+    <wsdl:message name="queryResponse">
+        <wsdl:part name="queryReturn" type="tns1:com.viettel.vcrbt.webservice.response.usermanage.QueryUserResp"/>
+    </wsdl:message>
+    <wsdl:message name="subscribeResponse">
+        <wsdl:part name="subscribeReturn" type="tns1:com.viettel.vcrbt.interfaces.webservice.listener.SubscribeResp"/>
+    </wsdl:message>
+    <wsdl:message name="csUnSubscribeRequest">
+        <wsdl:part name="CsUnSubscribeEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.CsUnSubscribeEvt"/>
+    </wsdl:message>
+    <wsdl:message name="unSubscribeResponse">
+        <wsdl:part name="unSubscribeReturn" type="tns1:com.viettel.vcrbt.interfaces.webservice.listener.UnsubscribeResp"/>
+    </wsdl:message>
+    <wsdl:message name="csSubscribeRequest">
+        <wsdl:part name="CsSubscribeEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.CsSubscribeEvt"/>
+    </wsdl:message>
+    <wsdl:message name="csUnSubscribeResponse">
+        <wsdl:part name="csUnSubscribeReturn" type="tns1:com.viettel.vcrbt.webservice.response.usermanage.CsUnsubscribeResp"/>
+    </wsdl:message>
+    <wsdl:message name="queryRequest">
+        <wsdl:part name="QueryUserEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.QueryUserEvt"/>
+    </wsdl:message>
+    <wsdl:message name="activateAndPauseResponse">
+        <wsdl:part name="activateAndPauseReturn" type="tns1:com.viettel.vcrbt.webservice.response.usermanage.ActivateAndPauseResp"/>
+    </wsdl:message>
+    <wsdl:message name="subscribeBCCSRequest">
+        <wsdl:part name="SubscribeEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.SubscribeEvt"/>
+    </wsdl:message>
+    <wsdl:message name="unSubscribeRequest">
+        <wsdl:part name="UnSubscribeEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.UnSubscribeEvt"/>
+    </wsdl:message>
+    <wsdl:message name="unSubscribeReverseResponse">
+        <wsdl:part name="unSubscribeReverseReturn" type="tns1:com.viettel.vcrbt.interfaces.webservice.listener.UnsubscribeResp"/>
+    </wsdl:message>
+    <wsdl:message name="activateAndPauseRequest">
+        <wsdl:part name="ActivateAndPauseEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.ActivateAndPauseEvt"/>
+    </wsdl:message>
+    <wsdl:message name="subscribePlusResponse">
+        <wsdl:part name="subscribePlusReturn" type="tns1:com.viettel.vcrbt.interfaces.webservice.listener.SubscribeResp"/>
+    </wsdl:message>
+    <wsdl:message name="subscribeRequest">
+        <wsdl:part name="SubscribeEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.SubscribeEvt"/>
+    </wsdl:message>
+    <wsdl:message name="subscribeSMSRequest">
+        <wsdl:part name="SubscribeEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.SubscribeEvt"/>
+    </wsdl:message>
+    <wsdl:message name="editRequest">
+        <wsdl:part name="EditUserEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.EditUserEvt"/>
+    </wsdl:message>
+    <wsdl:portType name="UserManage">
+        <wsdl:operation name="subscribe" parameterOrder="SubscribeEvt">
+            <wsdl:input message="impl:subscribeRequest" name="subscribeRequest"/>
+            <wsdl:output message="impl:subscribeResponse" name="subscribeResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="unSubscribe" parameterOrder="UnSubscribeEvt">
+            <wsdl:input message="impl:unSubscribeRequest" name="unSubscribeRequest"/>
+            <wsdl:output message="impl:unSubscribeResponse" name="unSubscribeResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="csSubscribe" parameterOrder="CsSubscribeEvt">
+            <wsdl:input message="impl:csSubscribeRequest" name="csSubscribeRequest"/>
+            <wsdl:output message="impl:csSubscribeResponse" name="csSubscribeResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="csUnSubscribe" parameterOrder="CsUnSubscribeEvt">
+            <wsdl:input message="impl:csUnSubscribeRequest" name="csUnSubscribeRequest"/>
+            <wsdl:output message="impl:csUnSubscribeResponse" name="csUnSubscribeResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getValidateCode" parameterOrder="GetValidateCodeEvt">
+            <wsdl:input message="impl:getValidateCodeRequest" name="getValidateCodeRequest"/>
+            <wsdl:output message="impl:getValidateCodeResponse" name="getValidateCodeResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="subscribeBCCS" parameterOrder="SubscribeEvt">
+            <wsdl:input message="impl:subscribeBCCSRequest" name="subscribeBCCSRequest"/>
+            <wsdl:output message="impl:subscribeBCCSResponse" name="subscribeBCCSResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="addSubscribeReverse" parameterOrder="SubscribeEvt">
+            <wsdl:input message="impl:addSubscribeReverseRequest" name="addSubscribeReverseRequest"/>
+            <wsdl:output message="impl:addSubscribeReverseResponse" name="addSubscribeReverseResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="subscribeSMS" parameterOrder="SubscribeEvt">
+            <wsdl:input message="impl:subscribeSMSRequest" name="subscribeSMSRequest"/>
+            <wsdl:output message="impl:subscribeSMSResponse" name="subscribeSMSResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="subscribePlus" parameterOrder="SubscribeEvt">
+            <wsdl:input message="impl:subscribePlusRequest" name="subscribePlusRequest"/>
+            <wsdl:output message="impl:subscribePlusResponse" name="subscribePlusResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="queryUserAll" parameterOrder="QueryUserEvt">
+            <wsdl:input message="impl:queryUserAllRequest" name="queryUserAllRequest"/>
+            <wsdl:output message="impl:queryUserAllResponse" name="queryUserAllResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="unSubscribeReverse" parameterOrder="UnSubscribeEvt">
+            <wsdl:input message="impl:unSubscribeReverseRequest" name="unSubscribeReverseRequest"/>
+            <wsdl:output message="impl:unSubscribeReverseResponse" name="unSubscribeReverseResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="activateAndPause" parameterOrder="ActivateAndPauseEvt">
+            <wsdl:input message="impl:activateAndPauseRequest" name="activateAndPauseRequest"/>
+            <wsdl:output message="impl:activateAndPauseResponse" name="activateAndPauseResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="edit" parameterOrder="EditUserEvt">
+            <wsdl:input message="impl:editRequest" name="editRequest"/>
+            <wsdl:output message="impl:editResponse" name="editResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="query" parameterOrder="QueryUserEvt">
+            <wsdl:input message="impl:queryRequest" name="queryRequest"/>
+            <wsdl:output message="impl:queryResponse" name="queryResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="UserManageSoapBinding" type="impl:UserManage">
+        <wsdlsoap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="subscribe">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="subscribeRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="subscribeResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="unSubscribe">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="unSubscribeRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="unSubscribeResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="csSubscribe">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="csSubscribeRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="csSubscribeResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="csUnSubscribe">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="csUnSubscribeRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="csUnSubscribeResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getValidateCode">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="getValidateCodeRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="getValidateCodeResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="subscribeBCCS">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="subscribeBCCSRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="subscribeBCCSResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="addSubscribeReverse">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="addSubscribeReverseRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="addSubscribeReverseResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="subscribeSMS">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="subscribeSMSRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="subscribeSMSResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="subscribePlus">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="subscribePlusRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="subscribePlusResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="queryUserAll">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="queryUserAllRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="queryUserAllResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="unSubscribeReverse">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="unSubscribeReverseRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="unSubscribeReverseResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="activateAndPause">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="activateAndPauseRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="activateAndPauseResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="edit">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="editRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="editResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="query">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="queryRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="queryResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="UserManageService">
+        <wsdl:port binding="impl:UserManageSoapBinding" name="UserManage">
+            <wsdlsoap:address location="http://localhost:8001/user-manage"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

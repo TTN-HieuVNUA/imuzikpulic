@@ -1,0 +1,1124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Banner Dark 1`] = `
+<View
+  bg="defaultBackground"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#262523",
+      },
+    ]
+  }
+>
+  <View
+    height={300}
+    position="relative"
+    style={
+      Array [
+        Object {
+          "height": 300,
+          "position": "relative",
+          "width": 750,
+        },
+      ]
+    }
+    width={750}
+  >
+    <RCTScrollView
+      horizontal={true}
+      onScroll={[Function]}
+      pagingEnabled={true}
+      scrollEventThrottle={16}
+      showsHorizontalScrollIndicator={false}
+    >
+      <View>
+        <View
+          height={300}
+          position="relative"
+          style={
+            Array [
+              Object {
+                "height": 300,
+                "position": "relative",
+                "width": 750,
+              },
+            ]
+          }
+          width={750}
+        >
+          <Image
+            source={
+              Object {
+                "uri": "https://via.placeholder.com/500",
+              }
+            }
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          />
+          <View
+            bottom={0}
+            position="absolute"
+            style={
+              Array [
+                Object {
+                  "bottom": 0,
+                  "position": "absolute",
+                  "width": "100%",
+                },
+              ]
+            }
+            width="100%"
+          >
+            <View
+              height="100%"
+              position="absolute"
+              style={
+                Array [
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "width": "100%",
+                  },
+                ]
+              }
+              width="100%"
+            >
+              <ViewManagerAdapter_ExpoLinearGradient
+                proxiedProperties={
+                  Object {
+                    "colors": Array [
+                      0,
+                      4280689955,
+                    ],
+                    "endPoint": undefined,
+                    "locations": undefined,
+                    "startPoint": undefined,
+                  }
+                }
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
+              />
+            </View>
+            <View
+              p={3}
+              style={
+                Array [
+                  Object {
+                    "paddingBottom": 15,
+                    "paddingLeft": 15,
+                    "paddingRight": 15,
+                    "paddingTop": 15,
+                    "width": "66.66666666666666%",
+                  },
+                ]
+              }
+              width={0.6666666666666666}
+            >
+              <Text
+                color="white"
+                fontFamily="body"
+                fontSize={3}
+                fontWeight="bold"
+                style={
+                  Array [
+                    Object {
+                      "color": "white",
+                      "fontFamily": "Helvetica",
+                      "fontSize": 17,
+                      "fontWeight": "700",
+                    },
+                  ]
+                }
+              >
+                Cài đặt nhạc chờ Imuzik
+              </Text>
+              <Text
+                color="primary"
+                fontFamily="body"
+                fontSize={2}
+                fontWeight="bold"
+                style={
+                  Array [
+                    Object {
+                      "color": "#FDCC26",
+                      "fontFamily": "Helvetica",
+                      "fontSize": 14,
+                      "fontWeight": "700",
+                    },
+                  ]
+                }
+              >
+                chỉ 10.000đ/tháng, cước tải bài hát 3.000đ
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          height={300}
+          position="relative"
+          style={
+            Array [
+              Object {
+                "height": 300,
+                "position": "relative",
+                "width": 750,
+              },
+            ]
+          }
+          width={750}
+        >
+          <Image
+            source={
+              Object {
+                "uri": "https://via.placeholder.com/500",
+              }
+            }
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          />
+          <View
+            bottom={0}
+            position="absolute"
+            style={
+              Array [
+                Object {
+                  "bottom": 0,
+                  "position": "absolute",
+                  "width": "100%",
+                },
+              ]
+            }
+            width="100%"
+          >
+            <View
+              height="100%"
+              position="absolute"
+              style={
+                Array [
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "width": "100%",
+                  },
+                ]
+              }
+              width="100%"
+            >
+              <ViewManagerAdapter_ExpoLinearGradient
+                proxiedProperties={
+                  Object {
+                    "colors": Array [
+                      0,
+                      4280689955,
+                    ],
+                    "endPoint": undefined,
+                    "locations": undefined,
+                    "startPoint": undefined,
+                  }
+                }
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
+              />
+            </View>
+            <View
+              p={3}
+              style={
+                Array [
+                  Object {
+                    "paddingBottom": 15,
+                    "paddingLeft": 15,
+                    "paddingRight": 15,
+                    "paddingTop": 15,
+                    "width": "66.66666666666666%",
+                  },
+                ]
+              }
+              width={0.6666666666666666}
+            >
+              <Text
+                color="white"
+                fontFamily="body"
+                fontSize={3}
+                fontWeight="bold"
+                style={
+                  Array [
+                    Object {
+                      "color": "white",
+                      "fontFamily": "Helvetica",
+                      "fontSize": 17,
+                      "fontWeight": "700",
+                    },
+                  ]
+                }
+              >
+                Cài đặt nhạc chờ Imuzik
+              </Text>
+              <Text
+                color="primary"
+                fontFamily="body"
+                fontSize={2}
+                fontWeight="bold"
+                style={
+                  Array [
+                    Object {
+                      "color": "#FDCC26",
+                      "fontFamily": "Helvetica",
+                      "fontSize": 14,
+                      "fontWeight": "700",
+                    },
+                  ]
+                }
+              >
+                chỉ 10.000đ/tháng, cước tải bài hát 3.000đ
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+    <View
+      bottom={0}
+      flexDirection="row"
+      p={4}
+      position="absolute"
+      right={0}
+      style={
+        Array [
+          Object {
+            "bottom": 0,
+            "flexDirection": "row",
+            "paddingBottom": 20,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 20,
+            "position": "absolute",
+            "right": 0,
+          },
+        ]
+      }
+    >
+      <View
+        borderRadius={6}
+        mx="2px"
+        overflow="hidden"
+        style={
+          Array [
+            Object {
+              "borderRadius": 6,
+              "marginLeft": 2,
+              "marginRight": 2,
+              "overflow": "hidden",
+            },
+          ]
+        }
+      >
+        <View
+          bg="secondary"
+          height={3}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#22E26B",
+                "height": 3,
+                "width": 16,
+              },
+            ]
+          }
+          width={16}
+        />
+      </View>
+      <View
+        borderRadius={6}
+        mx="2px"
+        overflow="hidden"
+        style={
+          Array [
+            Object {
+              "borderRadius": 6,
+              "marginLeft": 2,
+              "marginRight": 2,
+              "overflow": "hidden",
+            },
+          ]
+        }
+      >
+        <View
+          bg="#323232"
+          height={3}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#323232",
+                "height": 3,
+                "width": 4,
+              },
+            ]
+          }
+          width={4}
+        />
+      </View>
+    </View>
+  </View>
+  <View
+    height={300}
+    position="relative"
+    style={
+      Array [
+        Object {
+          "height": 300,
+          "position": "relative",
+          "width": 750,
+        },
+      ]
+    }
+    width={750}
+  >
+    <RCTScrollView
+      horizontal={true}
+      onScroll={[Function]}
+      pagingEnabled={true}
+      scrollEventThrottle={16}
+      showsHorizontalScrollIndicator={false}
+    >
+      <View>
+        <View
+          height={300}
+          position="relative"
+          style={
+            Array [
+              Object {
+                "height": 300,
+                "position": "relative",
+                "width": 750,
+              },
+            ]
+          }
+          width={750}
+        >
+          <Image
+            source={
+              Object {
+                "uri": "https://via.placeholder.com/500",
+              }
+            }
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          />
+          <View
+            bottom={0}
+            position="absolute"
+            style={
+              Array [
+                Object {
+                  "bottom": 0,
+                  "position": "absolute",
+                  "width": "100%",
+                },
+              ]
+            }
+            width="100%"
+          >
+            <View
+              height="100%"
+              position="absolute"
+              style={
+                Array [
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "width": "100%",
+                  },
+                ]
+              }
+              width="100%"
+            >
+              <ViewManagerAdapter_ExpoLinearGradient
+                proxiedProperties={
+                  Object {
+                    "colors": Array [
+                      0,
+                      4280689955,
+                    ],
+                    "endPoint": undefined,
+                    "locations": undefined,
+                    "startPoint": undefined,
+                  }
+                }
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
+              />
+            </View>
+            <View
+              p={3}
+              style={
+                Array [
+                  Object {
+                    "paddingBottom": 15,
+                    "paddingLeft": 15,
+                    "paddingRight": 15,
+                    "paddingTop": 15,
+                    "width": "66.66666666666666%",
+                  },
+                ]
+              }
+              width={0.6666666666666666}
+            >
+              <Text
+                color="white"
+                fontFamily="body"
+                fontSize={3}
+                fontWeight="bold"
+                style={
+                  Array [
+                    Object {
+                      "color": "white",
+                      "fontFamily": "Helvetica",
+                      "fontSize": 17,
+                      "fontWeight": "700",
+                    },
+                  ]
+                }
+              >
+                Cài đặt nhạc chờ Imuzik
+              </Text>
+              <Text
+                color="primary"
+                fontFamily="body"
+                fontSize={2}
+                fontWeight="bold"
+                style={
+                  Array [
+                    Object {
+                      "color": "#FDCC26",
+                      "fontFamily": "Helvetica",
+                      "fontSize": 14,
+                      "fontWeight": "700",
+                    },
+                  ]
+                }
+              >
+                chỉ 10.000đ/tháng, cước tải bài hát 3.000đ
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          height={300}
+          position="relative"
+          style={
+            Array [
+              Object {
+                "height": 300,
+                "position": "relative",
+                "width": 750,
+              },
+            ]
+          }
+          width={750}
+        >
+          <Image
+            source={
+              Object {
+                "uri": "https://via.placeholder.com/500",
+              }
+            }
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          />
+          <View
+            bottom={0}
+            position="absolute"
+            style={
+              Array [
+                Object {
+                  "bottom": 0,
+                  "position": "absolute",
+                  "width": "100%",
+                },
+              ]
+            }
+            width="100%"
+          >
+            <View
+              height="100%"
+              position="absolute"
+              style={
+                Array [
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "width": "100%",
+                  },
+                ]
+              }
+              width="100%"
+            >
+              <ViewManagerAdapter_ExpoLinearGradient
+                proxiedProperties={
+                  Object {
+                    "colors": Array [
+                      0,
+                      4280689955,
+                    ],
+                    "endPoint": undefined,
+                    "locations": undefined,
+                    "startPoint": undefined,
+                  }
+                }
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
+              />
+            </View>
+            <View
+              p={3}
+              style={
+                Array [
+                  Object {
+                    "paddingBottom": 15,
+                    "paddingLeft": 15,
+                    "paddingRight": 15,
+                    "paddingTop": 15,
+                    "width": "66.66666666666666%",
+                  },
+                ]
+              }
+              width={0.6666666666666666}
+            >
+              <Text
+                color="white"
+                fontFamily="body"
+                fontSize={3}
+                fontWeight="bold"
+                style={
+                  Array [
+                    Object {
+                      "color": "white",
+                      "fontFamily": "Helvetica",
+                      "fontSize": 17,
+                      "fontWeight": "700",
+                    },
+                  ]
+                }
+              >
+                Cài đặt nhạc chờ Imuzik
+              </Text>
+              <Text
+                color="primary"
+                fontFamily="body"
+                fontSize={2}
+                fontWeight="bold"
+                style={
+                  Array [
+                    Object {
+                      "color": "#FDCC26",
+                      "fontFamily": "Helvetica",
+                      "fontSize": 14,
+                      "fontWeight": "700",
+                    },
+                  ]
+                }
+              >
+                chỉ 10.000đ/tháng, cước tải bài hát 3.000đ
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+    <View
+      bottom={0}
+      flexDirection="row"
+      p={4}
+      position="absolute"
+      right={0}
+      style={
+        Array [
+          Object {
+            "bottom": 0,
+            "flexDirection": "row",
+            "paddingBottom": 20,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 20,
+            "position": "absolute",
+            "right": 0,
+          },
+        ]
+      }
+    >
+      <View
+        borderRadius={6}
+        mx="2px"
+        overflow="hidden"
+        style={
+          Array [
+            Object {
+              "borderRadius": 6,
+              "marginLeft": 2,
+              "marginRight": 2,
+              "overflow": "hidden",
+            },
+          ]
+        }
+      >
+        <View
+          bg="secondary"
+          height={3}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#22E26B",
+                "height": 3,
+                "width": 16,
+              },
+            ]
+          }
+          width={16}
+        />
+      </View>
+      <View
+        borderRadius={6}
+        mx="2px"
+        overflow="hidden"
+        style={
+          Array [
+            Object {
+              "borderRadius": 6,
+              "marginLeft": 2,
+              "marginRight": 2,
+              "overflow": "hidden",
+            },
+          ]
+        }
+      >
+        <View
+          bg="#323232"
+          height={3}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#323232",
+                "height": 3,
+                "width": 4,
+              },
+            ]
+          }
+          width={4}
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Banner Light 1`] = `
+<View
+  bg="defaultBackground"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "white",
+      },
+    ]
+  }
+>
+  <View
+    height={300}
+    position="relative"
+    style={
+      Array [
+        Object {
+          "height": 300,
+          "position": "relative",
+          "width": 750,
+        },
+      ]
+    }
+    width={750}
+  >
+    <RCTScrollView
+      horizontal={true}
+      onScroll={[Function]}
+      pagingEnabled={true}
+      scrollEventThrottle={16}
+      showsHorizontalScrollIndicator={false}
+    >
+      <View>
+        <View
+          height={300}
+          position="relative"
+          style={
+            Array [
+              Object {
+                "height": 300,
+                "position": "relative",
+                "width": 750,
+              },
+            ]
+          }
+          width={750}
+        >
+          <Image
+            source={
+              Object {
+                "uri": "https://via.placeholder.com/500",
+              }
+            }
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          />
+          <View
+            bottom={0}
+            position="absolute"
+            style={
+              Array [
+                Object {
+                  "bottom": 0,
+                  "position": "absolute",
+                  "width": "100%",
+                },
+              ]
+            }
+            width="100%"
+          >
+            <View
+              height="100%"
+              position="absolute"
+              style={
+                Array [
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "width": "100%",
+                  },
+                ]
+              }
+              width="100%"
+            >
+              <ViewManagerAdapter_ExpoLinearGradient
+                proxiedProperties={
+                  Object {
+                    "colors": Array [
+                      0,
+                      4280689955,
+                    ],
+                    "endPoint": undefined,
+                    "locations": undefined,
+                    "startPoint": undefined,
+                  }
+                }
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
+              />
+            </View>
+            <View
+              p={3}
+              style={
+                Array [
+                  Object {
+                    "paddingBottom": 15,
+                    "paddingLeft": 15,
+                    "paddingRight": 15,
+                    "paddingTop": 15,
+                    "width": "66.66666666666666%",
+                  },
+                ]
+              }
+              width={0.6666666666666666}
+            >
+              <Text
+                color="white"
+                fontFamily="body"
+                fontSize={3}
+                fontWeight="bold"
+                style={
+                  Array [
+                    Object {
+                      "color": "white",
+                      "fontFamily": "Helvetica",
+                      "fontSize": 17,
+                      "fontWeight": "700",
+                    },
+                  ]
+                }
+              >
+                Cài đặt nhạc chờ Imuzik
+              </Text>
+              <Text
+                color="primary"
+                fontFamily="body"
+                fontSize={2}
+                fontWeight="bold"
+                style={
+                  Array [
+                    Object {
+                      "color": "#FDCC26",
+                      "fontFamily": "Helvetica",
+                      "fontSize": 14,
+                      "fontWeight": "700",
+                    },
+                  ]
+                }
+              >
+                chỉ 10.000đ/tháng, cước tải bài hát 3.000đ
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          height={300}
+          position="relative"
+          style={
+            Array [
+              Object {
+                "height": 300,
+                "position": "relative",
+                "width": 750,
+              },
+            ]
+          }
+          width={750}
+        >
+          <Image
+            source={
+              Object {
+                "uri": "https://via.placeholder.com/500",
+              }
+            }
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          />
+          <View
+            bottom={0}
+            position="absolute"
+            style={
+              Array [
+                Object {
+                  "bottom": 0,
+                  "position": "absolute",
+                  "width": "100%",
+                },
+              ]
+            }
+            width="100%"
+          >
+            <View
+              height="100%"
+              position="absolute"
+              style={
+                Array [
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "width": "100%",
+                  },
+                ]
+              }
+              width="100%"
+            >
+              <ViewManagerAdapter_ExpoLinearGradient
+                proxiedProperties={
+                  Object {
+                    "colors": Array [
+                      0,
+                      4280689955,
+                    ],
+                    "endPoint": undefined,
+                    "locations": undefined,
+                    "startPoint": undefined,
+                  }
+                }
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
+              />
+            </View>
+            <View
+              p={3}
+              style={
+                Array [
+                  Object {
+                    "paddingBottom": 15,
+                    "paddingLeft": 15,
+                    "paddingRight": 15,
+                    "paddingTop": 15,
+                    "width": "66.66666666666666%",
+                  },
+                ]
+              }
+              width={0.6666666666666666}
+            >
+              <Text
+                color="white"
+                fontFamily="body"
+                fontSize={3}
+                fontWeight="bold"
+                style={
+                  Array [
+                    Object {
+                      "color": "white",
+                      "fontFamily": "Helvetica",
+                      "fontSize": 17,
+                      "fontWeight": "700",
+                    },
+                  ]
+                }
+              >
+                Cài đặt nhạc chờ Imuzik
+              </Text>
+              <Text
+                color="primary"
+                fontFamily="body"
+                fontSize={2}
+                fontWeight="bold"
+                style={
+                  Array [
+                    Object {
+                      "color": "#FDCC26",
+                      "fontFamily": "Helvetica",
+                      "fontSize": 14,
+                      "fontWeight": "700",
+                    },
+                  ]
+                }
+              >
+                chỉ 10.000đ/tháng, cước tải bài hát 3.000đ
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+    <View
+      bottom={0}
+      flexDirection="row"
+      p={4}
+      position="absolute"
+      right={0}
+      style={
+        Array [
+          Object {
+            "bottom": 0,
+            "flexDirection": "row",
+            "paddingBottom": 20,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 20,
+            "position": "absolute",
+            "right": 0,
+          },
+        ]
+      }
+    >
+      <View
+        borderRadius={6}
+        mx="2px"
+        overflow="hidden"
+        style={
+          Array [
+            Object {
+              "borderRadius": 6,
+              "marginLeft": 2,
+              "marginRight": 2,
+              "overflow": "hidden",
+            },
+          ]
+        }
+      >
+        <View
+          bg="secondary"
+          height={3}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#22E26B",
+                "height": 3,
+                "width": 16,
+              },
+            ]
+          }
+          width={16}
+        />
+      </View>
+      <View
+        borderRadius={6}
+        mx="2px"
+        overflow="hidden"
+        style={
+          Array [
+            Object {
+              "borderRadius": 6,
+              "marginLeft": 2,
+              "marginRight": 2,
+              "overflow": "hidden",
+            },
+          ]
+        }
+      >
+        <View
+          bg="#323232"
+          height={3}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#323232",
+                "height": 3,
+                "width": 4,
+              },
+            ]
+          }
+          width={4}
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;

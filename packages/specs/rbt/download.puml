@@ -1,0 +1,48 @@
+@startuml
+
+title Tải nhạc chờ
+
+start
+:@Tải nhạc chờ;
+if (Đã đăng nhập?) then (yes)
+  :Kiểm tra trạng thái;
+  note left
+    gọi **Webservice**
+  end note
+  if (Lấy trạng thái không thành công) then (yes)
+    :Thông báo không lấy được trạng thái;
+    stop
+  elseif (Chưa đăng ký dịch vụ?) then (yes)
+    :Đăng ký gói được chỉ định hoặc gói free nếu không chỉ định;
+    if (Đăng ký thành công?) then (yes)
+    else (Đăng ký thất bại)
+      :Thông báo không tải được do chưa đăng kí;
+      stop
+    endif
+  elseif (Đang tạm dừng dịch vụ?) then (yes)
+    :Tự động kích hoạt dịch vụ;
+    note left
+    - some note
+    - some note
+    end note
+    if (Kích hoạt dịch vụ thành công?) then (yes)
+    else (Kích hoạt dịch vụ thất bại)
+      :Thông báo không tải được do chưa đăng kí;
+      stop
+    endif
+  else (Dịch vụ đang active)
+  endif
+  :Yêu cầu tải nhạc chờ;
+  if (Tải nhạc chờ thành công?) then (yes)
+    :Thông báo tải thành công;
+    stop
+  else (Tải không thành công)
+    :Thông báo tải không thành công;
+    stop
+  endif
+else (Chưa đăng nhập)
+  :Yêu cầu đăng nhập;
+  stop
+endif
+end
+@enduml

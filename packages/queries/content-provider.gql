@@ -1,0 +1,38 @@
+query ContentProvider($group: String!, $after: String, $first: Int, $orderBy: SongOrderByInput) {
+  contentProvider(group: $group) {
+    id
+    name
+    group
+    imageUrl
+    songs(after: $after, first: $first, orderBy: $orderBy)
+      @connection(key: "singerSongs", filter: ["orderBy"]) {
+      ...SongConnectionBase
+      edges {
+        node {
+          ...SongBase
+          toneFromList {
+            ...ToneBase
+          }
+        }
+      }
+    }
+  }
+}
+
+query ContentProviders($after: String, $first: Int) {
+  contentProviders(after: $after, first: $first) {
+    totalCount
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+    edges {
+      node {
+        id
+        name
+        group
+        imageUrl
+      }
+    }
+  }
+}

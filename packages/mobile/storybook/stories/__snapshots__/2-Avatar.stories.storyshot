@@ -1,0 +1,261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Avatar Default 1`] = `
+<View
+  bg="defaultBackground"
+  flexDirection="row"
+  p={2}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#262523",
+        "flexDirection": "row",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "width": "50%",
+        },
+      ]
+    }
+    width={0.5}
+  >
+    <View
+      alignItems="center"
+      flexDirection="column"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "column",
+          },
+        ]
+      }
+    >
+      <View
+        borderRadius={100}
+        height={150}
+        overflow="hidden"
+        style={
+          Array [
+            Object {
+              "borderRadius": 100,
+              "height": 150,
+              "overflow": "hidden",
+              "width": 150,
+            },
+          ]
+        }
+        width={150}
+      >
+        <Image
+          resizeMode="cover"
+          source={
+            Object {
+              "uri": "https://via.placeholder.com/200",
+            }
+          }
+          style={
+            Object {
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        />
+      </View>
+      <Text
+        color="normalText"
+        fontFamily="body"
+        fontSize={2}
+        fontWeight="bold"
+        mt={1}
+        style={
+          Array [
+            Object {
+              "color": "white",
+              "fontFamily": "Helvetica",
+              "fontSize": 14,
+              "fontWeight": "700",
+              "marginTop": 5,
+              "textAlign": "center",
+            },
+          ]
+        }
+        textAlign="center"
+      >
+        Singer Name
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "width": "50%",
+        },
+      ]
+    }
+    width={0.5}
+  >
+    <View
+      alignItems="center"
+      flexDirection="column"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "column",
+          },
+        ]
+      }
+    >
+      <View
+        borderRadius={100}
+        height={150}
+        overflow="hidden"
+        style={
+          Array [
+            Object {
+              "borderRadius": 100,
+              "height": 150,
+              "overflow": "hidden",
+              "width": 150,
+            },
+          ]
+        }
+        width={150}
+      >
+        <Image
+          resizeMode="cover"
+          source={
+            Object {
+              "uri": "https://via.placeholder.com/200",
+            }
+          }
+          style={
+            Object {
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        />
+      </View>
+      <Text
+        color="normalText"
+        fontFamily="body"
+        fontSize={2}
+        fontWeight="bold"
+        mt={1}
+        style={
+          Array [
+            Object {
+              "color": "white",
+              "fontFamily": "Helvetica",
+              "fontSize": 14,
+              "fontWeight": "700",
+              "marginTop": 5,
+              "textAlign": "center",
+            },
+          ]
+        }
+        textAlign="center"
+      >
+        Singer Name Singer Name Singer Name Singer Name Singer Name
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Avatar Light 1`] = `
+<View
+  bg="defaultBackground"
+  p={2}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "white",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    alignItems="center"
+    flexDirection="column"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "column",
+        },
+      ]
+    }
+  >
+    <View
+      borderRadius={100}
+      height={150}
+      overflow="hidden"
+      style={
+        Array [
+          Object {
+            "borderRadius": 100,
+            "height": 150,
+            "overflow": "hidden",
+            "width": 150,
+          },
+        ]
+      }
+      width={150}
+    >
+      <Image
+        resizeMode="cover"
+        source={
+          Object {
+            "uri": "https://via.placeholder.com/200",
+          }
+        }
+        style={
+          Object {
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+      />
+    </View>
+    <Text
+      color="normalText"
+      fontFamily="body"
+      fontSize={2}
+      fontWeight="bold"
+      mt={1}
+      style={
+        Array [
+          Object {
+            "color": "#262523",
+            "fontFamily": "Helvetica",
+            "fontSize": 14,
+            "fontWeight": "700",
+            "marginTop": 5,
+            "textAlign": "center",
+          },
+        ]
+      }
+      textAlign="center"
+    >
+      Singer Name
+    </Text>
+  </View>
+</View>
+`;

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://localhost:8001/crbt-present"
+    xmlns:apachesoap="http://xml.apache.org/xml-soap"
+    xmlns:impl="http://localhost:8001/crbt-present"
+    xmlns:intf="http://localhost:8001/crbt-present"
+    xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:tns1="http://soapinterop.org/xsd"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">    <!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+    <wsdl:types>
+        <schema targetNamespace="http://soapinterop.org/xsd"
+            xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://localhost:8001/crbt-present"/>
+            <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.PresentToneEvt">
+                <sequence>
+                    <element name="chargeFeeMode" nillable="true" type="xsd:string"/>
+                    <element name="discount" nillable="true" type="xsd:string"/>
+                    <element name="fromUserPhoneNumber" nillable="true" type="xsd:string"/>
+                    <element name="keyword" nillable="true" type="xsd:string"/>
+                    <element name="moduleCode" nillable="true" type="xsd:string"/>
+                    <element name="months" nillable="true" type="xsd:string"/>
+                    <element name="operateValue" nillable="true" type="xsd:string"/>
+                    <element name="partnerID" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="price" nillable="true" type="xsd:string"/>
+                    <element name="resourceCode" nillable="true" type="xsd:string"/>
+                    <element name="resourceID" nillable="true" type="xsd:string"/>
+                    <element name="resourceType" nillable="true" type="xsd:string"/>
+                    <element name="role" nillable="true" type="xsd:string"/>
+                    <element name="roleCode" nillable="true" type="xsd:string"/>
+                    <element name="serviceID" nillable="true" type="xsd:string"/>
+                    <element name="toUserPhoneNumber" nillable="true" type="xsd:string"/>
+                    <element name="typeID" nillable="true" type="xsd:string"/>
+                    <element name="uploadType" nillable="true" type="xsd:string"/>
+                    <element name="validDuration" nillable="true" type="xsd:string"/>
+                    <element name="voucherID" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.crbtpresent.PresentToneResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.BatchOrderToneEvt">
+                <sequence>
+                    <element name="chargeFlag" nillable="true" type="xsd:string"/>
+                    <element name="discount" nillable="true" type="xsd:string"/>
+                    <element name="moduleCode" nillable="true" type="xsd:string"/>
+                    <element name="phoneNumbers" nillable="true" type="impl:ArrayOf_xsd_string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="resourceType" nillable="true" type="xsd:string"/>
+                    <element name="role" nillable="true" type="xsd:string"/>
+                    <element name="roleCode" nillable="true" type="xsd:string"/>
+                    <element name="toneCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.crbtpresent.ReturnObject">
+                <sequence>
+                    <element name="phoneNumber" nillable="true" type="xsd:string"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="serviceID" nillable="true" type="xsd:string"/>
+                    <element name="status" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.crbtpresent.BatchOrderToneResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                    <element name="returnObjects" nillable="true" type="impl:ArrayOf_tns1_com.viettel.vcrbt.webservice.response.crbtpresent.ReturnObject"/>
+                </sequence>
+            </complexType>
+        </schema>
+        <schema targetNamespace="http://localhost:8001/crbt-present"
+            xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://soapinterop.org/xsd"/>
+            <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+            <complexType name="ArrayOf_xsd_string">
+                <complexContent>
+                    <restriction base="soapenc:Array">
+                        <attribute ref="soapenc:arrayType" wsdl:arrayType="xsd:string[]"/>
+                    </restriction>
+                </complexContent>
+            </complexType>
+            <complexType name="ArrayOf_tns1_com.viettel.vcrbt.webservice.response.crbtpresent.ReturnObject">
+                <complexContent>
+                    <restriction base="soapenc:Array">
+                        <attribute ref="soapenc:arrayType" wsdl:arrayType="tns1:com.viettel.vcrbt.webservice.response.crbtpresent.ReturnObject[]"/>
+                    </restriction>
+                </complexContent>
+            </complexType>
+        </schema>
+    </wsdl:types>
+    <wsdl:message name="presentToneRequest">
+        <wsdl:part name="PresentToneEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.PresentToneEvt"/>
+    </wsdl:message>
+    <wsdl:message name="batchOrderToneRequest">
+        <wsdl:part name="BatchOrderToneEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.BatchOrderToneEvt"/>
+    </wsdl:message>
+    <wsdl:message name="batchOrderToneResponse">
+        <wsdl:part name="batchOrderToneReturn" type="tns1:com.viettel.vcrbt.webservice.response.crbtpresent.BatchOrderToneResp"/>
+    </wsdl:message>
+    <wsdl:message name="presentToneResponse">
+        <wsdl:part name="presentToneReturn" type="tns1:com.viettel.vcrbt.webservice.response.crbtpresent.PresentToneResp"/>
+    </wsdl:message>
+    <wsdl:portType name="CRBTPresent">
+        <wsdl:operation name="presentTone" parameterOrder="PresentToneEvt">
+            <wsdl:input message="impl:presentToneRequest" name="presentToneRequest"/>
+            <wsdl:output message="impl:presentToneResponse" name="presentToneResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="batchOrderTone" parameterOrder="BatchOrderToneEvt">
+            <wsdl:input message="impl:batchOrderToneRequest" name="batchOrderToneRequest"/>
+            <wsdl:output message="impl:batchOrderToneResponse" name="batchOrderToneResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="CRBTPresentSoapBinding" type="impl:CRBTPresent">
+        <wsdlsoap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="presentTone">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="presentToneRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="presentToneResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/crbt-present" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="batchOrderTone">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="batchOrderToneRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="batchOrderToneResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/crbt-present" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="CRBTPresentService">
+        <wsdl:port binding="impl:CRBTPresentSoapBinding" name="CRBTPresent">
+            <wsdlsoap:address location="http://localhost:8001/crbt-present"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

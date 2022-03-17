@@ -1,0 +1,66 @@
+query Article($slug: String!, $after: String, $first: Int) {
+  article(slug: $slug){
+    id
+    title
+    image_path
+    description
+    body
+    published_time
+    song{
+        id
+        ...SongBase
+        genres {
+            id
+            name
+            slug
+        }
+        tones {
+            ...ToneBase
+            duration
+            fileUrl
+        }
+    }
+
+     articlesRelation(after: $after, first: $first) {
+       totalCount
+      pageInfo {
+          endCursor
+          hasNextPage
+      }
+      edges {
+          node {
+           id
+           title
+           slug
+           image_path
+           description
+           body
+           published_time
+          }
+      }
+    }
+
+  }
+  
+}
+
+query ArticleList($after: String, $first: Int) {
+  articles(after: $after, first: $first) {
+    totalCount
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+    edges {
+      node {
+        id
+        title
+        slug
+        image_path
+        description
+        body
+        published_time
+      }
+    }
+  }
+}

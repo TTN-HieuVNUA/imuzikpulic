@@ -1,0 +1,57 @@
+query Singer($slug: String!, $after: String, $first: Int, $orderBy: SongOrderByInput) {
+  singer(slug: $slug) {
+    id
+    slug
+    alias
+    imageUrl
+    description
+    songs(after: $after, first: $first, orderBy: $orderBy)
+      @connection(key: "singerSongs", filter: ["orderBy"]) {
+      ...SongConnectionBase
+      edges {
+        node {
+          ...SongBase
+          toneFromList {
+            ...ToneBase
+          }
+        }
+      }
+    }
+  }
+}
+query SingerLikes($slug: String!) {
+  singer(slug: $slug) {
+    id
+    likes {
+      id
+      totalCount
+      liked
+    }
+  }
+}
+mutation LikeSinger($singerId: ID!, $like: Boolean!) {
+  likeSinger(singerId: $singerId, like: $like) {
+    errorCode
+    success
+    message
+    result
+  }
+}
+
+query Singers($after: String, $first: Int) {
+  singers(after: $after, first: $first) {
+    totalCount
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+    edges {
+      node {
+        id
+        slug
+        alias
+        imageUrl
+      }
+    }
+  }
+}

@@ -1,0 +1,735 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots AddMemberCard Dark 1`] = `
+<View
+  bg="defaultBackground"
+  py={3}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#262523",
+        "paddingBottom": 15,
+        "paddingTop": 15,
+      },
+    ]
+  }
+>
+  <View
+    bg="defaultBackground"
+    p={2}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#262523",
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+        },
+      ]
+    }
+  >
+    <View
+      alignItems="center"
+      bg="white"
+      borderRadius={8}
+      flexDirection="row"
+      overflow="hidden"
+      p={4}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "white",
+            "borderRadius": 8,
+            "flexDirection": "row",
+            "overflow": "hidden",
+            "paddingBottom": 20,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 20,
+          },
+        ]
+      }
+    >
+      <View
+        flex={1}
+        flexDirection="column"
+        style={
+          Array [
+            Object {
+              "flexBasis": 0,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "flexShrink": 1,
+            },
+          ]
+        }
+      >
+        <Text
+          color="#262523"
+          fontFamily="body"
+          fontSize={4}
+          fontWeight="bold"
+          pb={32}
+          style={
+            Array [
+              Object {
+                "color": "#262523",
+                "fontFamily": "Helvetica",
+                "fontSize": 20,
+                "fontWeight": "700",
+                "paddingBottom": 32,
+              },
+            ]
+          }
+        >
+          Thêm số điện thoại
+        </Text>
+        <View
+          alignItems="center"
+          flexDirection="row"
+          pb={3}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "paddingBottom": 15,
+              },
+            ]
+          }
+        >
+          <TextInput
+            allowFontScaling={true}
+            editable={true}
+            placeholder="Nhập tên"
+            placeholderTextColor="#848484"
+            rejectResponderTermination={true}
+            style={
+              Object {
+                "borderColor": "#C9C9C9",
+                "borderRadius": 8,
+                "borderWidth": 1,
+                "color": "#262523",
+                "fontSize": 14,
+                "height": 48,
+                "paddingLeft": 15,
+                "width": "100%",
+              }
+            }
+            underlineColorAndroid="transparent"
+          />
+        </View>
+        <View
+          pb={1}
+          style={
+            Array [
+              Object {
+                "paddingBottom": 5,
+              },
+            ]
+          }
+        >
+          <TextInput
+            allowFontScaling={true}
+            editable={true}
+            placeholder="Nhập số điện thoại "
+            placeholderTextColor="#848484"
+            rejectResponderTermination={true}
+            style={
+              Object {
+                "borderColor": "#C9C9C9",
+                "borderRadius": 8,
+                "borderWidth": 1,
+                "color": "#262523",
+                "fontSize": 14,
+                "height": 48,
+                "paddingLeft": 15,
+                "width": "100%",
+              }
+            }
+            underlineColorAndroid="transparent"
+          />
+        </View>
+        <View
+          alignItems="center"
+          flexDirection="row"
+          pt={4}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "width": 120,
+                },
+              ]
+            }
+            width={120}
+          >
+            <View
+              accessible={true}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "borderRadius": 16,
+                  "height": 50,
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "overflow": "hidden",
+                }
+              }
+            >
+              <ViewManagerAdapter_ExpoLinearGradient
+                proxiedProperties={
+                  Object {
+                    "colors": Array [
+                      4281921405,
+                      4279343502,
+                    ],
+                    "endPoint": Array [
+                      1,
+                      1,
+                    ],
+                    "locations": undefined,
+                    "startPoint": Array [
+                      0,
+                      0,
+                    ],
+                  }
+                }
+                style={
+                  Object {
+                    "height": "100%",
+                  }
+                }
+              >
+                <View
+                  alignItems="center"
+                  flexDirection="row"
+                  height="100%"
+                  justifyContent="center"
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": "100%",
+                        "justifyContent": "center",
+                        "width": "100%",
+                      },
+                    ]
+                  }
+                  width="100%"
+                >
+                  <Text
+                    color="white"
+                    fontFamily="body"
+                    fontSize={16}
+                    fontWeight="bold"
+                    style={
+                      Array [
+                        Object {
+                          "color": "white",
+                          "fontFamily": "Helvetica",
+                          "fontSize": 16,
+                          "fontWeight": "700",
+                        },
+                        Object {},
+                      ]
+                    }
+                  >
+                    Thêm SĐT
+                  </Text>
+                </View>
+              </ViewManagerAdapter_ExpoLinearGradient>
+            </View>
+          </View>
+          <View
+            ml={2}
+            style={
+              Array [
+                Object {
+                  "marginLeft": 10,
+                  "width": 105,
+                },
+              ]
+            }
+            width={105}
+          >
+            <View
+              accessible={true}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "borderColor": "#979797",
+                  "borderRadius": 8,
+                  "borderWidth": 0,
+                  "height": 50,
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "overflow": "hidden",
+                }
+              }
+            >
+              <ViewManagerAdapter_ExpoLinearGradient
+                proxiedProperties={
+                  Object {
+                    "colors": Array [
+                      0,
+                      0,
+                    ],
+                    "endPoint": Array [
+                      1,
+                      1,
+                    ],
+                    "locations": undefined,
+                    "startPoint": Array [
+                      0,
+                      0,
+                    ],
+                  }
+                }
+                style={
+                  Object {
+                    "height": "100%",
+                  }
+                }
+              >
+                <View
+                  alignItems="center"
+                  flexDirection="row"
+                  height="100%"
+                  justifyContent="center"
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": "100%",
+                        "justifyContent": "center",
+                        "width": "100%",
+                      },
+                    ]
+                  }
+                  width="100%"
+                >
+                  <Text
+                    color="#3D3D3F"
+                    fontFamily="body"
+                    fontSize={2}
+                    fontWeight="bold"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#3D3D3F",
+                          "fontFamily": "Helvetica",
+                          "fontSize": 14,
+                          "fontWeight": "700",
+                        },
+                        Object {},
+                      ]
+                    }
+                  >
+                    Hủy bỏ
+                  </Text>
+                </View>
+              </ViewManagerAdapter_ExpoLinearGradient>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots AddMemberCard Light 1`] = `
+<View
+  bg="defaultBackground"
+  py={3}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "white",
+        "paddingBottom": 15,
+        "paddingTop": 15,
+      },
+    ]
+  }
+>
+  <View
+    bg="defaultBackground"
+    p={2}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "white",
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+        },
+      ]
+    }
+  >
+    <View
+      alignItems="center"
+      bg="white"
+      borderRadius={8}
+      flexDirection="row"
+      overflow="hidden"
+      p={4}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "white",
+            "borderRadius": 8,
+            "flexDirection": "row",
+            "overflow": "hidden",
+            "paddingBottom": 20,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 20,
+          },
+        ]
+      }
+    >
+      <View
+        flex={1}
+        flexDirection="column"
+        style={
+          Array [
+            Object {
+              "flexBasis": 0,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "flexShrink": 1,
+            },
+          ]
+        }
+      >
+        <Text
+          color="#262523"
+          fontFamily="body"
+          fontSize={4}
+          fontWeight="bold"
+          pb={32}
+          style={
+            Array [
+              Object {
+                "color": "#262523",
+                "fontFamily": "Helvetica",
+                "fontSize": 20,
+                "fontWeight": "700",
+                "paddingBottom": 32,
+              },
+            ]
+          }
+        >
+          Thêm số điện thoại
+        </Text>
+        <View
+          alignItems="center"
+          flexDirection="row"
+          pb={3}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "paddingBottom": 15,
+              },
+            ]
+          }
+        >
+          <TextInput
+            allowFontScaling={true}
+            editable={true}
+            placeholder="Nhập tên"
+            placeholderTextColor="#848484"
+            rejectResponderTermination={true}
+            style={
+              Object {
+                "borderColor": "#C9C9C9",
+                "borderRadius": 8,
+                "borderWidth": 1,
+                "color": "#262523",
+                "fontSize": 14,
+                "height": 48,
+                "paddingLeft": 15,
+                "width": "100%",
+              }
+            }
+            underlineColorAndroid="transparent"
+          />
+        </View>
+        <View
+          pb={1}
+          style={
+            Array [
+              Object {
+                "paddingBottom": 5,
+              },
+            ]
+          }
+        >
+          <TextInput
+            allowFontScaling={true}
+            editable={true}
+            placeholder="Nhập số điện thoại "
+            placeholderTextColor="#848484"
+            rejectResponderTermination={true}
+            style={
+              Object {
+                "borderColor": "#C9C9C9",
+                "borderRadius": 8,
+                "borderWidth": 1,
+                "color": "#262523",
+                "fontSize": 14,
+                "height": 48,
+                "paddingLeft": 15,
+                "width": "100%",
+              }
+            }
+            underlineColorAndroid="transparent"
+          />
+        </View>
+        <View
+          alignItems="center"
+          flexDirection="row"
+          pt={4}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "width": 120,
+                },
+              ]
+            }
+            width={120}
+          >
+            <View
+              accessible={true}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "borderRadius": 16,
+                  "height": 50,
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "overflow": "hidden",
+                }
+              }
+            >
+              <ViewManagerAdapter_ExpoLinearGradient
+                proxiedProperties={
+                  Object {
+                    "colors": Array [
+                      4281921405,
+                      4279343502,
+                    ],
+                    "endPoint": Array [
+                      1,
+                      1,
+                    ],
+                    "locations": undefined,
+                    "startPoint": Array [
+                      0,
+                      0,
+                    ],
+                  }
+                }
+                style={
+                  Object {
+                    "height": "100%",
+                  }
+                }
+              >
+                <View
+                  alignItems="center"
+                  flexDirection="row"
+                  height="100%"
+                  justifyContent="center"
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": "100%",
+                        "justifyContent": "center",
+                        "width": "100%",
+                      },
+                    ]
+                  }
+                  width="100%"
+                >
+                  <Text
+                    color="white"
+                    fontFamily="body"
+                    fontSize={16}
+                    fontWeight="bold"
+                    style={
+                      Array [
+                        Object {
+                          "color": "white",
+                          "fontFamily": "Helvetica",
+                          "fontSize": 16,
+                          "fontWeight": "700",
+                        },
+                        Object {},
+                      ]
+                    }
+                  >
+                    Thêm SĐT
+                  </Text>
+                </View>
+              </ViewManagerAdapter_ExpoLinearGradient>
+            </View>
+          </View>
+          <View
+            ml={2}
+            style={
+              Array [
+                Object {
+                  "marginLeft": 10,
+                  "width": 105,
+                },
+              ]
+            }
+            width={105}
+          >
+            <View
+              accessible={true}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "borderColor": "#979797",
+                  "borderRadius": 8,
+                  "borderWidth": 0,
+                  "height": 50,
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "overflow": "hidden",
+                }
+              }
+            >
+              <ViewManagerAdapter_ExpoLinearGradient
+                proxiedProperties={
+                  Object {
+                    "colors": Array [
+                      0,
+                      0,
+                    ],
+                    "endPoint": Array [
+                      1,
+                      1,
+                    ],
+                    "locations": undefined,
+                    "startPoint": Array [
+                      0,
+                      0,
+                    ],
+                  }
+                }
+                style={
+                  Object {
+                    "height": "100%",
+                  }
+                }
+              >
+                <View
+                  alignItems="center"
+                  flexDirection="row"
+                  height="100%"
+                  justifyContent="center"
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": "100%",
+                        "justifyContent": "center",
+                        "width": "100%",
+                      },
+                    ]
+                  }
+                  width="100%"
+                >
+                  <Text
+                    color="#3D3D3F"
+                    fontFamily="body"
+                    fontSize={2}
+                    fontWeight="bold"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#3D3D3F",
+                          "fontFamily": "Helvetica",
+                          "fontSize": 14,
+                          "fontWeight": "700",
+                        },
+                        Object {},
+                      ]
+                    }
+                  >
+                    Hủy bỏ
+                  </Text>
+                </View>
+              </ViewManagerAdapter_ExpoLinearGradient>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

@@ -1,0 +1,13 @@
+{
+  "name": "@imuzik/specs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "gen": "cupl -w **/*.puml"
+  },
+  "devDependencies": {
+    "cupl": "^0.1.9"
+  }
+}

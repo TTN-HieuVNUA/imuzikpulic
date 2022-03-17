@@ -1,0 +1,1 @@
+export const MAX_REGISTER_ID_CACHE_SIZE = 1000;

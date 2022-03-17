@@ -1,0 +1,8 @@
+mutation RegisterDevice($registerId: String!, $deviceType: String!) {
+  registerDevice(registerId: $registerId, deviceType: $deviceType) {
+    success
+    message
+    errorCode
+    result
+  }
+}

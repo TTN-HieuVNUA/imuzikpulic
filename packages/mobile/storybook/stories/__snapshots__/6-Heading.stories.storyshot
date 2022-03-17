@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Heading Dark 1`] = `
+<View
+  bg="defaultBackground"
+  px={3}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#262523",
+        "paddingLeft": 15,
+        "paddingRight": 15,
+      },
+    ]
+  }
+>
+  <View
+    alignItems="center"
+    flexDirection="row"
+    mx={-3}
+    my={2}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "marginBottom": 10,
+          "marginLeft": -15,
+          "marginRight": -15,
+          "marginTop": 10,
+        },
+      ]
+    }
+  >
+    <View
+      bg="secondary"
+      borderRadius={2}
+      height={16}
+      overflow="hidden"
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#22E26B",
+            "borderRadius": 2,
+            "height": 16,
+            "overflow": "hidden",
+            "width": 4,
+          },
+        ]
+      }
+      width={4}
+    />
+    <Text
+      color="normalText"
+      fontFamily="body"
+      fontSize={4}
+      fontWeight="bold"
+      ml={2}
+      style={
+        Array [
+          Object {
+            "color": "white",
+            "fontFamily": "Helvetica",
+            "fontSize": 20,
+            "fontWeight": "700",
+            "marginLeft": 10,
+          },
+        ]
+      }
+    >
+      Ichart
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Heading Light 1`] = `
+<View
+  bg="defaultBackground"
+  p={3}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "white",
+        "paddingBottom": 15,
+        "paddingLeft": 15,
+        "paddingRight": 15,
+        "paddingTop": 15,
+      },
+    ]
+  }
+>
+  <View
+    alignItems="center"
+    flexDirection="row"
+    mx={-3}
+    my={2}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "marginBottom": 10,
+          "marginLeft": -15,
+          "marginRight": -15,
+          "marginTop": 10,
+        },
+      ]
+    }
+  >
+    <View
+      bg="secondary"
+      borderRadius={2}
+      height={16}
+      overflow="hidden"
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#22E26B",
+            "borderRadius": 2,
+            "height": 16,
+            "overflow": "hidden",
+            "width": 4,
+          },
+        ]
+      }
+      width={4}
+    />
+    <Text
+      color="normalText"
+      fontFamily="body"
+      fontSize={4}
+      fontWeight="bold"
+      ml={2}
+      style={
+        Array [
+          Object {
+            "color": "#262523",
+            "fontFamily": "Helvetica",
+            "fontSize": 20,
+            "fontWeight": "700",
+            "marginLeft": 10,
+          },
+        ]
+      }
+    >
+      Ichart
+    </Text>
+  </View>
+</View>
+`;

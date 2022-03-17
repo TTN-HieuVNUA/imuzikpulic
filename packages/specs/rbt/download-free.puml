@@ -1,0 +1,29 @@
+@startuml
+
+title Tải nhạc chờ mien phi
+
+start
+:@Tải nhạc chờ;
+:Đã đăng nhập!;
+:Dịch vụ đang active!;
+:Yêu cầu tải nhạc chờ;
+
+if (Có Download Promotion và chưa hết hạn tính từ lần download đầu tiên theo chương trình) then (yes)
+elseif (Có Download Promotion và đã hết hạn) then (yes)
+else (Không có Download Promotion)
+endif
+
+if (Số điện thoại được free download) then (yes)
+else (Số điện thoại không được free download)
+endif
+
+if (Đang thuộc ngày download miễn phí) then (yes)
+elseif (Đang thuộc khoảng tg download miễn phí) then (yes)
+else (Đang không thuộc ngày download miễn phí)
+endif
+
+:Tải nhạc chờ miễn phí nếu một trong những đk trên thoả mãn;
+:Lưu vào PromotionLog nếu dùng;
+:Thông báo tải thành công;
+end
+@enduml

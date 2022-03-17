@@ -1,0 +1,247 @@
+query MyRbt {
+  myRbt {
+    brandId
+    name
+    packageName
+    status
+    note
+    popup {
+      content
+      brandId
+      note
+    }
+  }
+}
+
+query MyRbtDownloads {
+  myRbt {
+    downloads {
+      id
+      toneCode
+      toneName
+      singerName
+      price
+      availableDateTime
+      personID
+      tone {
+        ...ToneBase
+        fileUrl
+        duration
+        price
+        song {
+          ...SongBase
+        }
+      }
+    }
+  }
+}
+
+query MyRbtDownloadsWithGenres {
+  myRbt {
+    downloads {
+      id
+      toneCode
+      toneName
+      singerName
+      price
+      availableDateTime
+      personID
+      tone {
+        ...ToneBase
+        fileUrl
+        duration
+        price
+        song {
+          genres {
+            id
+            slug
+            name
+          }
+          ...SongBase
+        }
+      }
+    }
+  }
+}
+
+mutation DeleteRbt($rbtCode: String!, $personId: String!) {
+  deleteRbt(rbtCode: $rbtCode, personId: $personId) {
+    success
+    message
+    errorCode
+    result
+  }
+}
+
+mutation GiftRbt($rbtCodes: [String!]!, $msisdn: String!) {
+  giftRbt(rbtCodes: $rbtCodes, msisdn: $msisdn) {
+    success
+    message
+    errorCode
+    result
+  }
+}
+mutation DownloadRbt($rbtCodes: [String!]!) {
+  downloadRbt(rbtCodes: $rbtCodes) {
+    success
+    message
+    errorCode
+    result
+  }
+}
+
+query RbtPackages {
+  rbtPackages {
+    id
+    name
+    brandId
+    period
+    price
+    note
+  }
+}
+
+mutation registerRbt($brandId: ID!) {
+  registerRbt(brandId: $brandId) {
+    success
+    message
+    errorCode
+    result
+  }
+}
+
+mutation activateRbt {
+  activateRbt {
+    success
+    message
+    errorCode
+    result
+  }
+}
+
+mutation cancelRbt {
+  cancelRbt {
+    success
+    message
+    errorCode
+    result
+  }
+}
+
+mutation pauseRbt {
+  pauseRbt {
+    success
+    message
+    errorCode
+    result
+  }
+}
+
+
+mutation CreateRbtAvailable($song_slug: String!, $time_start: String!, $time_stop: String!) {
+  createRbtAvailable(song_slug: $song_slug, time_start: $time_start, time_stop: $time_stop) {
+    success
+    message
+    errorCode
+    result {
+      id
+      type_creation
+      member_id
+      duration
+      available_datetime
+      local_file
+      updated_at
+      created_at
+      tone_code
+      tone_name
+      singer_name
+    }
+  }
+}
+
+query GetMyToneCreations($after: String, $first: Int){
+  getMyToneCreations(first: $first, after: $after){
+    totalCount
+    edges{
+      node{
+        __typename
+        id
+        duration
+        tone_code
+        tone_name_generation
+        tone_name
+        type_creation
+        member_id
+        created_at
+        updated_at
+        available_datetime
+        local_file
+        tone_status
+        type_creation
+        singer_name
+        tone_price
+        song{
+          id
+          name
+          fileUrl
+          genres{
+            name
+          }
+        }
+        contentProvider{
+          name
+          id
+        }
+        tone{
+          name
+          fileUrl
+          orderTimes
+        }
+      }
+    }
+    pageInfo{
+      hasNextPage
+      hasPreviousPage
+      startCursor
+      endCursor
+    }
+  }
+}
+
+query GetMyToneCreation($id: String!){
+  getMyToneCreation(id: $id){
+    __typename
+    id
+    duration
+    tone_code
+    tone_name_generation
+    tone_name
+    type_creation
+    member_id
+    created_at
+    updated_at
+    available_datetime
+    local_file
+    tone_status
+    type_creation
+    singer_name
+    tone_price
+    song{
+      id
+      name
+      fileUrl
+      genres{
+        name
+      }
+    }
+    contentProvider{
+      name
+      id
+    }
+    tone{
+      name
+      fileUrl
+      orderTimes
+    }
+  }
+}

@@ -1,0 +1,917 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots InputWithButton Dark 1`] = `
+<View
+  bg="defaultBackground"
+  py={3}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#262523",
+        "paddingBottom": 15,
+        "paddingTop": 15,
+      },
+    ]
+  }
+>
+  <View
+    bg="defaultBackground"
+    p={2}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#262523",
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+        },
+      ]
+    }
+  >
+    <View
+      alignItems="center"
+      backgroundColor="alternativeBackground"
+      borderColor="transparent"
+      borderRadius={8}
+      borderWidth={0}
+      flexDirection="row"
+      height={48}
+      justifyContent="space-between"
+      overflow="hidden"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#32302E",
+            "borderColor": "transparent",
+            "borderRadius": 8,
+            "borderWidth": 0,
+            "flexDirection": "row",
+            "height": 48,
+            "justifyContent": "space-between",
+            "overflow": "hidden",
+          },
+        ]
+      }
+    >
+      <View
+        flex={1}
+        flexDirection="row"
+        height="100%"
+        style={
+          Array [
+            Object {
+              "flexBasis": 0,
+              "flexDirection": "row",
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "height": "100%",
+            },
+          ]
+        }
+      >
+        <TextInput
+          allowFontScaling={true}
+          color="normalText"
+          editable={true}
+          fontSize={2}
+          height="100%"
+          placeholderTextColor="#AAAAAA"
+          px={3}
+          rejectResponderTermination={true}
+          selectionColor="#FDCC26"
+          style={
+            Array [
+              Object {
+                "color": "white",
+                "fontSize": 14,
+                "height": "100%",
+                "paddingLeft": 15,
+                "paddingRight": 15,
+                "width": "100%",
+              },
+            ]
+          }
+          underlineColorAndroid="transparent"
+          width="100%"
+        />
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          p={3}
+          style={
+            Array [
+              Object {
+                "paddingBottom": 15,
+                "paddingLeft": 15,
+                "paddingRight": 15,
+                "paddingTop": 15,
+              },
+            ]
+          }
+        >
+          <View
+            alignItems="center"
+            height={20}
+            justifyContent="center"
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "height": 20,
+                  "justifyContent": "center",
+                  "width": 20,
+                },
+              ]
+            }
+            width={20}
+          >
+            <RNSVGSvgView
+              align="xMidYMid"
+              bbHeight={20}
+              bbWidth={20}
+              fill="none"
+              focusable={false}
+              height={20}
+              meetOrSlice={0}
+              minX={0}
+              minY={0}
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  Object {
+                    "flex": 0,
+                    "height": 20,
+                    "width": 20,
+                  },
+                ]
+              }
+              vbHeight={20}
+              vbWidth={20}
+              width={20}
+            >
+              <RNSVGGroup
+                fill={null}
+                propList={
+                  Array [
+                    "fill",
+                  ]
+                }
+              >
+                <RNSVGPath
+                  clipRule={0}
+                  d="M0 10C0 4.48 4.48 0 10 0C15.52 0 20 4.48 20 10C20 15.52 15.52 20 10 20C4.48 20 0 15.52 0 10ZM11 11H15V9H11V5H9V9H5V11H9V15H11V11Z"
+                  fill={
+                    Array [
+                      1,
+                      "paint0_linear",
+                    ]
+                  }
+                  fillRule={0}
+                  propList={
+                    Array [
+                      "fill",
+                      "fillRule",
+                    ]
+                  }
+                />
+                <RNSVGDefs>
+                  <RNSVGLinearGradient
+                    gradient={
+                      Array [
+                        0,
+                        -15623794,
+                        1,
+                        -13045891,
+                      ]
+                    }
+                    gradientTransform={null}
+                    gradientUnits={1}
+                    name="paint0_linear"
+                    x1="15.4022"
+                    x2="0.688721"
+                    y1="0"
+                    y2="0"
+                  />
+                  <RNSVGLinearGradient
+                    gradient={
+                      Array [
+                        0,
+                        -6022805,
+                        1,
+                        -235673,
+                      ]
+                    }
+                    gradientTransform={null}
+                    gradientUnits={1}
+                    name="paint1_linear"
+                    x1="10.5"
+                    x2="10.5"
+                    y1="10"
+                    y2="0"
+                  />
+                </RNSVGDefs>
+              </RNSVGGroup>
+            </RNSVGSvgView>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    bg="defaultBackground"
+    p={2}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#262523",
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+        },
+      ]
+    }
+  >
+    <View
+      alignItems="center"
+      backgroundColor="alternativeBackground"
+      borderColor="lightText"
+      borderRadius={8}
+      borderWidth={1}
+      flexDirection="row"
+      height={48}
+      justifyContent="space-between"
+      overflow="hidden"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#32302E",
+            "borderColor": "#AAAAAA",
+            "borderRadius": 8,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "height": 48,
+            "justifyContent": "space-between",
+            "overflow": "hidden",
+          },
+        ]
+      }
+    >
+      <View
+        flex={1}
+        flexDirection="row"
+        height="100%"
+        style={
+          Array [
+            Object {
+              "flexBasis": 0,
+              "flexDirection": "row",
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "height": "100%",
+            },
+          ]
+        }
+      >
+        <TextInput
+          allowFontScaling={true}
+          color="normalText"
+          editable={true}
+          fontSize={2}
+          height="100%"
+          placeholderTextColor="#AAAAAA"
+          px={3}
+          rejectResponderTermination={true}
+          selectionColor="#FDCC26"
+          style={
+            Array [
+              Object {
+                "color": "white",
+                "fontSize": 14,
+                "height": "100%",
+                "paddingLeft": 15,
+                "paddingRight": 15,
+                "width": "100%",
+              },
+            ]
+          }
+          underlineColorAndroid="transparent"
+          width="100%"
+        />
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          p={3}
+          style={
+            Array [
+              Object {
+                "paddingBottom": 15,
+                "paddingLeft": 15,
+                "paddingRight": 15,
+                "paddingTop": 15,
+              },
+            ]
+          }
+        >
+          <View
+            alignItems="center"
+            height={20}
+            justifyContent="center"
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "height": 20,
+                  "justifyContent": "center",
+                  "width": 20,
+                },
+              ]
+            }
+            width={20}
+          >
+            <RNSVGSvgView
+              align="xMidYMid"
+              bbHeight={20}
+              bbWidth={20}
+              fill="none"
+              focusable={false}
+              height={20}
+              meetOrSlice={0}
+              minX={0}
+              minY={0}
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  Object {
+                    "flex": 0,
+                    "height": 20,
+                    "width": 20,
+                  },
+                ]
+              }
+              vbHeight={20}
+              vbWidth={18}
+              width={20}
+            >
+              <RNSVGGroup
+                fill={null}
+                propList={
+                  Array [
+                    "fill",
+                  ]
+                }
+              >
+                <RNSVGPath
+                  clipRule={0}
+                  d="M16 2H15V0H13V2H5V0H3V2H2C0.89 2 0 2.9 0 4V18C0 19.1 0.89 20 2 20H16C17.1 20 18 19.1 18 18V4C18 2.9 17.1 2 16 2ZM9 5C10.66 5 12 6.34 12 8C12 9.66 10.66 11 9 11C7.34 11 6 9.66 6 8C6 6.34 7.34 5 9 5ZM3 16V17H15V16C15 14 11 12.9 9 12.9C7 12.9 3 14 3 16Z"
+                  fill={4294967295}
+                  fillRule={0}
+                  propList={
+                    Array [
+                      "fill",
+                      "fillRule",
+                    ]
+                  }
+                />
+                <RNSVGDefs>
+                  <RNSVGLinearGradient
+                    gradient={
+                      Array [
+                        0,
+                        -15623794,
+                        1,
+                        -13045891,
+                      ]
+                    }
+                    gradientTransform={null}
+                    gradientUnits={1}
+                    name="paint0_linear"
+                    x1="15.4022"
+                    x2="0.688721"
+                    y1="0"
+                    y2="0"
+                  />
+                  <RNSVGLinearGradient
+                    gradient={
+                      Array [
+                        0,
+                        -6022805,
+                        1,
+                        -235673,
+                      ]
+                    }
+                    gradientTransform={null}
+                    gradientUnits={1}
+                    name="paint1_linear"
+                    x1="10.5"
+                    x2="10.5"
+                    y1="10"
+                    y2="0"
+                  />
+                </RNSVGDefs>
+              </RNSVGGroup>
+            </RNSVGSvgView>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots InputWithButton Light 1`] = `
+<View
+  bg="defaultBackground"
+  py={3}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "white",
+        "paddingBottom": 15,
+        "paddingTop": 15,
+      },
+    ]
+  }
+>
+  <View
+    bg="defaultBackground"
+    p={2}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "white",
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+        },
+      ]
+    }
+  >
+    <View
+      alignItems="center"
+      backgroundColor="alternativeBackground"
+      borderColor="transparent"
+      borderRadius={8}
+      borderWidth={0}
+      flexDirection="row"
+      height={48}
+      justifyContent="space-between"
+      overflow="hidden"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F1F1F1",
+            "borderColor": "transparent",
+            "borderRadius": 8,
+            "borderWidth": 0,
+            "flexDirection": "row",
+            "height": 48,
+            "justifyContent": "space-between",
+            "overflow": "hidden",
+          },
+        ]
+      }
+    >
+      <View
+        flex={1}
+        flexDirection="row"
+        height="100%"
+        style={
+          Array [
+            Object {
+              "flexBasis": 0,
+              "flexDirection": "row",
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "height": "100%",
+            },
+          ]
+        }
+      >
+        <TextInput
+          allowFontScaling={true}
+          color="normalText"
+          editable={true}
+          fontSize={2}
+          height="100%"
+          placeholderTextColor="#676767"
+          px={3}
+          rejectResponderTermination={true}
+          selectionColor="#FDCC26"
+          style={
+            Array [
+              Object {
+                "color": "#262523",
+                "fontSize": 14,
+                "height": "100%",
+                "paddingLeft": 15,
+                "paddingRight": 15,
+                "width": "100%",
+              },
+            ]
+          }
+          underlineColorAndroid="transparent"
+          width="100%"
+        />
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          p={3}
+          style={
+            Array [
+              Object {
+                "paddingBottom": 15,
+                "paddingLeft": 15,
+                "paddingRight": 15,
+                "paddingTop": 15,
+              },
+            ]
+          }
+        >
+          <View
+            alignItems="center"
+            height={20}
+            justifyContent="center"
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "height": 20,
+                  "justifyContent": "center",
+                  "width": 20,
+                },
+              ]
+            }
+            width={20}
+          >
+            <RNSVGSvgView
+              align="xMidYMid"
+              bbHeight={20}
+              bbWidth={20}
+              fill="none"
+              focusable={false}
+              height={20}
+              meetOrSlice={0}
+              minX={0}
+              minY={0}
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  Object {
+                    "flex": 0,
+                    "height": 20,
+                    "width": 20,
+                  },
+                ]
+              }
+              vbHeight={20}
+              vbWidth={20}
+              width={20}
+            >
+              <RNSVGGroup
+                fill={null}
+                propList={
+                  Array [
+                    "fill",
+                  ]
+                }
+              >
+                <RNSVGPath
+                  clipRule={0}
+                  d="M0 10C0 4.48 4.48 0 10 0C15.52 0 20 4.48 20 10C20 15.52 15.52 20 10 20C4.48 20 0 15.52 0 10ZM11 11H15V9H11V5H9V9H5V11H9V15H11V11Z"
+                  fill={
+                    Array [
+                      1,
+                      "paint0_linear",
+                    ]
+                  }
+                  fillRule={0}
+                  propList={
+                    Array [
+                      "fill",
+                      "fillRule",
+                    ]
+                  }
+                />
+                <RNSVGDefs>
+                  <RNSVGLinearGradient
+                    gradient={
+                      Array [
+                        0,
+                        -15623794,
+                        1,
+                        -13045891,
+                      ]
+                    }
+                    gradientTransform={null}
+                    gradientUnits={1}
+                    name="paint0_linear"
+                    x1="15.4022"
+                    x2="0.688721"
+                    y1="0"
+                    y2="0"
+                  />
+                  <RNSVGLinearGradient
+                    gradient={
+                      Array [
+                        0,
+                        -6022805,
+                        1,
+                        -235673,
+                      ]
+                    }
+                    gradientTransform={null}
+                    gradientUnits={1}
+                    name="paint1_linear"
+                    x1="10.5"
+                    x2="10.5"
+                    y1="10"
+                    y2="0"
+                  />
+                </RNSVGDefs>
+              </RNSVGGroup>
+            </RNSVGSvgView>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    bg="defaultBackground"
+    p={2}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "white",
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+        },
+      ]
+    }
+  >
+    <View
+      alignItems="center"
+      backgroundColor="alternativeBackground"
+      borderColor="lightText"
+      borderRadius={8}
+      borderWidth={1}
+      flexDirection="row"
+      height={48}
+      justifyContent="space-between"
+      overflow="hidden"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F1F1F1",
+            "borderColor": "#676767",
+            "borderRadius": 8,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "height": 48,
+            "justifyContent": "space-between",
+            "overflow": "hidden",
+          },
+        ]
+      }
+    >
+      <View
+        flex={1}
+        flexDirection="row"
+        height="100%"
+        style={
+          Array [
+            Object {
+              "flexBasis": 0,
+              "flexDirection": "row",
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "height": "100%",
+            },
+          ]
+        }
+      >
+        <TextInput
+          allowFontScaling={true}
+          color="normalText"
+          editable={true}
+          fontSize={2}
+          height="100%"
+          placeholderTextColor="#676767"
+          px={3}
+          rejectResponderTermination={true}
+          selectionColor="#FDCC26"
+          style={
+            Array [
+              Object {
+                "color": "#262523",
+                "fontSize": 14,
+                "height": "100%",
+                "paddingLeft": 15,
+                "paddingRight": 15,
+                "width": "100%",
+              },
+            ]
+          }
+          underlineColorAndroid="transparent"
+          width="100%"
+        />
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          p={3}
+          style={
+            Array [
+              Object {
+                "paddingBottom": 15,
+                "paddingLeft": 15,
+                "paddingRight": 15,
+                "paddingTop": 15,
+              },
+            ]
+          }
+        >
+          <View
+            alignItems="center"
+            height={20}
+            justifyContent="center"
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "height": 20,
+                  "justifyContent": "center",
+                  "width": 20,
+                },
+              ]
+            }
+            width={20}
+          >
+            <RNSVGSvgView
+              align="xMidYMid"
+              bbHeight={20}
+              bbWidth={20}
+              fill="none"
+              focusable={false}
+              height={20}
+              meetOrSlice={0}
+              minX={0}
+              minY={0}
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  Object {
+                    "flex": 0,
+                    "height": 20,
+                    "width": 20,
+                  },
+                ]
+              }
+              vbHeight={20}
+              vbWidth={18}
+              width={20}
+            >
+              <RNSVGGroup
+                fill={null}
+                propList={
+                  Array [
+                    "fill",
+                  ]
+                }
+              >
+                <RNSVGPath
+                  clipRule={0}
+                  d="M16 2H15V0H13V2H5V0H3V2H2C0.89 2 0 2.9 0 4V18C0 19.1 0.89 20 2 20H16C17.1 20 18 19.1 18 18V4C18 2.9 17.1 2 16 2ZM9 5C10.66 5 12 6.34 12 8C12 9.66 10.66 11 9 11C7.34 11 6 9.66 6 8C6 6.34 7.34 5 9 5ZM3 16V17H15V16C15 14 11 12.9 9 12.9C7 12.9 3 14 3 16Z"
+                  fill={4280689955}
+                  fillRule={0}
+                  propList={
+                    Array [
+                      "fill",
+                      "fillRule",
+                    ]
+                  }
+                />
+                <RNSVGDefs>
+                  <RNSVGLinearGradient
+                    gradient={
+                      Array [
+                        0,
+                        -15623794,
+                        1,
+                        -13045891,
+                      ]
+                    }
+                    gradientTransform={null}
+                    gradientUnits={1}
+                    name="paint0_linear"
+                    x1="15.4022"
+                    x2="0.688721"
+                    y1="0"
+                    y2="0"
+                  />
+                  <RNSVGLinearGradient
+                    gradient={
+                      Array [
+                        0,
+                        -6022805,
+                        1,
+                        -235673,
+                      ]
+                    }
+                    gradientTransform={null}
+                    gradientUnits={1}
+                    name="paint1_linear"
+                    x1="10.5"
+                    x2="10.5"
+                    y1="10"
+                    y2="0"
+                  />
+                </RNSVGDefs>
+              </RNSVGGroup>
+            </RNSVGSvgView>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

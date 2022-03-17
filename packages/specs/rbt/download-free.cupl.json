@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cinoss/cupl/master/src/config.schema.json",
+  "global": {
+    "dialect": "vi"
+  },
+  "paths": {
+    "Đã đăng nhập|Dịch vụ đang active|Có Download Promotion và chưa hết hạn tính từ lần download đầu tiên theo chương trình|Số điện thoại không được free download|Đang không thuộc ngày download miễn phí": {
+      "tags": []
+    },
+    "Đã đăng nhập|Dịch vụ đang active|Có Download Promotion và chưa hết hạn tính từ lần download đầu tiên theo chương trình|Số điện thoại không được free download|Đang thuộc khoảng tg download miễn phí": {
+      "tags": []
+    },
+    "Đã đăng nhập|Dịch vụ đang active|Có Download Promotion và chưa hết hạn tính từ lần download đầu tiên theo chương trình|Số điện thoại không được free download|Đang thuộc ngày download miễn phí": {
+      "tags": []
+    },
+    "Đã đăng nhập|Dịch vụ đang active|Có Download Promotion và chưa hết hạn tính từ lần download đầu tiên theo chương trình|Số điện thoại được free download|Đang không thuộc ngày download miễn phí": {
+      "tags": []
+    },
+    "Đã đăng nhập|Dịch vụ đang active|Có Download Promotion và chưa hết hạn tính từ lần download đầu tiên theo chương trình|Số điện thoại được free download|Đang thuộc khoảng tg download miễn phí": {
+      "tags": []
+    },
+    "Đã đăng nhập|Dịch vụ đang active|Có Download Promotion và chưa hết hạn tính từ lần download đầu tiên theo chương trình|Số điện thoại được free download|Đang thuộc ngày download miễn phí": {
+      "tags": []
+    },
+    "Đã đăng nhập|Dịch vụ đang active|Có Download Promotion và đã hết hạn|Số điện thoại không được free download|Đang không thuộc ngày download miễn phí": {
+      "tags": []
+    },
+    "Đã đăng nhập|Dịch vụ đang active|Có Download Promotion và đã hết hạn|Số điện thoại không được free download|Đang thuộc khoảng tg download miễn phí": {
+      "tags": []
+    },
+    "Đã đăng nhập|Dịch vụ đang active|Có Download Promotion và đã hết hạn|Số điện thoại không được free download|Đang thuộc ngày download miễn phí": {
+      "tags": []
+    },
+    "Đã đăng nhập|Dịch vụ đang active|Có Download Promotion và đã hết hạn|Số điện thoại được free download|Đang không thuộc ngày download miễn phí": {
+      "tags": []
+    },
+    "Đã đăng nhập|Dịch vụ đang active|Có Download Promotion và đã hết hạn|Số điện thoại được free download|Đang thuộc khoảng tg download miễn phí": {
+      "tags": []
+    },
+    "Đã đăng nhập|Dịch vụ đang active|Có Download Promotion và đã hết hạn|Số điện thoại được free download|Đang thuộc ngày download miễn phí": {
+      "tags": []
+    },
+    "Đã đăng nhập|Dịch vụ đang active|Không có Download Promotion|Số điện thoại không được free download|Đang không thuộc ngày download miễn phí": {
+      "tags": []
+    },
+    "Đã đăng nhập|Dịch vụ đang active|Không có Download Promotion|Số điện thoại không được free download|Đang thuộc khoảng tg download miễn phí": {
+      "tags": []
+    },
+    "Đã đăng nhập|Dịch vụ đang active|Không có Download Promotion|Số điện thoại không được free download|Đang thuộc ngày download miễn phí": {
+      "tags": []
+    },
+    "Đã đăng nhập|Dịch vụ đang active|Không có Download Promotion|Số điện thoại được free download|Đang không thuộc ngày download miễn phí": {
+      "tags": []
+    },
+    "Đã đăng nhập|Dịch vụ đang active|Không có Download Promotion|Số điện thoại được free download|Đang thuộc khoảng tg download miễn phí": {
+      "tags": []
+    },
+    "Đã đăng nhập|Dịch vụ đang active|Không có Download Promotion|Số điện thoại được free download|Đang thuộc ngày download miễn phí": {
+      "tags": []
+    }
+  }
+}

@@ -1,0 +1,1373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://localhost:8001/user-tone-manage"
+    xmlns:apachesoap="http://xml.apache.org/xml-soap"
+    xmlns:impl="http://localhost:8001/user-tone-manage"
+    xmlns:intf="http://localhost:8001/user-tone-manage"
+    xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:tns1="http://soapinterop.org/xsd"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">    <!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+    <wsdl:types>
+        <schema targetNamespace="http://soapinterop.org/xsd"
+            xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://localhost:8001/user-tone-manage"/>
+            <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.SetToneEvt">
+                <sequence>
+                    <element name="calledUserID" nillable="true" type="xsd:string"/>
+                    <element name="calledUserType" nillable="true" type="xsd:string"/>
+                    <element name="callerNumber" nillable="true" type="xsd:string"/>
+                    <element name="description" nillable="true" type="xsd:string"/>
+                    <element name="endTime" nillable="true" type="xsd:string"/>
+                    <element name="loopType" nillable="true" type="xsd:string"/>
+                    <element name="moduleCode" nillable="true" type="xsd:string"/>
+                    <element name="moodModeID" nillable="true" type="xsd:string"/>
+                    <element name="overlayFlag" nillable="true" type="xsd:string"/>
+                    <element name="phoneState" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="resourceType" nillable="true" type="xsd:string"/>
+                    <element name="role" nillable="true" type="xsd:string"/>
+                    <element name="roleCode" nillable="true" type="xsd:string"/>
+                    <element name="setMode" nillable="true" type="xsd:string"/>
+                    <element name="setType" nillable="true" type="xsd:string"/>
+                    <element name="startTime" nillable="true" type="xsd:string"/>
+                    <element name="timeType" nillable="true" type="xsd:string"/>
+                    <element name="toneBoxID" nillable="true" type="xsd:string"/>
+                    <element name="toneType" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usertonemanage.SetToneResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                    <element name="settingID" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.AddGroupEvt">
+                <sequence>
+                    <element name="description" nillable="true" type="xsd:string"/>
+                    <element name="groupCode" nillable="true" type="xsd:string"/>
+                    <element name="groupName" nillable="true" type="xsd:string"/>
+                    <element name="moduleCode" nillable="true" type="xsd:string"/>
+                    <element name="phoneNumber" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="role" nillable="true" type="xsd:string"/>
+                    <element name="roleCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usertonemanage.AddGroupResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="groupID" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.DelGroupEvt">
+                <sequence>
+                    <element name="groupCode" nillable="true" type="xsd:string"/>
+                    <element name="groupID" nillable="true" type="xsd:string"/>
+                    <element name="moduleCode" nillable="true" type="xsd:string"/>
+                    <element name="phoneNumber" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="role" nillable="true" type="xsd:string"/>
+                    <element name="roleCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usertonemanage.DelGroupResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.QueryGroupEvt">
+                <sequence>
+                    <element name="endRecordNum" nillable="true" type="xsd:string"/>
+                    <element name="phoneNumber" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="queryType" nillable="true" type="xsd:string"/>
+                    <element name="startRecordNum" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usertonemanage.GroupInfo">
+                <sequence>
+                    <element name="description" nillable="true" type="xsd:string"/>
+                    <element name="groupCode" nillable="true" type="xsd:string"/>
+                    <element name="groupID" nillable="true" type="xsd:string"/>
+                    <element name="groupName" nillable="true" type="xsd:string"/>
+                    <element name="phoneNumber" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usertonemanage.QueryGroupResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="groupInfos" nillable="true" type="impl:ArrayOf_tns1_com.viettel.vcrbt.webservice.response.usertonemanage.GroupInfo"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="recordSum" nillable="true" type="xsd:string"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.AddGroupMemberEvt">
+                <sequence>
+                    <element name="groupCode" nillable="true" type="xsd:string"/>
+                    <element name="groupID" nillable="true" type="xsd:string"/>
+                    <element name="memberDetails" nillable="true" type="xsd:string"/>
+                    <element name="memberName" nillable="true" type="xsd:string"/>
+                    <element name="memberNumber" nillable="true" type="xsd:string"/>
+                    <element name="moduleCode" nillable="true" type="xsd:string"/>
+                    <element name="phoneNumber" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="role" nillable="true" type="xsd:string"/>
+                    <element name="roleCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usertonemanage.AddGroupMemberResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.DelGroupMemberEvt">
+                <sequence>
+                    <element name="groupCode" nillable="true" type="xsd:string"/>
+                    <element name="groupID" nillable="true" type="xsd:string"/>
+                    <element name="memberNumber" nillable="true" type="impl:ArrayOf_xsd_string"/>
+                    <element name="moduleCode" nillable="true" type="xsd:string"/>
+                    <element name="phoneNumber" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="role" nillable="true" type="xsd:string"/>
+                    <element name="roleCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usertonemanage.DelGroupMemberResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.QueryGroupMemberEvt">
+                <sequence>
+                    <element name="endRecordNum" nillable="true" type="xsd:string"/>
+                    <element name="groupCode" nillable="true" type="xsd:string"/>
+                    <element name="groupID" nillable="true" type="xsd:string"/>
+                    <element name="phoneNumber" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="queryType" nillable="true" type="xsd:string"/>
+                    <element name="startRecordNum" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usertonemanage.GroupMemberInfo">
+                <sequence>
+                    <element name="memberDetails" nillable="true" type="xsd:string"/>
+                    <element name="memberName" nillable="true" type="xsd:string"/>
+                    <element name="memberNumber" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usertonemanage.QueryGroupMemberResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="groupMemberInfos" nillable="true" type="impl:ArrayOf_tns1_com.viettel.vcrbt.webservice.response.usertonemanage.GroupMemberInfo"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="recordSum" nillable="true" type="xsd:string"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.AddToneBoxEvt">
+                <sequence>
+                    <element name="canSplit" nillable="true" type="xsd:string"/>
+                    <element name="canUpdate" nillable="true" type="xsd:string"/>
+                    <element name="catalogID" nillable="true" type="xsd:string"/>
+                    <element name="description" nillable="true" type="xsd:string"/>
+                    <element name="enabledDate" nillable="true" type="xsd:string"/>
+                    <element name="feeType" nillable="true" type="xsd:string"/>
+                    <element name="isMixMusicBox" nillable="true" type="xsd:string"/>
+                    <element name="languageID" nillable="true" type="xsd:string"/>
+                    <element name="loopToneType" nillable="true" type="xsd:string"/>
+                    <element name="moduleCode" nillable="true" type="xsd:string"/>
+                    <element name="name" nillable="true" type="xsd:string"/>
+                    <element name="objectCode" nillable="true" type="xsd:string"/>
+                    <element name="objectRole" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="price" nillable="true" type="xsd:string"/>
+                    <element name="priceGroupID" nillable="true" type="xsd:string"/>
+                    <element name="relativeTime" nillable="true" type="xsd:string"/>
+                    <element name="role" nillable="true" type="xsd:string"/>
+                    <element name="roleCode" nillable="true" type="xsd:string"/>
+                    <element name="serviceID" nillable="true" type="xsd:string"/>
+                    <element name="toneBoxCode" nillable="true" type="xsd:string"/>
+                    <element name="toneCode" nillable="true" type="impl:ArrayOf_xsd_string"/>
+                    <element name="toneEndOffsets" nillable="true" type="impl:ArrayOf_xsd_string"/>
+                    <element name="toneFileNames" nillable="true" type="impl:ArrayOf_xsd_string"/>
+                    <element name="toneID" nillable="true" type="impl:ArrayOf_xsd_string"/>
+                    <element name="toneOffsets" nillable="true" type="impl:ArrayOf_xsd_string"/>
+                    <element name="toneType" nillable="true" type="impl:ArrayOf_xsd_string"/>
+                    <element name="toneValidDay" nillable="true" type="xsd:string"/>
+                    <element name="type" nillable="true" type="xsd:string"/>
+                    <element name="uploadType" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usertonemanage.AddToneBoxResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                    <element name="toneBoxCode" nillable="true" type="xsd:string"/>
+                    <element name="toneBoxID" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.EditToneBoxEvt">
+                <sequence>
+                    <element name="canSplit" nillable="true" type="xsd:string"/>
+                    <element name="canUpdate" nillable="true" type="xsd:string"/>
+                    <element name="description" nillable="true" type="xsd:string"/>
+                    <element name="enabledDate" nillable="true" type="xsd:string"/>
+                    <element name="feeType" nillable="true" type="xsd:string"/>
+                    <element name="languageID" nillable="true" type="xsd:string"/>
+                    <element name="moduleCode" nillable="true" type="xsd:string"/>
+                    <element name="name" nillable="true" type="xsd:string"/>
+                    <element name="newCatalogID" nillable="true" type="xsd:string"/>
+                    <element name="objectCode" nillable="true" type="xsd:string"/>
+                    <element name="objectRole" nillable="true" type="xsd:string"/>
+                    <element name="oldCatalogID" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="price" nillable="true" type="xsd:string"/>
+                    <element name="priceGroupID" nillable="true" type="xsd:string"/>
+                    <element name="reason" nillable="true" type="xsd:string"/>
+                    <element name="relativeTime" nillable="true" type="xsd:string"/>
+                    <element name="role" nillable="true" type="xsd:string"/>
+                    <element name="roleCode" nillable="true" type="xsd:string"/>
+                    <element name="serviceID" nillable="true" type="xsd:string"/>
+                    <element name="tableType" nillable="true" type="xsd:string"/>
+                    <element name="toneBoxID" nillable="true" type="xsd:string"/>
+                    <element name="toneCode" nillable="true" type="impl:ArrayOf_xsd_string"/>
+                    <element name="toneEndOffsets" nillable="true" type="impl:ArrayOf_xsd_string"/>
+                    <element name="toneFileNames" nillable="true" type="impl:ArrayOf_xsd_string"/>
+                    <element name="toneID" nillable="true" type="impl:ArrayOf_xsd_string"/>
+                    <element name="toneOffsets" nillable="true" type="impl:ArrayOf_xsd_string"/>
+                    <element name="toneType" nillable="true" type="impl:ArrayOf_xsd_string"/>
+                    <element name="toneValidDay" nillable="true" type="xsd:string"/>
+                    <element name="type" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usertonemanage.EditToneBoxResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.OrderToneEvt">
+                <sequence>
+                    <element name="chargeFeeMode" nillable="true" type="xsd:string"/>
+                    <element name="discount" nillable="true" type="xsd:string"/>
+                    <element name="fromFlag" nillable="true" type="xsd:string"/>
+                    <element name="keyword" nillable="true" type="xsd:string"/>
+                    <element name="merchantID" nillable="true" type="xsd:string"/>
+                    <element name="moduleCode" nillable="true" type="xsd:string"/>
+                    <element name="partnerID" nillable="true" type="xsd:string"/>
+                    <element name="passID" nillable="true" type="xsd:string"/>
+                    <element name="phoneNumber" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="price" nillable="true" type="xsd:string"/>
+                    <element name="productID" nillable="true" type="xsd:string"/>
+                    <element name="rankType" nillable="true" type="xsd:string"/>
+                    <element name="resourceCode" nillable="true" type="xsd:string"/>
+                    <element name="resourceID" nillable="true" type="xsd:string"/>
+                    <element name="resourceType" nillable="true" type="xsd:string"/>
+                    <element name="role" nillable="true" type="xsd:string"/>
+                    <element name="roleCode" nillable="true" type="xsd:string"/>
+                    <element name="serviceID" nillable="true" type="xsd:string"/>
+                    <element name="toneValidDay" nillable="true" type="xsd:string"/>
+                    <element name="validDuration" nillable="true" type="xsd:string"/>
+                    <element name="voucherID" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.OrderToneResp">
+                <sequence>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.DelInboxToneEvt">
+                <sequence>
+                    <element name="merchantID" nillable="true" type="xsd:string"/>
+                    <element name="moduleCode" nillable="true" type="xsd:string"/>
+                    <element name="personId" nillable="true" type="xsd:string"/>
+                    <element name="phoneNumber" nillable="true" type="xsd:string"/>
+                    <element name="portType" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="role" nillable="true" type="xsd:string"/>
+                    <element name="roleCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usertonemanage.DelInboxToneResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.AddTbToneEvt">
+                <sequence>
+                    <element name="moduleCode" nillable="true" type="xsd:string"/>
+                    <element name="objectCode" nillable="true" type="xsd:string"/>
+                    <element name="objectRole" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="role" nillable="true" type="xsd:string"/>
+                    <element name="roleCode" nillable="true" type="xsd:string"/>
+                    <element name="toneBoxID" nillable="true" type="xsd:string"/>
+                    <element name="toneCode" nillable="true" type="impl:ArrayOf_xsd_string"/>
+                    <element name="toneEndOffsets" nillable="true" type="impl:ArrayOf_xsd_string"/>
+                    <element name="toneID" nillable="true" type="impl:ArrayOf_xsd_string"/>
+                    <element name="toneOffsets" nillable="true" type="impl:ArrayOf_xsd_string"/>
+                    <element name="toneType" nillable="true" type="xsd:string"/>
+                    <element name="type" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usertonemanage.AddTbToneResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.DelTbToneEvt">
+                <sequence>
+                    <element name="moduleCode" nillable="true" type="xsd:string"/>
+                    <element name="objectCode" nillable="true" type="xsd:string"/>
+                    <element name="objectRole" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="role" nillable="true" type="xsd:string"/>
+                    <element name="roleCode" nillable="true" type="xsd:string"/>
+                    <element name="toneBoxID" nillable="true" type="xsd:string"/>
+                    <element name="toneCode" nillable="true" type="impl:ArrayOf_xsd_string"/>
+                    <element name="toneEndOffsets" nillable="true" type="xsd:string"/>
+                    <element name="toneID" nillable="true" type="impl:ArrayOf_xsd_string"/>
+                    <element name="toneOffsets" nillable="true" type="xsd:string"/>
+                    <element name="toneType" nillable="true" type="xsd:string"/>
+                    <element name="type" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usertonemanage.DelTbToneResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.SendSmEvt">
+                <sequence>
+                    <element name="endDate" nillable="true" type="xsd:string"/>
+                    <element name="endTime" nillable="true" type="xsd:string"/>
+                    <element name="moduleCode" nillable="true" type="xsd:string"/>
+                    <element name="phoneNumbers" nillable="true" type="impl:ArrayOf_xsd_string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="role" nillable="true" type="xsd:string"/>
+                    <element name="roleCode" nillable="true" type="xsd:string"/>
+                    <element name="smContent" nillable="true" type="xsd:string"/>
+                    <element name="smLabel" nillable="true" type="xsd:string"/>
+                    <element name="srcTerminalID" nillable="true" type="xsd:string"/>
+                    <element name="startDate" nillable="true" type="xsd:string"/>
+                    <element name="startTime" nillable="true" type="xsd:string"/>
+                    <element name="taskName" nillable="true" type="xsd:string"/>
+                    <element name="timeType" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usertonemanage.SendSmResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.QueryToneBoxEvt">
+                <sequence>
+                    <element name="approveType" nillable="true" type="xsd:string"/>
+                    <element name="askType" nillable="true" type="xsd:string"/>
+                    <element name="beginUpdateTime" nillable="true" type="xsd:string"/>
+                    <element name="beginUploadTime" nillable="true" type="xsd:string"/>
+                    <element name="canSplit" nillable="true" type="xsd:string"/>
+                    <element name="canUpdate" nillable="true" type="xsd:string"/>
+                    <element name="catalogID" nillable="true" type="xsd:string"/>
+                    <element name="endRecordNum" nillable="true" type="xsd:string"/>
+                    <element name="endUpdateTime" nillable="true" type="xsd:string"/>
+                    <element name="endUploadTime" nillable="true" type="xsd:string"/>
+                    <element name="feeType" nillable="true" type="xsd:string"/>
+                    <element name="isMixMusicBox" nillable="true" type="xsd:string"/>
+                    <element name="languageID" nillable="true" type="xsd:string"/>
+                    <element name="maxOrderTimes" nillable="true" type="xsd:string"/>
+                    <element name="maxPrice" nillable="true" type="xsd:string"/>
+                    <element name="minOrderTimes" nillable="true" type="xsd:string"/>
+                    <element name="minPrice" nillable="true" type="xsd:string"/>
+                    <element name="orderBy" nillable="true" type="xsd:string"/>
+                    <element name="orderType" nillable="true" type="xsd:string"/>
+                    <element name="ownerid" nillable="true" type="xsd:string"/>
+                    <element name="ownertype" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="queryToneBoxType" nillable="true" type="xsd:string"/>
+                    <element name="queryType" nillable="true" type="xsd:string"/>
+                    <element name="relativeTime" nillable="true" type="xsd:string"/>
+                    <element name="startRecordNum" nillable="true" type="xsd:string"/>
+                    <element name="status" nillable="true" type="xsd:string"/>
+                    <element name="subInfoName" nillable="true" type="xsd:string"/>
+                    <element name="subInfoValue" nillable="true" type="xsd:string"/>
+                    <element name="timeFlag" nillable="true" type="xsd:string"/>
+                    <element name="toneBoxCode" nillable="true" type="xsd:string"/>
+                    <element name="toneBoxID" nillable="true" type="xsd:string"/>
+                    <element name="toneBoxName" nillable="true" type="xsd:string"/>
+                    <element name="toneBoxType" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usertonemanage.ToneBoxInfo">
+                <sequence>
+                    <element name="askType" nillable="true" type="xsd:string"/>
+                    <element name="availableDateTime" nillable="true" type="xsd:string"/>
+                    <element name="canSplit" nillable="true" type="xsd:string"/>
+                    <element name="canUpdate" nillable="true" type="xsd:string"/>
+                    <element name="catalogID" nillable="true" type="xsd:string"/>
+                    <element name="contentLanguage" nillable="true" type="xsd:string"/>
+                    <element name="downTime" nillable="true" type="xsd:string"/>
+                    <element name="downloadTimes" nillable="true" type="xsd:string"/>
+                    <element name="enabledDate" nillable="true" type="xsd:string"/>
+                    <element name="feeType" nillable="true" type="xsd:string"/>
+                    <element name="isMixMusicBox" nillable="true" type="xsd:string"/>
+                    <element name="languageID" nillable="true" type="xsd:string"/>
+                    <element name="loopToneType" nillable="true" type="xsd:string"/>
+                    <element name="merchantID" nillable="true" type="xsd:string"/>
+                    <element name="modifyID" nillable="true" type="xsd:string"/>
+                    <element name="operator" nillable="true" type="xsd:string"/>
+                    <element name="orderInfo" nillable="true" type="xsd:string"/>
+                    <element name="ownerID" nillable="true" type="xsd:string"/>
+                    <element name="ownerType" nillable="true" type="xsd:string"/>
+                    <element name="passID" nillable="true" type="xsd:string"/>
+                    <element name="personToneBoxID" nillable="true" type="xsd:string"/>
+                    <element name="price" nillable="true" type="xsd:string"/>
+                    <element name="priceGroupID" nillable="true" type="xsd:string"/>
+                    <element name="productID" nillable="true" type="xsd:string"/>
+                    <element name="reOrderMode" nillable="true" type="xsd:string"/>
+                    <element name="reason" nillable="true" type="xsd:string"/>
+                    <element name="refuseReason" nillable="true" type="xsd:string"/>
+                    <element name="relativeTime" nillable="true" type="xsd:string"/>
+                    <element name="remark" nillable="true" type="xsd:string"/>
+                    <element name="resourceServiceType" nillable="true" type="xsd:string"/>
+                    <element name="serviceID" nillable="true" type="xsd:string"/>
+                    <element name="setTime" nillable="true" type="xsd:string"/>
+                    <element name="setTimes" nillable="true" type="xsd:string"/>
+                    <element name="spCode" nillable="true" type="xsd:string"/>
+                    <element name="spName" nillable="true" type="xsd:string"/>
+                    <element name="status" nillable="true" type="xsd:string"/>
+                    <element name="tableType" nillable="true" type="xsd:string"/>
+                    <element name="tariffPrice" nillable="true" type="xsd:string"/>
+                    <element name="toneBoxCode" nillable="true" type="xsd:string"/>
+                    <element name="toneBoxDescription" nillable="true" type="xsd:string"/>
+                    <element name="toneBoxID" nillable="true" type="xsd:string"/>
+                    <element name="toneBoxName" nillable="true" type="xsd:string"/>
+                    <element name="updateTime" nillable="true" type="xsd:string"/>
+                    <element name="uploadType" nillable="true" type="xsd:string"/>
+                    <element name="validDay" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usertonemanage.QueryToneBoxResp1">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="recordSum" nillable="true" type="xsd:string"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                    <element name="toneBoxInfos" nillable="true" type="impl:ArrayOf_tns1_com.viettel.vcrbt.webservice.response.usertonemanage.ToneBoxInfo"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.QueryTbToneEvt">
+                <sequence>
+                    <element name="approveType" nillable="true" type="xsd:string"/>
+                    <element name="languageID" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="toneBoxID" nillable="true" type="xsd:string"/>
+                    <element name="type" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usertonemanage.ToneInfo">
+                <sequence>
+                    <element name="aipTonePreListenAddress" nillable="true" type="xsd:string"/>
+                    <element name="aipTonePreListenURL" nillable="true" type="xsd:string"/>
+                    <element name="allowedChannel" nillable="true" type="xsd:string"/>
+                    <element name="askType" nillable="true" type="xsd:string"/>
+                    <element name="availableDateTime" nillable="true" type="xsd:string"/>
+                    <element name="beginTime" nillable="true" type="xsd:string"/>
+                    <element name="category" nillable="true" type="xsd:string"/>
+                    <element name="categoryName" nillable="true" type="xsd:string"/>
+                    <element name="checkTime" nillable="true" type="xsd:string"/>
+                    <element name="contentLanguage" nillable="true" type="xsd:string"/>
+                    <element name="corpCode" nillable="true" type="xsd:string"/>
+                    <element name="corpName" nillable="true" type="xsd:string"/>
+                    <element name="cpCode" nillable="true" type="xsd:string"/>
+                    <element name="cpName" nillable="true" type="xsd:string"/>
+                    <element name="cutFlag" nillable="true" type="xsd:string"/>
+                    <element name="deviceAndUrl" nillable="true" type="xsd:string"/>
+                    <element name="diyUserPhoneNumber" nillable="true" type="xsd:string"/>
+                    <element name="downTime" nillable="true" type="xsd:string"/>
+                    <element name="enabledDate" nillable="true" type="xsd:string"/>
+                    <element name="endOffset" nillable="true" type="xsd:string"/>
+                    <element name="endTime" nillable="true" type="xsd:string"/>
+                    <element name="fileSyncInterval" nillable="true" type="xsd:string"/>
+                    <element name="fileSyncPath" nillable="true" type="xsd:string"/>
+                    <element name="freeOrderTimes" nillable="true" type="xsd:string"/>
+                    <element name="ftpPassword" nillable="true" type="xsd:string"/>
+                    <element name="ftpUserName" nillable="true" type="xsd:string"/>
+                    <element name="index" nillable="true" type="xsd:string"/>
+                    <element name="info" nillable="true" type="xsd:string"/>
+                    <element name="language" nillable="true" type="xsd:string"/>
+                    <element name="lyricCompanyID" nillable="true" type="xsd:string"/>
+                    <element name="lyricValidDay" nillable="true" type="xsd:string"/>
+                    <element name="merchantID" nillable="true" type="xsd:string"/>
+                    <element name="modifyID" nillable="true" type="xsd:string"/>
+                    <element name="musicID" nillable="true" type="xsd:string"/>
+                    <element name="offset" nillable="true" type="xsd:string"/>
+                    <element name="operator" nillable="true" type="xsd:string"/>
+                    <element name="orderInfo" nillable="true" type="xsd:string"/>
+                    <element name="orderTimes" nillable="true" type="xsd:string"/>
+                    <element name="passID" nillable="true" type="xsd:string"/>
+                    <element name="personID" nillable="true" type="xsd:string"/>
+                    <element name="plusUserPhoneNumber" nillable="true" type="xsd:string"/>
+                    <element name="price" nillable="true" type="xsd:string"/>
+                    <element name="priceGroupID" nillable="true" type="xsd:string"/>
+                    <element name="productID" nillable="true" type="xsd:string"/>
+                    <element name="reOrderMode" nillable="true" type="xsd:string"/>
+                    <element name="reason" nillable="true" type="xsd:string"/>
+                    <element name="recordCompanyID" nillable="true" type="xsd:string"/>
+                    <element name="recordValidDay" nillable="true" type="xsd:string"/>
+                    <element name="rejectReason" nillable="true" type="xsd:string"/>
+                    <element name="relativeTime" nillable="true" type="xsd:string"/>
+                    <element name="remark" nillable="true" type="xsd:string"/>
+                    <element name="resourceServiceType" nillable="true" type="xsd:string"/>
+                    <element name="serviceID" nillable="true" type="xsd:string"/>
+                    <element name="setTimes" nillable="true" type="xsd:string"/>
+                    <element name="singerName" nillable="true" type="xsd:string"/>
+                    <element name="singerNameAddress" nillable="true" type="xsd:string"/>
+                    <element name="singerNameLetter" nillable="true" type="xsd:string"/>
+                    <element name="singerNamePath" nillable="true" type="xsd:string"/>
+                    <element name="singerSex" nillable="true" type="xsd:string"/>
+                    <element name="status" nillable="true" type="xsd:string"/>
+                    <element name="tableType" nillable="true" type="xsd:string"/>
+                    <element name="tariffPrice" nillable="true" type="xsd:string"/>
+                    <element name="taxisIndex" nillable="true" type="xsd:string"/>
+                    <element name="taxisToneDownInfo" nillable="true" type="xsd:string"/>
+                    <element name="toneAddress" nillable="true" type="xsd:string"/>
+                    <element name="toneCode" nillable="true" type="xsd:string"/>
+                    <element name="toneCodeLong" nillable="true" type="xsd:string"/>
+                    <element name="toneID" nillable="true" type="xsd:string"/>
+                    <element name="toneName" nillable="true" type="xsd:string"/>
+                    <element name="toneNameAddress" nillable="true" type="xsd:string"/>
+                    <element name="toneNameLetter" nillable="true" type="xsd:string"/>
+                    <element name="toneNamePath" nillable="true" type="xsd:string"/>
+                    <element name="tonePath" nillable="true" type="xsd:string"/>
+                    <element name="tonePreListenAddress" nillable="true" type="xsd:string"/>
+                    <element name="tonePreListenPath" nillable="true" type="xsd:string"/>
+                    <element name="toneValidDay" nillable="true" type="xsd:string"/>
+                    <element name="totalPrice" nillable="true" type="xsd:string"/>
+                    <element name="tuneCompanyID" nillable="true" type="xsd:string"/>
+                    <element name="tuneValidDay" nillable="true" type="xsd:string"/>
+                    <element name="updateTime" nillable="true" type="xsd:string"/>
+                    <element name="uploadTime" nillable="true" type="xsd:string"/>
+                    <element name="uploadType" nillable="true" type="xsd:string"/>
+                    <element name="webTonePreListenAddress" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usertonemanage.QueryTbToneResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="recordSum" nillable="true" type="xsd:string"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                    <element name="toneInfos" nillable="true" type="impl:ArrayOf_tns1_com.viettel.vcrbt.webservice.response.usertonemanage.ToneInfo"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.ReOrderToneEvt">
+                <sequence>
+                    <element name="chargeFeeMode" nillable="true" type="xsd:string"/>
+                    <element name="discount" nillable="true" type="xsd:string"/>
+                    <element name="keyword" nillable="true" type="xsd:string"/>
+                    <element name="merchantID" nillable="true" type="xsd:string"/>
+                    <element name="moduleCode" nillable="true" type="xsd:string"/>
+                    <element name="partnerID" nillable="true" type="xsd:string"/>
+                    <element name="personalID" nillable="true" type="xsd:string"/>
+                    <element name="phoneNumber" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="price" nillable="true" type="xsd:string"/>
+                    <element name="productID" nillable="true" type="xsd:string"/>
+                    <element name="resourceCode" nillable="true" type="xsd:string"/>
+                    <element name="resourceID" nillable="true" type="xsd:string"/>
+                    <element name="resourceType" nillable="true" type="xsd:string"/>
+                    <element name="role" nillable="true" type="xsd:string"/>
+                    <element name="roleCode" nillable="true" type="xsd:string"/>
+                    <element name="serviceID" nillable="true" type="xsd:string"/>
+                    <element name="toneValidDay" nillable="true" type="xsd:string"/>
+                    <element name="validDuration" nillable="true" type="xsd:string"/>
+                    <element name="voucherID" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usertonemanage.ReOrderToneResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.UploadToneEvt">
+                <sequence>
+                    <element name="FTPPassword" nillable="true" type="xsd:string"/>
+                    <element name="FTPUserName" nillable="true" type="xsd:string"/>
+                    <element name="aggregatorShare" nillable="true" type="xsd:string"/>
+                    <element name="allowedChannel" nillable="true" type="xsd:string"/>
+                    <element name="auditionFileNames" nillable="true" type="xsd:string"/>
+                    <element name="beginTime" nillable="true" type="xsd:string"/>
+                    <element name="bgToneCode" nillable="true" type="xsd:string"/>
+                    <element name="bgToneID" nillable="true" type="xsd:string"/>
+                    <element name="catalog" nillable="true" type="xsd:string"/>
+                    <element name="catalogID" nillable="true" type="xsd:string"/>
+                    <element name="corpID" nillable="true" type="xsd:string"/>
+                    <element name="cpRevSharePercentage" nillable="true" type="xsd:string"/>
+                    <element name="cpType" nillable="true" type="xsd:string"/>
+                    <element name="cutFlag" nillable="true" type="xsd:string"/>
+                    <element name="enabledDate" nillable="true" type="xsd:string"/>
+                    <element name="endTime" nillable="true" type="xsd:string"/>
+                    <element name="fileSyncInterval" nillable="true" type="xsd:string"/>
+                    <element name="fileSyncPath" nillable="true" type="xsd:string"/>
+                    <element name="language" nillable="true" type="xsd:string"/>
+                    <element name="lyricCompanyID" nillable="true" type="xsd:string"/>
+                    <element name="lyricValidDay" nillable="true" type="xsd:string"/>
+                    <element name="moduleCode" nillable="true" type="xsd:string"/>
+                    <element name="monthFee" nillable="true" type="xsd:string"/>
+                    <element name="musicID" nillable="true" type="xsd:string"/>
+                    <element name="needApproved" nillable="true" type="xsd:string"/>
+                    <element name="partnerID" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="price" nillable="true" type="xsd:string"/>
+                    <element name="priceGroupID" nillable="true" type="xsd:string"/>
+                    <element name="recordCompanyID" nillable="true" type="xsd:string"/>
+                    <element name="recordValidDay" nillable="true" type="xsd:string"/>
+                    <element name="relativeTime" nillable="true" type="xsd:string"/>
+                    <element name="resourceServiceType" nillable="true" type="xsd:string"/>
+                    <element name="role" nillable="true" type="xsd:string"/>
+                    <element name="roleCode" nillable="true" type="xsd:string"/>
+                    <element name="singerName" nillable="true" type="xsd:string"/>
+                    <element name="singerNameLetter" nillable="true" type="xsd:string"/>
+                    <element name="singerSex" nillable="true" type="xsd:string"/>
+                    <element name="toneCode" nillable="true" type="xsd:string"/>
+                    <element name="toneInfo" nillable="true" type="xsd:string"/>
+                    <element name="toneName" nillable="true" type="xsd:string"/>
+                    <element name="toneNameLetter" nillable="true" type="xsd:string"/>
+                    <element name="toneValidDay" nillable="true" type="xsd:string"/>
+                    <element name="totalPrice" nillable="true" type="xsd:string"/>
+                    <element name="tuneCompanyID" nillable="true" type="xsd:string"/>
+                    <element name="tuneValidDay" nillable="true" type="xsd:string"/>
+                    <element name="uploadID" nillable="true" type="xsd:string"/>
+                    <element name="uploadType" nillable="true" type="xsd:string"/>
+                    <element name="userToneCode" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usertonemanage.UploadToneResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                    <element name="toneCode" nillable="true" type="xsd:string"/>
+                    <element name="toneID" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.QuerySettingEvt">
+                <sequence>
+                    <element name="calledUserID" nillable="true" type="xsd:string"/>
+                    <element name="calledUserType" nillable="true" type="xsd:string"/>
+                    <element name="phoneState" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="setMode" nillable="true" type="xsd:string"/>
+                    <element name="setType" nillable="true" type="xsd:string"/>
+                    <element name="timeType" nillable="true" type="xsd:string"/>
+                    <element name="toneType" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usertonemanage.SettingInfo">
+                <sequence>
+                    <element name="callerName" nillable="true" type="xsd:string"/>
+                    <element name="callerNumber" nillable="true" type="xsd:string"/>
+                    <element name="description" nillable="true" type="xsd:string"/>
+                    <element name="endTime" nillable="true" type="xsd:string"/>
+                    <element name="loopType" nillable="true" type="xsd:string"/>
+                    <element name="moodModeID" nillable="true" type="xsd:string"/>
+                    <element name="offset" nillable="true" type="xsd:string"/>
+                    <element name="operator" nillable="true" type="xsd:string"/>
+                    <element name="phoneState" nillable="true" type="xsd:string"/>
+                    <element name="priority" nillable="true" type="xsd:string"/>
+                    <element name="resourceType" nillable="true" type="xsd:string"/>
+                    <element name="setMode" nillable="true" type="xsd:string"/>
+                    <element name="setTime" nillable="true" type="xsd:string"/>
+                    <element name="setType" nillable="true" type="xsd:string"/>
+                    <element name="settingID" nillable="true" type="xsd:string"/>
+                    <element name="startTime" nillable="true" type="xsd:string"/>
+                    <element name="status" nillable="true" type="xsd:string"/>
+                    <element name="timeType" nillable="true" type="xsd:string"/>
+                    <element name="toneBoxID" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usertonemanage.QuerySettingResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="recordSum" nillable="true" type="xsd:string"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                    <element name="settingInfos" nillable="true" type="impl:ArrayOf_tns1_com.viettel.vcrbt.webservice.response.usertonemanage.SettingInfo"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.EditSettingEvt">
+                <sequence>
+                    <element name="calledUserID" nillable="true" type="xsd:string"/>
+                    <element name="calledUserType" nillable="true" type="xsd:string"/>
+                    <element name="callerNumber" nillable="true" type="xsd:string"/>
+                    <element name="description" nillable="true" type="xsd:string"/>
+                    <element name="endTime" nillable="true" type="xsd:string"/>
+                    <element name="loopType" nillable="true" type="xsd:string"/>
+                    <element name="moduleCode" nillable="true" type="xsd:string"/>
+                    <element name="moodModeID" nillable="true" type="xsd:string"/>
+                    <element name="overlayFlag" nillable="true" type="xsd:string"/>
+                    <element name="phoneState" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="resourceType" nillable="true" type="xsd:string"/>
+                    <element name="role" nillable="true" type="xsd:string"/>
+                    <element name="roleCode" nillable="true" type="xsd:string"/>
+                    <element name="setType" nillable="true" type="xsd:string"/>
+                    <element name="settingID" nillable="true" type="xsd:string"/>
+                    <element name="startTime" nillable="true" type="xsd:string"/>
+                    <element name="timeType" nillable="true" type="xsd:string"/>
+                    <element name="toneBoxID" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usertonemanage.EditSettingResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                    <element name="settingID" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.DelSettingEvt">
+                <sequence>
+                    <element name="calledUserID" nillable="true" type="xsd:string"/>
+                    <element name="calledUserType" nillable="true" type="xsd:string"/>
+                    <element name="moduleCode" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="role" nillable="true" type="xsd:string"/>
+                    <element name="roleCode" nillable="true" type="xsd:string"/>
+                    <element name="settingID" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.wsdlnode.QueryInboxToneEvt">
+                <sequence>
+                    <element name="endRecordNum" nillable="true" type="xsd:string"/>
+                    <element name="languageID" nillable="true" type="xsd:string"/>
+                    <element name="merchantID" nillable="true" type="xsd:string"/>
+                    <element name="phoneNumber" nillable="true" type="xsd:string"/>
+                    <element name="portalAccount" nillable="true" type="xsd:string"/>
+                    <element name="portalPwd" nillable="true" type="xsd:string"/>
+                    <element name="portalType" nillable="true" type="xsd:string"/>
+                    <element name="queryType" nillable="true" type="xsd:string"/>
+                    <element name="resourceServiceType" nillable="true" type="xsd:string"/>
+                    <element name="resourceType" nillable="true" type="xsd:string"/>
+                    <element name="serviceID" nillable="true" type="xsd:string"/>
+                    <element name="startRecordNum" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+            <complexType name="com.viettel.vcrbt.webservice.response.usertonemanage.QueryInboxToneResp">
+                <sequence>
+                    <element name="eventClassName" nillable="true" type="xsd:string"/>
+                    <element name="operationID" nillable="true" type="xsd:string"/>
+                    <element name="protocolType" type="xsd:int"/>
+                    <element name="recordSum" nillable="true" type="xsd:string"/>
+                    <element name="resultCode" nillable="true" type="xsd:string"/>
+                    <element name="resultInfo" nillable="true" type="xsd:string"/>
+                    <element name="returnCode" nillable="true" type="xsd:string"/>
+                    <element name="toneBoxInfos" nillable="true" type="impl:ArrayOf_tns1_com.viettel.vcrbt.webservice.response.usertonemanage.ToneBoxInfo"/>
+                    <element name="toneInfos" nillable="true" type="impl:ArrayOf_tns1_com.viettel.vcrbt.webservice.response.usertonemanage.ToneInfo"/>
+                </sequence>
+            </complexType>
+        </schema>
+        <schema targetNamespace="http://localhost:8001/user-tone-manage"
+            xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://soapinterop.org/xsd"/>
+            <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+            <complexType name="ArrayOf_tns1_com.viettel.vcrbt.webservice.response.usertonemanage.GroupInfo">
+                <complexContent>
+                    <restriction base="soapenc:Array">
+                        <attribute ref="soapenc:arrayType" wsdl:arrayType="tns1:com.viettel.vcrbt.webservice.response.usertonemanage.GroupInfo[]"/>
+                    </restriction>
+                </complexContent>
+            </complexType>
+            <complexType name="ArrayOf_xsd_string">
+                <complexContent>
+                    <restriction base="soapenc:Array">
+                        <attribute ref="soapenc:arrayType" wsdl:arrayType="xsd:string[]"/>
+                    </restriction>
+                </complexContent>
+            </complexType>
+            <complexType name="ArrayOf_tns1_com.viettel.vcrbt.webservice.response.usertonemanage.GroupMemberInfo">
+                <complexContent>
+                    <restriction base="soapenc:Array">
+                        <attribute ref="soapenc:arrayType" wsdl:arrayType="tns1:com.viettel.vcrbt.webservice.response.usertonemanage.GroupMemberInfo[]"/>
+                    </restriction>
+                </complexContent>
+            </complexType>
+            <complexType name="ArrayOf_tns1_com.viettel.vcrbt.webservice.response.usertonemanage.ToneBoxInfo">
+                <complexContent>
+                    <restriction base="soapenc:Array">
+                        <attribute ref="soapenc:arrayType" wsdl:arrayType="tns1:com.viettel.vcrbt.webservice.response.usertonemanage.ToneBoxInfo[]"/>
+                    </restriction>
+                </complexContent>
+            </complexType>
+            <complexType name="ArrayOf_tns1_com.viettel.vcrbt.webservice.response.usertonemanage.ToneInfo">
+                <complexContent>
+                    <restriction base="soapenc:Array">
+                        <attribute ref="soapenc:arrayType" wsdl:arrayType="tns1:com.viettel.vcrbt.webservice.response.usertonemanage.ToneInfo[]"/>
+                    </restriction>
+                </complexContent>
+            </complexType>
+            <complexType name="ArrayOf_tns1_com.viettel.vcrbt.webservice.response.usertonemanage.SettingInfo">
+                <complexContent>
+                    <restriction base="soapenc:Array">
+                        <attribute ref="soapenc:arrayType" wsdl:arrayType="tns1:com.viettel.vcrbt.webservice.response.usertonemanage.SettingInfo[]"/>
+                    </restriction>
+                </complexContent>
+            </complexType>
+        </schema>
+    </wsdl:types>
+    <wsdl:message name="editToneBoxRequest">
+        <wsdl:part name="EditToneBoxEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.EditToneBoxEvt"/>
+    </wsdl:message>
+    <wsdl:message name="reOrderToneResponse">
+        <wsdl:part name="reOrderToneReturn" type="tns1:com.viettel.vcrbt.webservice.response.usertonemanage.ReOrderToneResp"/>
+    </wsdl:message>
+    <wsdl:message name="addGroupMemberResponse">
+        <wsdl:part name="addGroupMemberReturn" type="tns1:com.viettel.vcrbt.webservice.response.usertonemanage.AddGroupMemberResp"/>
+    </wsdl:message>
+    <wsdl:message name="orderToneResponse">
+        <wsdl:part name="orderToneReturn" type="tns1:com.viettel.vcrbt.webservice.response.OrderToneResp"/>
+    </wsdl:message>
+    <wsdl:message name="delGroupRequest">
+        <wsdl:part name="DelGroupEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.DelGroupEvt"/>
+    </wsdl:message>
+    <wsdl:message name="addGroupMemberRequest">
+        <wsdl:part name="AddGroupEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.AddGroupMemberEvt"/>
+    </wsdl:message>
+    <wsdl:message name="queryGroupResponse">
+        <wsdl:part name="queryGroupReturn" type="tns1:com.viettel.vcrbt.webservice.response.usertonemanage.QueryGroupResp"/>
+    </wsdl:message>
+    <wsdl:message name="addToneBoxRequest">
+        <wsdl:part name="AddToneBoxEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.AddToneBoxEvt"/>
+    </wsdl:message>
+    <wsdl:message name="delTbToneResponse">
+        <wsdl:part name="delTbToneReturn" type="tns1:com.viettel.vcrbt.webservice.response.usertonemanage.DelTbToneResp"/>
+    </wsdl:message>
+    <wsdl:message name="querySettingRequest">
+        <wsdl:part name="QuerySettingEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.QuerySettingEvt"/>
+    </wsdl:message>
+    <wsdl:message name="editSettingResponse">
+        <wsdl:part name="editSettingReturn" type="tns1:com.viettel.vcrbt.webservice.response.usertonemanage.EditSettingResp"/>
+    </wsdl:message>
+    <wsdl:message name="delGroupMemberResponse">
+        <wsdl:part name="delGroupMemberReturn" type="tns1:com.viettel.vcrbt.webservice.response.usertonemanage.DelGroupMemberResp"/>
+    </wsdl:message>
+    <wsdl:message name="queryInboxToneResponse">
+        <wsdl:part name="queryInboxToneReturn" type="tns1:com.viettel.vcrbt.webservice.response.usertonemanage.QueryInboxToneResp"/>
+    </wsdl:message>
+    <wsdl:message name="addGroupResponse">
+        <wsdl:part name="addGroupReturn" type="tns1:com.viettel.vcrbt.webservice.response.usertonemanage.AddGroupResp"/>
+    </wsdl:message>
+    <wsdl:message name="addTbToneResponse">
+        <wsdl:part name="addTbToneReturn" type="tns1:com.viettel.vcrbt.webservice.response.usertonemanage.AddTbToneResp"/>
+    </wsdl:message>
+    <wsdl:message name="queryGroupMemberResponse">
+        <wsdl:part name="queryGroupMemberReturn" type="tns1:com.viettel.vcrbt.webservice.response.usertonemanage.QueryGroupMemberResp"/>
+    </wsdl:message>
+    <wsdl:message name="reOrderToneRequest">
+        <wsdl:part name="ReOrderToneEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.ReOrderToneEvt"/>
+    </wsdl:message>
+    <wsdl:message name="delGroupMemberRequest">
+        <wsdl:part name="DelGroupMemberEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.DelGroupMemberEvt"/>
+    </wsdl:message>
+    <wsdl:message name="delInboxToneResponse">
+        <wsdl:part name="delInboxToneReturn" type="tns1:com.viettel.vcrbt.webservice.response.usertonemanage.DelInboxToneResp"/>
+    </wsdl:message>
+    <wsdl:message name="addGroupRequest">
+        <wsdl:part name="AddGroupEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.AddGroupEvt"/>
+    </wsdl:message>
+    <wsdl:message name="delSettingResponse">
+        <wsdl:part name="delSettingReturn" type="xsd:string"/>
+    </wsdl:message>
+    <wsdl:message name="addToneBoxResponse">
+        <wsdl:part name="addToneBoxReturn" type="tns1:com.viettel.vcrbt.webservice.response.usertonemanage.AddToneBoxResp"/>
+    </wsdl:message>
+    <wsdl:message name="delTbToneRequest">
+        <wsdl:part name="DelTbToneEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.DelTbToneEvt"/>
+    </wsdl:message>
+    <wsdl:message name="sendSmResponse">
+        <wsdl:part name="sendSmReturn" type="tns1:com.viettel.vcrbt.webservice.response.usertonemanage.SendSmResp"/>
+    </wsdl:message>
+    <wsdl:message name="querySettingResponse">
+        <wsdl:part name="querySettingReturn" type="tns1:com.viettel.vcrbt.webservice.response.usertonemanage.QuerySettingResp"/>
+    </wsdl:message>
+    <wsdl:message name="uploadToneRequest">
+        <wsdl:part name="UploadToneEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.UploadToneEvt"/>
+    </wsdl:message>
+    <wsdl:message name="delGroupResponse">
+        <wsdl:part name="delGroupReturn" type="tns1:com.viettel.vcrbt.webservice.response.usertonemanage.DelGroupResp"/>
+    </wsdl:message>
+    <wsdl:message name="queryToneBoxRequest">
+        <wsdl:part name="QueryToneBoxEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.QueryToneBoxEvt"/>
+    </wsdl:message>
+    <wsdl:message name="queryTbToneResponse">
+        <wsdl:part name="queryTbToneReturn" type="tns1:com.viettel.vcrbt.webservice.response.usertonemanage.QueryTbToneResp"/>
+    </wsdl:message>
+    <wsdl:message name="setToneResponse">
+        <wsdl:part name="setToneReturn" type="tns1:com.viettel.vcrbt.webservice.response.usertonemanage.SetToneResp"/>
+    </wsdl:message>
+    <wsdl:message name="queryGroupRequest">
+        <wsdl:part name="QueryGroupEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.QueryGroupEvt"/>
+    </wsdl:message>
+    <wsdl:message name="queryGroupMemberRequest">
+        <wsdl:part name="QueryGroupMemberEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.QueryGroupMemberEvt"/>
+    </wsdl:message>
+    <wsdl:message name="sendSmRequest">
+        <wsdl:part name="SendSmEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.SendSmEvt"/>
+    </wsdl:message>
+    <wsdl:message name="delSettingRequest">
+        <wsdl:part name="DelSettingEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.DelSettingEvt"/>
+    </wsdl:message>
+    <wsdl:message name="editToneBoxResponse">
+        <wsdl:part name="editToneBoxReturn" type="tns1:com.viettel.vcrbt.webservice.response.usertonemanage.EditToneBoxResp"/>
+    </wsdl:message>
+    <wsdl:message name="delInboxToneRequest">
+        <wsdl:part name="DelInboxToneEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.DelInboxToneEvt"/>
+    </wsdl:message>
+    <wsdl:message name="addTbToneRequest">
+        <wsdl:part name="AddTbToneEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.AddTbToneEvt"/>
+    </wsdl:message>
+    <wsdl:message name="queryInboxToneRequest">
+        <wsdl:part name="QueryInboxToneEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.QueryInboxToneEvt"/>
+    </wsdl:message>
+    <wsdl:message name="setToneRequest">
+        <wsdl:part name="SetToneEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.SetToneEvt"/>
+    </wsdl:message>
+    <wsdl:message name="queryToneBoxResponse">
+        <wsdl:part name="queryToneBoxReturn" type="tns1:com.viettel.vcrbt.webservice.response.usertonemanage.QueryToneBoxResp1"/>
+    </wsdl:message>
+    <wsdl:message name="uploadToneResponse">
+        <wsdl:part name="uploadToneReturn" type="tns1:com.viettel.vcrbt.webservice.response.usertonemanage.UploadToneResp"/>
+    </wsdl:message>
+    <wsdl:message name="orderToneRequest">
+        <wsdl:part name="OrderToneEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.OrderToneEvt"/>
+    </wsdl:message>
+    <wsdl:message name="queryTbToneRequest">
+        <wsdl:part name="QueryTbToneEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.QueryTbToneEvt"/>
+    </wsdl:message>
+    <wsdl:message name="editSettingRequest">
+        <wsdl:part name="EditSettingEvt" type="tns1:com.viettel.vcrbt.webservice.wsdlnode.EditSettingEvt"/>
+    </wsdl:message>
+    <wsdl:portType name="UserToneManage">
+        <wsdl:operation name="setTone" parameterOrder="SetToneEvt">
+            <wsdl:input message="impl:setToneRequest" name="setToneRequest"/>
+            <wsdl:output message="impl:setToneResponse" name="setToneResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="addGroup" parameterOrder="AddGroupEvt">
+            <wsdl:input message="impl:addGroupRequest" name="addGroupRequest"/>
+            <wsdl:output message="impl:addGroupResponse" name="addGroupResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="delGroup" parameterOrder="DelGroupEvt">
+            <wsdl:input message="impl:delGroupRequest" name="delGroupRequest"/>
+            <wsdl:output message="impl:delGroupResponse" name="delGroupResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="queryGroup" parameterOrder="QueryGroupEvt">
+            <wsdl:input message="impl:queryGroupRequest" name="queryGroupRequest"/>
+            <wsdl:output message="impl:queryGroupResponse" name="queryGroupResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="addGroupMember" parameterOrder="AddGroupEvt">
+            <wsdl:input message="impl:addGroupMemberRequest" name="addGroupMemberRequest"/>
+            <wsdl:output message="impl:addGroupMemberResponse" name="addGroupMemberResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="delGroupMember" parameterOrder="DelGroupMemberEvt">
+            <wsdl:input message="impl:delGroupMemberRequest" name="delGroupMemberRequest"/>
+            <wsdl:output message="impl:delGroupMemberResponse" name="delGroupMemberResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="queryGroupMember" parameterOrder="QueryGroupMemberEvt">
+            <wsdl:input message="impl:queryGroupMemberRequest" name="queryGroupMemberRequest"/>
+            <wsdl:output message="impl:queryGroupMemberResponse" name="queryGroupMemberResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="addToneBox" parameterOrder="AddToneBoxEvt">
+            <wsdl:input message="impl:addToneBoxRequest" name="addToneBoxRequest"/>
+            <wsdl:output message="impl:addToneBoxResponse" name="addToneBoxResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="editToneBox" parameterOrder="EditToneBoxEvt">
+            <wsdl:input message="impl:editToneBoxRequest" name="editToneBoxRequest"/>
+            <wsdl:output message="impl:editToneBoxResponse" name="editToneBoxResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="orderTone" parameterOrder="OrderToneEvt">
+            <wsdl:input message="impl:orderToneRequest" name="orderToneRequest"/>
+            <wsdl:output message="impl:orderToneResponse" name="orderToneResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="delInboxTone" parameterOrder="DelInboxToneEvt">
+            <wsdl:input message="impl:delInboxToneRequest" name="delInboxToneRequest"/>
+            <wsdl:output message="impl:delInboxToneResponse" name="delInboxToneResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="addTbTone" parameterOrder="AddTbToneEvt">
+            <wsdl:input message="impl:addTbToneRequest" name="addTbToneRequest"/>
+            <wsdl:output message="impl:addTbToneResponse" name="addTbToneResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="delTbTone" parameterOrder="DelTbToneEvt">
+            <wsdl:input message="impl:delTbToneRequest" name="delTbToneRequest"/>
+            <wsdl:output message="impl:delTbToneResponse" name="delTbToneResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="sendSm" parameterOrder="SendSmEvt">
+            <wsdl:input message="impl:sendSmRequest" name="sendSmRequest"/>
+            <wsdl:output message="impl:sendSmResponse" name="sendSmResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="queryToneBox" parameterOrder="QueryToneBoxEvt">
+            <wsdl:input message="impl:queryToneBoxRequest" name="queryToneBoxRequest"/>
+            <wsdl:output message="impl:queryToneBoxResponse" name="queryToneBoxResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="queryTbTone" parameterOrder="QueryTbToneEvt">
+            <wsdl:input message="impl:queryTbToneRequest" name="queryTbToneRequest"/>
+            <wsdl:output message="impl:queryTbToneResponse" name="queryTbToneResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="reOrderTone" parameterOrder="ReOrderToneEvt">
+            <wsdl:input message="impl:reOrderToneRequest" name="reOrderToneRequest"/>
+            <wsdl:output message="impl:reOrderToneResponse" name="reOrderToneResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="uploadTone" parameterOrder="UploadToneEvt">
+            <wsdl:input message="impl:uploadToneRequest" name="uploadToneRequest"/>
+            <wsdl:output message="impl:uploadToneResponse" name="uploadToneResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="querySetting" parameterOrder="QuerySettingEvt">
+            <wsdl:input message="impl:querySettingRequest" name="querySettingRequest"/>
+            <wsdl:output message="impl:querySettingResponse" name="querySettingResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="editSetting" parameterOrder="EditSettingEvt">
+            <wsdl:input message="impl:editSettingRequest" name="editSettingRequest"/>
+            <wsdl:output message="impl:editSettingResponse" name="editSettingResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="delSetting" parameterOrder="DelSettingEvt">
+            <wsdl:input message="impl:delSettingRequest" name="delSettingRequest"/>
+            <wsdl:output message="impl:delSettingResponse" name="delSettingResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="queryInboxTone" parameterOrder="QueryInboxToneEvt">
+            <wsdl:input message="impl:queryInboxToneRequest" name="queryInboxToneRequest"/>
+            <wsdl:output message="impl:queryInboxToneResponse" name="queryInboxToneResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="UserToneManageSoapBinding" type="impl:UserToneManage">
+        <wsdlsoap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="setTone">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="setToneRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="setToneResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-tone-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="addGroup">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="addGroupRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="addGroupResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-tone-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="delGroup">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="delGroupRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="delGroupResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-tone-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="queryGroup">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="queryGroupRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="queryGroupResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-tone-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="addGroupMember">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="addGroupMemberRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="addGroupMemberResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-tone-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="delGroupMember">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="delGroupMemberRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="delGroupMemberResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-tone-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="queryGroupMember">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="queryGroupMemberRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="queryGroupMemberResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-tone-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="addToneBox">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="addToneBoxRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="addToneBoxResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-tone-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="editToneBox">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="editToneBoxRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="editToneBoxResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-tone-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="orderTone">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="orderToneRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="orderToneResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-tone-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="delInboxTone">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="delInboxToneRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="delInboxToneResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-tone-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="addTbTone">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="addTbToneRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="addTbToneResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-tone-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="delTbTone">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="delTbToneRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="delTbToneResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-tone-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="sendSm">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="sendSmRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="sendSmResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-tone-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="queryToneBox">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="queryToneBoxRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="queryToneBoxResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-tone-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="queryTbTone">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="queryTbToneRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="queryTbToneResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-tone-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="reOrderTone">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="reOrderToneRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="reOrderToneResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-tone-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="uploadTone">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="uploadToneRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="uploadToneResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-tone-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="querySetting">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="querySettingRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="querySettingResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-tone-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="editSetting">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="editSettingRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="editSettingResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-tone-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="delSetting">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="delSettingRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="delSettingResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-tone-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="queryInboxTone">
+            <wsdlsoap:operation soapAction=""/>
+            <wsdl:input name="queryInboxToneRequest">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://listener.webservice.interfaces.vcrbt.viettel.com" use="encoded"/>
+            </wsdl:input>
+            <wsdl:output name="queryInboxToneResponse">
+                <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost:8001/user-tone-manage" use="encoded"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="UserToneManageService">
+        <wsdl:port binding="impl:UserToneManageSoapBinding" name="UserToneManage">
+            <wsdlsoap:address location="http://localhost:8001/user-tone-manage"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

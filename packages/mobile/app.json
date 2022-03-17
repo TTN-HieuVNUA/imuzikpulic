@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "packagerOpts": {
+      "config": "rn-cli.config.js"
+    },
+    "name": "IMuzik",
+    "slug": "imuzikv1",
+    "privacy": "unlisted",
+    "platforms": ["ios", "android", "web"],
+    "version": "1.0.3",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.viettel.imuzikvas1",
+      "buildNumber": "22",
+      "infoPlist": {
+        "UIBackgroundModes": ["audio"]
+      }
+    },
+    "android": {
+      "package": "com.viettel.imuzikvas1"
+    }
+  }
+}

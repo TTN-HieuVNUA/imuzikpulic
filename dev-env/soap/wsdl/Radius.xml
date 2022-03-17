@@ -1,0 +1,68 @@
+<wsdl:definitions xmlns:axis2="http://viettel.com"
+    xmlns:ns1="http://org.apache.axis2/xsd"
+    xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:ns0="http://viettel.com/xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://viettel.com">
+    <wsdl:documentation>Radius</wsdl:documentation>
+    <wsdl:types>
+        <xs:schema xmlns:ns="http://viettel.com/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://viettel.com/xsd">
+            <xs:element name="getMSISDN">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="username" nillable="true" type="xs:string" />
+                        <xs:element name="password" nillable="true" type="xs:string" />
+                        <xs:element name="ip" nillable="true" type="xs:string" />
+                        <xs:element name="ggname" nillable="true" type="xs:string" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getMSISDNResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="return" nillable="true" type="ns0:ResultResponse" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="ResultResponse" type="ns0:ResultResponse" />
+            <xs:complexType name="ResultResponse">
+                <xs:sequence>
+                    <xs:element name="code" type="xs:int" />
+                    <xs:element name="desc" nillable="true" type="xs:string" />
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="getMSISDNMessage">
+        <wsdl:part name="part1" element="ns0:getMSISDN" />
+    </wsdl:message>
+    <wsdl:message name="getMSISDNResponse">
+        <wsdl:part name="part1" element="ns0:getMSISDNResponse" />
+    </wsdl:message>
+    <wsdl:portType name="RadiusPortType">
+        <wsdl:operation name="getMSISDN">
+            <wsdl:input xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" message="axis2:getMSISDNMessage" wsaw:Action="urn:getMSISDN" />
+            <wsdl:output message="axis2:getMSISDNResponse" />
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="RadiusSOAP11Binding" type="axis2:RadiusPortType">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+        <wsdl:operation name="getMSISDN">
+            <soap:operation soapAction="urn:getMSISDN" style="document" />
+            <wsdl:input>
+                <soap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="Radius">
+        <wsdl:port name="RadiusSOAP11port_http" binding="axis2:RadiusSOAP11Binding">
+            <soap:address location="http://localhost:8001/radius" />
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

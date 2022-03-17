@@ -1,0 +1,20 @@
+query HelpArticleCategories {
+  helpArticleCategories {
+    id
+    name
+    slug
+  }
+}
+
+query HelpArticles($slug: String!) {
+  helpArticleCategory(slug: $slug) {
+    id
+    name
+    slug
+    articles {
+      id
+      title
+      body
+    }
+  }
+}

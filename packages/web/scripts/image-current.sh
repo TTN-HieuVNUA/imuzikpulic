@@ -1,0 +1,8 @@
+#!/bin/sh
+APP_NAME=web
+IMAGE_PATH="$REGISTRY/imuzik-web"
+APP_VERSION=1.0
+BUILD_VERSION="$APP_VERSION-$(git rev-parse --short=9 HEAD)"
+IMAGE="$IMAGE_PATH/$APP_NAME:$BUILD_VERSION"
+
+echo $IMAGE

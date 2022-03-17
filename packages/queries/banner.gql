@@ -1,0 +1,55 @@
+query FeaturedList($after: String, $first: Int) {
+  featuredList(after: $after, first: $first) {
+    totalCount
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+    edges {
+      node {
+        id
+        name
+        alterText
+        fileUrl
+        publishedTime
+        itemType
+        itemId
+        item {
+          ... on Song {
+            slug
+          }
+          ... on Genre {
+            slug
+          }
+          ... on Singer {
+            slug
+          }
+          ... on Topic {
+            slug
+          }
+        }
+      }
+    }
+  }
+}
+
+query PageBanner($page: String!, $slug: String, $after: String, $first: Int) {
+  pageBanner(page: $page, slug: $slug, after: $after, first: $first) {
+    totalCount
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+    edges {
+      node {
+        id
+        name
+        alterText
+        fileUrl
+        publishedTime
+        itemType
+        itemId
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+query Node($id: ID!) {
+  node(id: $id) {
+    ... on Song {
+      ...SongBase
+      tones {
+        ...ToneBase
+        duration
+        fileUrl
+      }
+    }
+  }
+}

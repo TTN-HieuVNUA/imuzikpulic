@@ -1,0 +1,67 @@
+fragment TopicBase on Topic {
+  id
+  slug
+  name
+  imageUrl
+  description
+}
+
+query HotTopics {
+  hotTopics {
+    ...TopicBase
+  }
+}
+
+query HotTop100 {
+  hotTop100 {
+    ...TopicBase
+  }
+}
+
+query Topics($after: String, $first: Int) {
+  topics(after: $after, first: $first) {
+    totalCount
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+    edges {
+      node {
+        ...TopicBase
+      }
+    }
+  }
+}
+
+query Top100s($after: String, $first: Int) {
+  top100s(after: $after, first: $first) {
+    totalCount
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+    edges {
+      node {
+        ...TopicBase
+      }
+    }
+  }
+}
+
+query topic($slug: String!, $after: String, $first: Int, $orderBy: SongOrderByInput) {
+  topic(slug: $slug) {
+    ...TopicBase
+    songs(after: $after, first: $first, orderBy: $orderBy)
+      @connection(key: "singerSongs", filter: ["orderBy"]) {
+      ...SongConnectionBase
+      edges {
+        node {
+          ...SongBase
+          toneFromList {
+            ...ToneBase
+          }
+        }
+      }
+    }
+  }
+}

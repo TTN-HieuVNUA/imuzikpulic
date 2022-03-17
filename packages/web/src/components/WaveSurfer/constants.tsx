@@ -1,0 +1,5 @@
+export const SET_CURRENT_SONG = 'SET_CURRENT_SONG';
+export const SET_IS_PLAYING = 'SET_IS_PLAYING';
+export const SET_IS_READY = 'SET_IS_READY';
+export const SET_TIME_REGIONS = 'SET_TIME_REGIONS';
+export const SET_ERROR_MASSAGE = 'SET_ERROR_MASSAGE';

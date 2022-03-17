@@ -1,0 +1,59 @@
+fragment GenreSearch on Genre {
+  id
+  slug
+  name
+  imageUrl
+}
+fragment SingerSearch on Singer {
+  id
+  alias
+  slug
+  imageUrl
+}
+fragment ContentProviderSearch on ContentProvider {
+  id
+  name
+  code
+  imageUrl
+}
+
+query Search($query: String!, $after: String, $first: Int!, $type: NodeType) {
+  search(query: $query, after: $after, first: $first, type: $type) {
+    totalCount
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+    edges {
+      node {
+        __typename
+        id
+        ... on Song {
+          ...SongBase
+        }
+        ... on Genre {
+          ...GenreSearch
+        }
+        ... on Singer {
+          ...SingerSearch
+        }
+        ... on ContentProvider {
+          ...ContentProviderSearch
+        }
+      }
+    }
+  }
+}
+
+query HotKeywords {
+  hotKeywords
+}
+
+mutation RecordKeyword($keyword: String!) {
+  recordKeyword(keyword: $keyword) {
+    success
+    errorCode
+    message
+    result
+  }
+}

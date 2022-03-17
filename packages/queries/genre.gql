@@ -1,0 +1,46 @@
+fragment GenreBase on Genre {
+  id
+  slug
+  name
+  description
+  imageUrl
+}
+
+query HotGenres {
+  hotGenres {
+    ...GenreBase
+  }
+}
+
+query Genres($after: String, $first: Int) {
+  genres(after: $after, first: $first) {
+    totalCount
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+    edges {
+      node {
+        ...GenreBase
+      }
+    }
+  }
+}
+
+query Genre($slug: String!, $after: String, $first: Int, $orderBy: SongOrderByInput) {
+  genre(slug: $slug) {
+    ...GenreBase
+    songs(after: $after, first: $first, orderBy: $orderBy)
+      @connection(key: "singerSongs", filter: ["orderBy"]) {
+      ...SongConnectionBase
+      edges {
+        node {
+          ...SongBase
+          toneFromList {
+            ...ToneBase
+          }
+        }
+      }
+    }
+  }
+}
